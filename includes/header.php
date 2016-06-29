@@ -1,0 +1,94 @@
+<?php
+
+// Redirect for IE6 users
+if (isset($browser_info['msie']))
+{
+	if ($browser_info['msie'] < 7)
+    {
+		redirect('/ie6.php');
+    }
+}
+
+if (!isset( $page_title ))
+{
+    $page_title = PAGE_TITLE_BASE;
+}
+
+if (!isset( $tab ))
+{
+    $tab = 'tab1';
+}
+
+?><!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+   "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+<meta name="description" content="I develop applications for the social web. My development skillset includes PHP, Oracle, MySQL, Facebook Apps, Twitter Apps and more." />
+<meta name="keywords" content="Mike Dang, Dang, Interactive Marketing, Social Media, Developer, Application Developer, Web Developer, Facebook, Facebook apps, Twitter" />
+<meta name="viewport" content="width=device-width" />
+<meta name="apple-mobile-web-app-capable" content="yes" />
+<meta name="apple-touch-fullscreen" content="yes" />
+<title><?php echo $page_title ?></title>
+<link rel="canonical" href="http://www.mikedang.com/" /> 
+<link rel="shortcut icon" type="image/x-icon" href="/favicon.ico" />
+<!--[if IE]><![endif]-->
+<link rel="stylesheet" href="<?php echo STATIC_ROOT ?>/css/global<?php echo ASSET_VERSION ?>.css" type="text/css" media="all" />
+<!--[if IE 7]>
+<link rel="stylesheet" href="<?php echo STATIC_ROOT ?>/css/ie7.css" type="text/css" media="all" />
+<![endif]-->
+<!--[if IE 8]>
+<link rel="stylesheet" href="<?php echo STATIC_ROOT ?>/css/ie8.css" type="text/css" media="all" />
+<![endif]-->
+<?php if (is_mobile_browser()): ?>
+<link rel="stylesheet" href="<?php echo STATIC_ROOT ?>/css/mobile.css" type="text/css" media="all" />
+<?php endif; ?>
+
+<?php if (IS_DEV): ?>
+<script type="text/javascript" src="<?php echo STATIC_ROOT ?>/js/jquery-<?php echo JQUERY_VERSION ?>.min.js"></script>
+<?php else: ?>
+<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/<?php echo JQUERY_VERSION ?>/jquery.min.js"></script>
+<?php endif; ?>
+<script type="text/javascript">
+var reloader=document.location.hash.substr(1);if(reloader){if(reloader.charAt(0)=='/'){if(window.opener){window.opener.location.href=reloader;window.close();}else{location.href=reloader;}}}
+</script>
+</head>
+<?php flush(); ?>
+<body id="<?php echo $tab ?>" class="theme3">
+<div id="container">
+<a name="top"></a>
+
+<div id="header">
+	
+    <div id="logo">
+        <h1><a href="/"><img src="<?php echo STATIC_ROOT ?>/i/logo_min.gif" width="145" height="37" alt="Mike Dang" /></a></h1>
+        <span>Code monkey for hire</span>
+    </div>
+    
+	<?php if (!is_mobile_browser()): ?>
+    <!--
+    <div id="twitter">
+        <div id="twitter-ctrl">
+            <a href="#" id="twitter-prev">previous</a>
+            <a href="#" id="twitter-next">next</a>
+        </div>
+    	<div id="tweets" class="clearfix"></div>
+    </div>
+    -->
+    <?php endif; ?>
+    
+    <div id="loader2">Working...</div>
+</div>
+
+<a name="top-nav"></a>
+	
+<ul id="tabnav">
+	<li class="tab1"><a href="/">Home</a></li>
+	<li class="tab2"><a href="/work/">Development</a></li>
+	<li class="tab3"><a href="/posts">Posts</a></li>
+	<li class="tab4"><a href="/about/">About</a></li>
+	<li id="tab-cta" class="tab5"><a href="/contact/">Contact</a></li>
+</ul>
+<ul id="subnav"></ul>
+

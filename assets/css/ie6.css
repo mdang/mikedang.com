@@ -1,0 +1,64 @@
+h3, h4, h5, p, span {
+    font-family: helvetica, arial, sans-serif;
+}
+#tweets {
+    height: 115px;
+}
+
+.feature-set {
+	display: none;
+	width: 640px;
+} 
+
+.feature-item h4 {
+	margin-top: 5px;
+}
+
+#main {
+	width: 620px;
+}
+
+img {
+	border: none;
+	text-decoration: none;
+}
+
+.postmetadata {
+	margin: 18px 0;
+	background: #fff;
+	border: none;
+	padding: 5px 4px;
+}
+.postmetadata p {
+	
+}
+#main .post {
+	margin: 0 0 18px;
+	clear: both;
+}
+
+#project-views {
+    overflow: hidden;
+    clear: both;
+    border: none;
+    background: #fff;
+}
+#project-thumbs {
+	overflow: hidden;
+	clear: both;
+}
+#project-details {
+	clear: both;
+}
+
+.post .clearfix {
+    width: 600px;
+}
+#all .post .clearfix {
+	width: 675px;
+}
+
+#msg {
+    height: 100px;
+}
+
