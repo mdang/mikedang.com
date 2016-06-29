@@ -9,11 +9,19 @@ require_once 'DateDifference.php';
 
 $tab = 'tab1';
 
-$featured   = get_featured_apps(10);
-$debug[]    = Zend_Debug::dump($featured, 'Featured Projects', 0);
+$featured = get_featured_apps(15);
+$debug[] = Zend_Debug::dump($featured, 'Featured Projects', 0);
 
-$third_party_posts = get_third_party_posts(null, 15);
-$debug[]    = Zend_Debug::dump($third_party_posts, 'All posts', 0);
+$photo_options = array(
+  'consumer_key' => _500PX_CONSUMER_KEY,
+  'rpp' => 20
+  );
+
+$featured_photos = get_featured_photos($photo_options);
+$debug[] = Zend_Debug::dump($featured_photos, 'Featured Photos', 0);
+
+// $third_party_posts = get_third_party_posts(null, 15);
+// $debug[]    = Zend_Debug::dump($third_party_posts, 'All posts', 0);
 
 ?>
 
@@ -22,7 +30,7 @@ $debug[]    = Zend_Debug::dump($third_party_posts, 'All posts', 0);
 </div>
 
 <div id="all">
-
+<!--
 <h3 class="headline">Wish your site was more social? I got you covered</h3>
 
 <div id="soc-intro" class="clearfix">
@@ -74,6 +82,7 @@ $debug[]    = Zend_Debug::dump($third_party_posts, 'All posts', 0);
 </div>
 
 <p class="link-prompt"><a class="ajax" href="/posts">see all posts</a></p>
+-->
 <h3 class="headline">I help some of the world's most recognizable brands market on the web</h3>
 
 <div id="dev-preview">
@@ -144,14 +153,13 @@ $(function() {
 	set_page_title('<?php echo PAGE_TITLE_BASE . PAGE_TITLE_SEPERATOR . 'Home' ?>');
 	add_ajax_request_handlers();
 
-	var $container = $('#soc-intro');
+	var $container = $('.feature-set');
 
 	$container.imagesLoaded(function() {
-		$container.masonry({
-			itemSelector: '.soc-item'
-		});
+		// $container.masonry({
+		// 	itemSelector: '.soc-item'
+		// });
 
-		fade_in_social();
 		fade_in_projects();
 	});
 

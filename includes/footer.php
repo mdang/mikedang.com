@@ -13,7 +13,7 @@
 	<li><a href="/sitemap" class="ajax" rel="">Sitemap</a></li>
 </ul>
 <ul id="footersubnav">
-	<li><div id="g-plusone"></div></li>
+	<li id="li-plusone"><div id="g-plusone"></div></li>
 	<li><div id="fb-root"></div><fb:like href="http://www.mikedang.com" send="true" layout="button_count" show_faces="true" font=""></fb:like></li>
 </ul>
 
@@ -26,15 +26,15 @@
 $(function() {
 	<?php if (!is_mobile_browser()): ?>
 	/*
-	load('<?php echo STATIC_ROOT ?>/js/twitter<?php echo ASSET_VERSION ?>.js', function() { 
-		twitter_search('dang :)', 50, 'init_tweets'); 
+	load('<?php echo STATIC_ROOT ?>/js/twitter<?php echo ASSET_VERSION ?>.js', function() {
+		twitter_search('dang :)', 50, 'init_tweets');
 		init_tweet_control();
-		
-		setInterval('refresh_timestamps()', 30000); 
+
+		setInterval('refresh_timestamps()', 30000);
 	});
 	*/
 	<?php endif; ?>
-	load('http://apis.google.com/js/plusone.js', function() { 
+	load('http://apis.google.com/js/plusone.js', function() {
 		gapi.plusone.render("g-plusone", {"size": "medium", "count": "true"});
 	});
 	load('http://connect.facebook.net/en_US/all.js#xfbml=1', function() {});
@@ -56,7 +56,7 @@ $(function() {
 
 </script>
 <?php endif; ?>
-<?php 
+<?php
 
 if (DEBUG and (IS_DEV) and !empty($debug))
 {

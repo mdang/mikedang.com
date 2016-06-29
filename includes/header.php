@@ -31,7 +31,7 @@ if (!isset( $tab ))
 <meta name="apple-mobile-web-app-capable" content="yes" />
 <meta name="apple-touch-fullscreen" content="yes" />
 <title><?php echo $page_title ?></title>
-<link rel="canonical" href="http://www.mikedang.com/" /> 
+<link rel="canonical" href="http://www.mikedang.com/" />
 <link rel="shortcut icon" type="image/x-icon" href="/favicon.ico" />
 <!--[if IE]><![endif]-->
 <link rel="stylesheet" href="<?php echo STATIC_ROOT ?>/css/global<?php echo ASSET_VERSION ?>.css" type="text/css" media="all" />
@@ -45,11 +45,7 @@ if (!isset( $tab ))
 <link rel="stylesheet" href="<?php echo STATIC_ROOT ?>/css/mobile.css" type="text/css" media="all" />
 <?php endif; ?>
 
-<?php if (IS_DEV): ?>
-<script type="text/javascript" src="<?php echo STATIC_ROOT ?>/js/jquery-<?php echo JQUERY_VERSION ?>.min.js"></script>
-<?php else: ?>
-<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/<?php echo JQUERY_VERSION ?>/jquery.min.js"></script>
-<?php endif; ?>
+<script src="//code.jquery.com/jquery-1.5.2.min.js"></script>
 <script type="text/javascript">
 var reloader=document.location.hash.substr(1);if(reloader){if(reloader.charAt(0)=='/'){if(window.opener){window.opener.location.href=reloader;window.close();}else{location.href=reloader;}}}
 </script>
@@ -60,12 +56,12 @@ var reloader=document.location.hash.substr(1);if(reloader){if(reloader.charAt(0)
 <a name="top"></a>
 
 <div id="header">
-	
+
     <div id="logo">
         <h1><a href="/"><img src="<?php echo STATIC_ROOT ?>/i/logo_min.gif" width="145" height="37" alt="Mike Dang" /></a></h1>
         <span>Code monkey for hire</span>
     </div>
-    
+
 	<?php if (!is_mobile_browser()): ?>
     <!--
     <div id="twitter">
@@ -77,12 +73,12 @@ var reloader=document.location.hash.substr(1);if(reloader){if(reloader.charAt(0)
     </div>
     -->
     <?php endif; ?>
-    
+
     <div id="loader2">Working...</div>
 </div>
 
 <a name="top-nav"></a>
-	
+
 <ul id="tabnav">
 	<li class="tab1"><a href="/">Home</a></li>
 	<li class="tab2"><a href="/work/">Development</a></li>
@@ -91,4 +87,3 @@ var reloader=document.location.hash.substr(1);if(reloader){if(reloader.charAt(0)
 	<li id="tab-cta" class="tab5"><a href="/contact/">Contact</a></li>
 </ul>
 <ul id="subnav"></ul>
-
