@@ -1,6 +1,6 @@
-<?php 
+<?php
 
-if (!defined('APP_INIT')) 
+if (!defined('APP_INIT'))
 {
     require_once '../../init.php';
 }
@@ -22,21 +22,21 @@ $debug[]    = Zend_Debug::dump($third_party_posts, 'All posts', 0);
 </div>
 
 <div id="all">
- 
-<h3 class="headline">Wish your site was more social? I have you covered</h3>
+
+<h3 class="headline">Wishing your site was more social? I have you covered</h3>
 
 <div id="soc-intro" class="clearfix">
-	<?php 
-	
-	foreach ($third_party_posts as $post) 
+	<?php
+
+	foreach ($third_party_posts as $post)
 	{
 		$soc_logo = '';
-		
-		if (strtotime($post['third_party_create_tmsp']) > strtotime('3 days ago')) 
+
+		if (strtotime($post['third_party_create_tmsp']) > strtotime('3 days ago'))
 		{
 			$soc_logo = 'label_new_red.png';
-		} 
-		
+		}
+
 		switch ( $post['post_type'] )
 		{
 			case 'photo':
@@ -49,9 +49,9 @@ $debug[]    = Zend_Debug::dump($third_party_posts, 'All posts', 0);
 					<div class="soc-logo"><img src="<?php echo STATIC_ROOT ?>/i/<?php echo $soc_logo ?>" alt="" /></div>
 					<?php endif; ?>
 				</div>
-				
-				<?php 
-				
+
+				<?php
+
 				break;
 			case 'status':
 			default:
@@ -63,13 +63,13 @@ $debug[]    = Zend_Debug::dump($third_party_posts, 'All posts', 0);
 					<div class="soc-logo"><img src="<?php echo STATIC_ROOT ?>/i/<?php echo $soc_logo ?>" alt="" /></div>
 					<?php endif; ?>
 				</div>
-				
-				<?php 
-				
+
+				<?php
+
 				break;
 		}
 	}
-	
+
 	?>
 </div>
 
@@ -78,19 +78,19 @@ $debug[]    = Zend_Debug::dump($third_party_posts, 'All posts', 0);
 
 <div id="dev-preview">
 	<div id="feature" class="clearfix">
-        <?php 
-        
+        <?php
+
         $i = 0;
-        
+
         echo '<div class="feature-set clearfix">';
-        
+
         foreach ($featured as $app)
         {
             if ($i !== 0 and ($i % 5 == 0))
             {
                 echo PHP_EOL .'</div>'. PHP_EOL .'<div class="feature-set clearfix">'. PHP_EOL;
             }
-            
+
             $preview_file_nm = $app['preview_file_nm'];
             $app_id          = $app['app_id'];
             $app_nm          = $app['app_nm'];
@@ -98,41 +98,41 @@ $debug[]    = Zend_Debug::dump($third_party_posts, 'All posts', 0);
             $client_nm       = $app['client_nm'];
             $app_desc        = $app['app_desc'];
             $url             = $app['url'];
-             
+
             if ($preview_file_nm)
             {
                 $img_tag = '<img src="'. IMG_APP_MEDIA_FILE_PATH . $preview_file_nm .'" width="175" height="150" alt="'. $app_nm .'" />';
             }
-            else 
+            else
             {
                 $img_tag = '<img src="' . STATIC_ROOT . '/i/blank.gif" class="feature-divider" width="175" height="150" alt="'. $app_nm .'" />';
             }
-             
+
             if ($client_nm)
             {
                 $client_str = '<p><span>Client:</span> <a class="ajax" href="/work/?client='. $client_id .'">'. $client_nm .'</a></p>';
             }
-             
+
             echo PHP_EOL;
             echo <<<FEATURE
                 <div class="feature-item">
-                    
+
                     <a class="ajax" href="/work/detail?id=$app_id">$img_tag</a>
-                    
+
                     <h4><a class="ajax" href="/work/detail?id=$app_id">$app_nm</a></h4>
                     $client_str
                 </div>
 FEATURE;
             $i++;
-            
+
         }
-        
+
         echo PHP_EOL .'</div>';
-        
+
         ?>
-        
+
     </div>
-    
+
     <p class="link-prompt clearfix"><a class="ajax" href="/work/">see all projects</a></p>
 </div>
 </div>
@@ -143,19 +143,19 @@ $(function() {
 	select_tab('<?php echo $tab; ?>');
 	set_page_title('<?php echo PAGE_TITLE_BASE . PAGE_TITLE_SEPERATOR . 'Home' ?>');
 	add_ajax_request_handlers();
-	
+
 	var $container = $('#soc-intro');
-	
+
 	$container.imagesLoaded(function() {
 		$container.masonry({
 			itemSelector: '.soc-item'
 		});
-		
+
 		fade_in_social();
-		fade_in_projects();	
+		fade_in_projects();
 	});
 
-	
+
 	<?php if (GOOGLE_ANALYTICS_ACCT): ?>
 	_gaq.push(['_trackPageview', '/index']);
 	<?php endif; ?>
