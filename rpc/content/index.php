@@ -23,7 +23,7 @@ $debug[]    = Zend_Debug::dump($third_party_posts, 'All posts', 0);
 
 <div id="all">
 
-<h3 class="headline">Wishing your site was more social? I have you covered</h3>
+<h3 class="headline">Wish your site was more social? I got you covered</h3>
 
 <div id="soc-intro" class="clearfix">
 	<?php
