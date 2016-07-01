@@ -6,7 +6,7 @@ body {
 	background: #f9f9f9;
 	text-align: center;
 	/* font: .9em/1.5em "Lucida Grande", Tahoma, arial, sans-serif; */
-	font: 1em/1.5em Georgia, serif;
+	font: 1.5em/1.9em Georgia, serif;
 	/*color: #4F4E4E;*/
 	color: #345;
 }
@@ -16,25 +16,32 @@ img {
 }
 
 h2 {
-	margin: .4em 0 .6em;
-	font: 2.8em/1.2em Plantin, "Plantin std", "Plantin", "Baskerville", Georgia, "Times New Roman", serif;
+	margin: .4em 0 0;
+	font: 3.2em/1em Plantin, "Plantin std", "Plantin", "Baskerville", Georgia, "Times New Roman", serif;
 	float: left;
 }
 h3 {
-	font-size: 1.3em;
+	font-size: 1.7em;
 	font-weight: normal;
-    letter-spacing: .03em;
+  letter-spacing: .03em;
+	margin-right: 8px;
 }
 h4 {
-	font-size: 1.07em;
+	font-size: 1.0em;
 	text-transform: lowercase;
+	font-weight: bold;
 }
 h5 {
-	font-size: 1em;
+	font-size: 1.4em;
 }
 h3, h4, h5 {
 	margin-bottom: 0.3em;
-	line-height: 1.3em;
+	line-height: 1.6em;
+	clear: both;
+}
+.row {
+	clear: both;
+	margin-bottom: 20px;
 }
 /*
 h2, h3, h4, h5, p, .subcontent {
@@ -90,15 +97,13 @@ a:link, a:visited, a:active {
 }
 a:hover {
 	text-decoration: none;
-
 	border-bottom: 1px solid #333;
 	color: #000;
 }
 
 #container {
 	text-align: left;
-	/*width: 930px;*/
-	width: 1080px;
+	/*width: 1080px;*/
 	margin: 0 auto;
 }
 
@@ -295,14 +300,31 @@ ul#tabnav li#tab-cta a:hover {
 	clear: both;
 }
 
+.img-responsive {
+	width: 100%;
+	padding-bottom: 6px;
+}
+
 #footer {
 	margin: 35px 6px 0;
 	padding: 5px 3px 30px;
 	clear: both;
 }
+footer {
+	margin-top: 40px;
+	background: #101010;
+	clear: both;
+	padding: 20px 40px 2px;
+}
 #copyright {
 	float: left;
-	font-size: 80%;
+	font-size: 87%;
+	color: #9d9d9d;
+}
+
+.navbar {
+	margin-bottom: 0;
+	border-radius: 0;
 }
 
 #footernav {
@@ -313,8 +335,8 @@ ul#tabnav li#tab-cta a:hover {
 	padding-left: 12px;
 }
 #footernav li a {
-	color: #777;
-	font-size: 90%;
+	color: #9d9d9d;
+	font-size: 95%;
 }
 #footernav a:link, #footernav a:visited, #footernav a:active {
 	text-decoration: none;
@@ -328,10 +350,10 @@ ul#tabnav li#tab-cta a:hover {
 #footersubnav li {
 	float: right;
 	padding: 0;
-	margin-right: 12px;
+	margin-left: 12px;
 }
 #li-plusone {
-	margin-top: 4px;
+	margin-top: 8px;
 }
 
 .hidden {
@@ -952,21 +974,28 @@ label.error {
 	float: left;
 }
 
+.truncate {
+  width: 165px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
 .feature-set {
 }
 .feature-item {
-	display: none;
+	display: inline-block;
 
 	float: left;
-	margin: 3px 0 3px 9px;
+	margin: 3px 7px 3px 0;
 	width: 185px;
 	padding: 4px 7px;
 	border: 1px solid #fff;
 	text-align: center;
 
 	-moz-border-radius: 5px;
-    -webkit-border-radius: 5px;
-    border-radius: 5px;
+  -webkit-border-radius: 5px;
+  border-radius: 5px;
 }
 .feature-item h4, .feature-item p {
     text-align: left;
@@ -1118,6 +1147,6 @@ h3.headline {
     color: #fff;
 }
 
-#soc-intro {
+/*#soc-intro {
 	height: 1000px;
-}
+}*/

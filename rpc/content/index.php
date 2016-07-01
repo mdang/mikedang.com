@@ -12,9 +12,13 @@ $tab = 'tab1';
 $featured = get_featured_apps(15);
 $debug[] = Zend_Debug::dump($featured, 'Featured Projects', 0);
 
+// 500px image sizes: https://github.com/500px/api-documentation/blob/master/basics/formats_and_terms.md#image-urls-and-image-sizes
 $photo_options = array(
   'consumer_key' => _500PX_CONSUMER_KEY,
-  'rpp' => 20
+  'rpp' => 20,
+  'sort' => '_score',
+  'image_size[0]' => 3,
+  'image_size[1]' => 600
   );
 
 $featured_photos = get_featured_photos($photo_options);
@@ -30,7 +34,7 @@ $debug[] = Zend_Debug::dump($featured_photos, 'Featured Photos', 0);
 </div>
 
 <div id="all">
-<!--
+<?php /*
 <h3 class="headline">Wish your site was more social? I got you covered</h3>
 
 <div id="soc-intro" class="clearfix">
@@ -82,7 +86,8 @@ $debug[] = Zend_Debug::dump($featured_photos, 'Featured Photos', 0);
 </div>
 
 <p class="link-prompt"><a class="ajax" href="/posts">see all posts</a></p>
--->
+*/
+?>
 <h3 class="headline">I help some of the world's most recognizable brands market on the web</h3>
 
 <div id="dev-preview">
@@ -97,7 +102,7 @@ $debug[] = Zend_Debug::dump($featured_photos, 'Featured Photos', 0);
         {
             if ($i !== 0 and ($i % 5 == 0))
             {
-                echo PHP_EOL .'</div>'. PHP_EOL .'<div class="feature-set clearfix">'. PHP_EOL;
+                //echo PHP_EOL .'</div>'. PHP_EOL .'<div class="feature-set clearfix">'. PHP_EOL;
             }
 
             $preview_file_nm = $app['preview_file_nm'];
@@ -124,16 +129,15 @@ $debug[] = Zend_Debug::dump($featured_photos, 'Featured Photos', 0);
 
             echo PHP_EOL;
             echo <<<FEATURE
-                <div class="feature-item">
+                <div class="feature-item" style="display: none">
 
                     <a class="ajax" href="/work/detail?id=$app_id">$img_tag</a>
 
-                    <h4><a class="ajax" href="/work/detail?id=$app_id">$app_nm</a></h4>
+                    <h4><a class="ajax truncate" href="/work/detail?id=$app_id">$app_nm</a></h4>
                     $client_str
                 </div>
 FEATURE;
             $i++;
-
         }
 
         echo PHP_EOL .'</div>';
@@ -146,10 +150,50 @@ FEATURE;
 </div>
 </div>
 
+</div>
+<!-- </div> -->
+
+<div class="container-fluid bg-3 text-center">
+  <h3 class="headline">I love photography</h3>
+  <div class="row">
+    <?php
+
+    $i = 0;
+    foreach ($featured_photos as $photo) {
+      if ($i % 4 === 0) {
+        echo '</div>';
+        echo '<div class="row">';
+      }
+      echo '<div class="col-sm-3 col-md-3"><img class="img-responsive" src="' . $photo->image_url[0] . '" srcset="' . $photo->image_url[0] .' 1x, ' . $photo->image_url[1] .' 2x"></div>';
+      $i++;
+    }
+
+    ?>
+  </div>
+</div>
+
+<p class="link-prompt clearfix"><a class="ajax" href="/photos/">see more photos</a></p>
+
+
+
+<!-- testing -->
+<!-- <div style="clear: both;">
+<ul>
+  <?php
+
+  foreach ($featured_photos as $photo) {
+    echo '<li style="display:inline-block"><img src="' . $photo->image_url[0] . '" srcset="' . $photo->image_url[0] .' 1x, ' . $photo->image_url[1] .' 2x"></li>';
+  }
+
+  ?>
+</ul>
+</div> -->
+
+
 <script type="text/javascript">
 
 $(function() {
-	select_tab('<?php echo $tab; ?>');
+	//select_tab('<?php echo $tab; ?>');
 	set_page_title('<?php echo PAGE_TITLE_BASE . PAGE_TITLE_SEPERATOR . 'Home' ?>');
 	add_ajax_request_handlers();
 
@@ -162,7 +206,6 @@ $(function() {
 
 		fade_in_projects();
 	});
-
 
 	<?php if (GOOGLE_ANALYTICS_ACCT): ?>
 	_gaq.push(['_trackPageview', '/index']);

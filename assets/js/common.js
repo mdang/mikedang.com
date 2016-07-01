@@ -3,9 +3,9 @@ function load(url, callback) {
 
 	var script  = document.createElement('script');
 	script.type = "text/javascript";
-	
+
 	if (script.readyState) {  //IE
-		
+
 	    script.onreadystatechange = function() {
 	        if (script.readyState == 'loaded' ||
 	                script.readyState == 'complete') {
@@ -13,14 +13,14 @@ function load(url, callback) {
 	            callback();
 	        }
 	    };
-	    
+
 	} else {  //Others
-	    
+
 		script.onload = function(){
 	        callback();
 	    };
 	}
-	
+
 	script.src = url;
 	document.getElementsByTagName('head')[0].appendChild(script);
 }
@@ -51,7 +51,7 @@ function init_feature_cyle() {
 	        prev:   '#feature-prev'
 	    });
 	}
-	
+
 };
 
 function init_tweet_control() {
@@ -78,21 +78,21 @@ function gridAnimationSocial(item) {
 }
 
 function fade_in_projects() {
-	// Calculate the height of the area to be filled in 
+	// Calculate the height of the area to be filled in
 	var cCnt = 5;
-    var gH = $(".feature-item").height();
-    var gM = 15;
-    var nH = 60;
+  var gH = $(".feature-item").height();
+  var gM = 15;
+  var nH = 60;
 
 	fitems = new Array();
     $(".feature-item").each(function () {
-        fitems.push($(this));
+				fitems.push($(this));
     });
     rCnt = Math.ceil((fitems.length) / cCnt);
     cH = ((gH * rCnt) + (rCnt * gM)) + nH;
-    $('#dev-preview').css({
-        'height': cH + 'px'
-    });
+    // $('#dev-preview').css({
+    //     'height': cH + 'px'
+    // });
 
     gridAnimationProjects(fitems.shift());
 }
@@ -102,69 +102,69 @@ function fade_in_social() {
     $(".soc-item").each(function () {
         gitems.push($(this));
     });
-    
+
     gridAnimationSocial(gitems.shift());
 }
 
 function load_third_party_posts(third_party_id) {
 	show_loading_indicator();
-	
+
 	$.ajax({
-	    url: '/rpc/post_builder.php', 
+	    url: '/rpc/post_builder.php',
 	    type: 'GET',
-	    data: 'tpid=' + third_party_id,     
+	    data: 'tpid=' + third_party_id,
 	    dataType: 'html',
-	    success: function(content) {  
+	    success: function(content) {
 			$('#soc-intro').html(content);
-			
+
 			var $container = $('#soc-intro');
 			show_loading_indicator();
-			
+
 			$container.imagesLoaded( function(){
 			  $container.masonry({
 			    itemSelector : '.soc-item'
 			  });
-			  
-			  fade_in_social(); 
-			  
+
+			  fade_in_social();
+
 			  setTimeout('hide_loading_indicator()', 7000);
 			});
 	    },
 	    error: function(XMLHttpRequest, textStatus, errorThrown) {
 	    	alert(textStatus);
-	    },    
+	    },
 	    complete: function(XMLHttpRequest, textStatus) {
-	    	
+
 	    }
 	});
 }
 
 
 
-/* navigation */ 
+/* navigation */
 
 
 $(function() {
-	setInterval('check_anchor()', 300);  
+	setInterval('check_anchor()', 300);
 });
 
-var current_anchor = null; 
+var current_anchor = null;
 var scrolling      = true;
 
 show_loading_indicator = function() {
 	//var current_pos = $(window).scrollTop();
 	//$('#loader2').css('top', current_pos);
 	/*
-	var d = document; 
-	 var rootElm = (d.documentelement && d.compatMode == 'CSS1Compat') ? d.documentelement : d.body; 
-	 var vpw = self.innerWidth ? self.innerWidth : rootElm.clientWidth; // viewport width 
-	 var vph = self.innerHeight ? self.innerHeight : rootElm.clientHeight; // viewport height 
-	 var myDiv = d.getelementById('loader2'); 
-	 myDiv.style.position = 'absolute'; 
-	 myDiv.style.left = ((vpw - 100) / 2) + 'px';  
+	var d = document;
+	 var rootElm = (d.documentelement && d.compatMode == 'CSS1Compat') ? d.documentelement : d.body;
+	 var vpw = self.innerWidth ? self.innerWidth : rootElm.clientWidth; // viewport width
+	 var vph = self.innerHeight ? self.innerHeight : rootElm.clientHeight; // viewport height
+	 var myDiv = d.getelementById('loader2');
+	 myDiv.style.position = 'absolute';
+	 myDiv.style.left = ((vpw - 100) / 2) + 'px';
 	 myDiv.style.top = (rootElm.scrollTop + (vph - 100)/2 ) + 'px';
 	*/
-	
+
 	$('#loader2').show();
 };
 
@@ -173,46 +173,46 @@ hide_loading_indicator = function() {
 };
 
 check_anchor = function() {
-	
+
 	var hash = document.location.hash.substr(1);
 	var is_ie_browser = is_ie();
-	
+
 	if (hash) {
-		
+
 		// Check to see if we are navigating to an element on the same page or to a different page
 		if (hash.charAt(0) != '/') {
 			return;
 		}
-		
+
 		// Keep it from constantly refreshing the content if it's the same page
-		if (current_anchor != hash) {  
+		if (current_anchor != hash) {
 			current_anchor = hash;
-			
+
 			//$('#progress').show();
 			show_loading_indicator();
-			
+
 			// IE will return distorted content if this is used
 			if (!is_ie_browser) {
-				$('#content').fadeTo('fast', 0.2); 
+				$('#content').fadeTo('fast', 0.2);
 			}
 
 			$.ajax({
-			    
-			    url: '/rpc/content' + hash, 
+
+			    url: '/rpc/content' + hash,
 			    type: 'GET',
-			    data: '',     
+			    data: '',
 			    cache: false,
 			    dataType: 'html',
-			    success: function(content) {  
-			        
+			    success: function(content) {
+
 					$('#content').html(content);
-					
+
 					if (!is_ie_browser) {
 						$('#content').fadeTo('fast', 1);
 					}
-			        
-			        // Top navigation temporarily disables scrolling because there is no need to, 
-			        // 	it causes lag in this case 
+
+			        // Top navigation temporarily disables scrolling because there is no need to,
+			        // 	it causes lag in this case
 			        if (scrolling) {
 			        	$.scrollTo(0, { duration: 1000 });
 			        }
@@ -223,9 +223,9 @@ check_anchor = function() {
 			    error: function(XMLHttpRequest, textStatus, errorThrown) {
 
 			        alert(textStatus);
-			    },    
+			    },
 			    complete: function(XMLHttpRequest, textStatus) {
-			        
+
 			        //$('#progress').hide();
 			    	hide_loading_indicator();
 			    }
@@ -244,12 +244,12 @@ get_page = function(page_nm, tab, scrolling) {
 	if (scrolling == false) {
 		disable_scrolling();
 	}
-	
+
 	// IE changes the href value to be a fully qualified url for some reason
 	page_nm = page_nm.replace(/http:\/\/www.mikedang.com/i, '');
 	page_nm = page_nm.replace(/http:\/\/stg.mikedang.com/i, '');
 	page_nm = page_nm.replace(/http:\/\/mikedang.com/i, '');
-	
+
 	window.location = '#' + page_nm;
 };
 
@@ -280,5 +280,3 @@ $('.tab4 a').click(function() { get_page($(this).attr('href'), 'tab4', false); r
 //$('.tab5 a').click(function() { get_page($(this).attr('href'), 'tab5', false); return false; });
 
 add_ajax_request_handlers();
-	
-
