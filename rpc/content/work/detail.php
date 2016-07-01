@@ -1,6 +1,6 @@
-<?php 
+<?php
 
-if (!defined('APP_INIT')) 
+if (!defined('APP_INIT'))
 {
     require_once '../../../init.php';
 }
@@ -48,14 +48,14 @@ $preview_file_nm = $project['preview_file_nm'];
 $featured_ind    = $project['featured_ind'];
 $create_tmsp     = $project['create_tmsp'];
 
-// Make sure http:// is present but not added again if it is 
+// Make sure http:// is present but not added again if it is
 if ($url)
 {
     if (!strstr($url, 'http'))
     {
         $full_url = 'http://'. $url;
     }
-    else 
+    else
     {
         $full_url = $url;
     }
@@ -68,7 +68,7 @@ $debug[] = Zend_Debug::dump($media_files, 'Media Files', 0);
 $debug[] = Zend_Debug::dump($related_work, 'Related Work', 0);
 
 $params = array();
-	    
+
 if (isset($_GET['client']))
 {
     $params = array('page' => $page_num,
@@ -79,193 +79,193 @@ elseif (isset($_GET['tag']))
     $params = array('page' => $page_num,
     					'tag' => $_GET['tag']);
 }
-else 
+else
 {
 	$params = array('page' => $page_num);
 }
-    
+
 $params_str = http_build_query($params);
 
 ?>
 
 <div id="title">
     <h2><?php echo $app_nm ?></h2>
-    
+
     <?php if ($logo_file_nm): ?>
-    <!--  
+    <!--
     <div id="client-logo">
         <img src="<?php echo IMG_CLIENT_LOGO_PATH ?><?php echo $logo_file_nm ?>" alt="<?php echo $client_nm; ?>" width="75" height="75" />
     </div>
     -->
     <?php endif; ?>
-	
+
 	<div id="details-ret">
     	<a class="ajax" href="/work/?<?php echo $params_str ?>">go back to project results</a>
     </div>
 </div>
 
 <div id="main-2">
-    
+
     <?php if (!empty($media_files)): ?>
     <div id="project-images">
-        
-        <?php 
-        
+
+        <?php
+
         foreach ($media_files as $file)
         {
             $file_id      = $file['media_file_id'];
             $file_nm      = $file['media_file_nm'];
             $file_type_cd = $file['media_file_type_cd'];
             $file_desc    = $file['media_file_desc'];
-            
+
             $file_path_a  = IMG_APP_MEDIA_FILE_PATH . $file_nm;
-            
+
             echo '<img src="'. $file_path_a .'" alt="'. $file_desc .'" width="625" height="350" />';
         }
-        
+
         ?>
     </div>
     <?php else: ?>
-    
+
     <img src="<?php echo STATIC_ROOT ?>/i/blank.gif" style="background: #ccc;" width="625" height="350" alt="" />
-    
+
     <?php endif; ?>
-    
+
     <?php if (count($media_files) > 1): ?>
     <div id="project-views" class="clearfix">
-    
+
         <ul id="project-thumbs">
-        	<?php 
-            
+        	<?php
+
             foreach ($media_files as $file)
             {
                 $file_id      = $file['media_file_id'];
                 $file_nm      = $file['media_file_nm'];
                 $file_type_cd = $file['media_file_type_cd'];
                 $file_desc    = $file['media_file_desc'];
-                
+
                 $file_path    = IMG_APP_MEDIA_FILE_PATH . IMG_THUMBNAIL_PREFIX . $file_nm;
-                
+
                 echo '<li><a href="#"><img src="'. $file_path .'" width="75" height="42" alt="'. $file_desc .'" /></a></li>';
             }
-            
+
             ?>
         </ul>
-        
+
     </div>
     <?php endif; ?>
-    
+
     <div id="project-details">
         <?php if ($cmnt): ?>
-        
+
         <p><?php echo nl2br($cmnt); ?></p>
-        
+
         <?php elseif ($app_desc): ?>
-        
+
         <p><?php echo nl2br($app_desc); ?></p>
-        
+
         <?php endif; ?>
-        
+
         <div class="project-details-ret"><a class="ajax" href="/work/?<?php echo $params_str ?>">go back to project results</a></div>
     </div>
 
 </div>
 
 <div id="sidebar-2">
-    
+
     <?php if ($client_nm or $url): ?>
     <div class="submodule clearfix">
         <h4>General Info</h4>
-        
+
         <div class="subcontent">
-            
+
             <?php if ($client_nm): ?>
             <a class="ajax" href="/work/?client=<?php echo $client_id ?>"><?php echo $client_nm ?></a><br />
             <?php endif; ?>
-            
+
             <?php if ($url): ?>
             <a href="<?php echo $full_url ?>" target="_new"><?php echo $url ?></a>
             <?php endif; ?>
         </div>
-        
+
     </div>
     <?php endif; ?>
-    
+
     <?php if ($app_resp): ?>
     <div class="submodule clearfix">
         <h4>Responsibilities</h4>
-        
+
         <div class="subcontent">
-            
+
             <?php echo nl2br($app_resp) ?>
-            
+
         </div>
-        
+
     </div>
     <?php endif; ?>
-    
+
     <?php if ($workplace_nm): ?>
     <div class="submodule clearfix">
         <h4>Workplace</h4>
-        
+
         <div class="subcontent">
             <?php echo $workplace_nm ?>
         </div>
-        
+
     </div>
     <?php endif; ?>
-    
+
     <?php if (!empty($tags)): ?>
     <div class="submodule clearfix">
         <h4>Tags</h4>
-        
+
         <div class="subcontent">
-            <?php 
-            
+            <?php
+
             $tag_str = '';
-                
+
             foreach ($tags as $tag)
             {
                 $tag_str .= '<a class="ajax tag" href="/work/?tag='. $tag['tag_id'] .'">'. str_replace(' ', '&nbsp;', $tag['tag_nm']) .'</a> ';
             }
-            
+
             $tag_str = rtrim($tag_str, ', ');
-            
+
             echo $tag_str;
-            
+
             ?>
-        	
+
         	<p><a class="ajax" href="/tags">see all</a></p>
         </div>
-        
+
     </div>
     <?php endif; ?>
-    
+
     <?php if (!empty($related_work)): ?>
     <div class="submodule clearfix">
         <h4>More Client Work</h4>
         <div class="subcontent">
-            <?php 
-            
+            <?php
+
             foreach ($related_work as $related)
             {
                 echo '<div class="project-related">';
-                
+
                 if ($preview_file_nm)
                 {
                     $img_path = IMG_APP_PREVIEW_PATH . $related['preview_file_nm'];
                     $img_tag  = '<img src="'. $img_path .'" alt="'. $related['app_nm'] .'" width="175" height="150" />';
                 }
-                else 
+                else
                 {
                     $img_tag  = '<img src="' . STATIC_ROOT .'/i/blank.gif" style="background: #ccc;" width="175" height="85" alt="" />';
                 }
-                
+
                 echo '<a class="ajax" href="/work/detail?id='. $related['app_id'] .'&' . $params_str . '">'. $img_tag .'</a>';
                 echo '<a class="ajax" href="/work/detail?id='. $related['app_id'] .'&' . $params_str . '">'. $related['app_nm'] .'</a>';
                 echo '</div>';
             }
-            
+
             ?>
         </div>
     </div>
@@ -275,9 +275,10 @@ $params_str = http_build_query($params);
 <script type="text/javascript">
 
 $(function() {
-    
+
 	select_tab('<?php echo $tab; ?>');
 	set_page_title('<?php echo js_escape_string(PAGE_TITLE_BASE . PAGE_TITLE_SEPERATOR . 'Work' . PAGE_TITLE_SEPERATOR . $app_nm) ?>');
+  add_ajax_request_handlers();
 
 	if ($('#project-thumbs')) {
 		$('#project-images').cycle({
@@ -291,8 +292,8 @@ $(function() {
 	        }
 	    });
 	}
-    
-    add_ajax_request_handlers();
+
+
 
     <?php if (GOOGLE_ANALYTICS_ACCT): ?>
 	_gaq.push(['_trackPageview', '/work/detail/<?php echo urlencode( $app_nm ) ?>']);

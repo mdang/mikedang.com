@@ -124,7 +124,7 @@ $debug[] = Zend_Debug::dump($featured_photos, 'Featured Photos', 0);
 
             if ($client_nm)
             {
-                $client_str = '<p><span>Client:</span> <a class="ajax" href="/work/?client='. $client_id .'">'. $client_nm .'</a></p>';
+                $client_str = '<p><!--<span>Client:</span> --><a class="ajax" href="/work/?client='. $client_id .'">'. $client_nm .'</a></p>';
             }
 
             echo PHP_EOL;
@@ -150,11 +150,12 @@ FEATURE;
 </div>
 </div>
 
-</div>
+<!-- </div> -->
 <!-- </div> -->
 
+<h3 class="headline">I also dabble in photography</h3>
+
 <div class="container-fluid bg-3 text-center">
-  <h3 class="headline">I love photography</h3>
   <div class="row">
     <?php
 
@@ -193,7 +194,7 @@ FEATURE;
 <script type="text/javascript">
 
 $(function() {
-	//select_tab('<?php echo $tab; ?>');
+	select_tab('<?php echo $tab; ?>');
 	set_page_title('<?php echo PAGE_TITLE_BASE . PAGE_TITLE_SEPERATOR . 'Home' ?>');
 	add_ajax_request_handlers();
 
