@@ -395,10 +395,10 @@ a:hover.button span {
 }
 
 .listview {
-	margin: 7px 0;
+	margin: 7px 14px 7px 0;
 	padding: 8px 12px;
 	background: #f7f7f7;
-	width: 550px;
+	/*width: 550px;*/
 	border-bottom: 1px solid #eee;
 }
 .listview a {
@@ -738,7 +738,7 @@ a:hover.button span {
 }
 
 #msg {
-	width: 400px;
+	width: 87%;
 }
 
 
@@ -977,6 +977,8 @@ legend {
 	padding: 2px 5px;
 	margin-left: 4px;
 	color: #ccc;
+	border-bottom: 0;
+	width: inherit;
 }
 
 label {
@@ -1168,6 +1170,12 @@ h3.headline {
 }
 .theme5 .soc-3 {
 	background: #ADC1D6;
+}
+
+.submit {
+	padding: .3em 1em;
+	background: #F17022;
+	color: #fff;
 }
 
 ::-moz-selection {

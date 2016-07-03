@@ -104,7 +104,7 @@ $params_str = http_build_query($params);
     </div>
 </div>
 
-<div class="">
+<div class="container-fluid bg-3">
 
 <div id="main-2" class="col-xs-12 col-sm-12 col-md-9">
 
