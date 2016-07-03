@@ -354,6 +354,7 @@ $params_str = http_build_query($params);
 
 <?php if (!is_mobile_browser()): ?>
 <div id="sidebar" class="col-xs-12 col-sm-12 col-md-4">
+    <?php /*
     <div class="submodule clearfix">
         <h4>At a Glance</h4>
         <div class="subcontent">
@@ -371,6 +372,7 @@ $params_str = http_build_query($params);
         </div>
 
     </div>
+    */ ?>
 
     <div class="submodule clearfix">
         <h4>Client Overview</h4>

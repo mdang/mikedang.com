@@ -267,7 +267,13 @@ is_ie = function() {
 
 add_ajax_request_handlers = function() {
 	$('.ajax').each(function() {
-		$(this).click(function() { get_page($(this).attr('href'), $(this).attr('rel')); return false; });
+		$(this).click(function() {
+			get_page($(this).attr('href'), $(this).attr('rel'));
+			// $('#fullnav .nav li').removeClass('active');
+			$('#fullnav li').removeClass('active');
+			$(this).parent().addClass('active');
+			return false;
+		});
 	});
 };
 
