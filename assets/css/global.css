@@ -477,13 +477,12 @@ a:hover.button span {
 }
 #sidebar, #sidebar-2 {
 	float: left;
-	margin-left: 12px;
+	/*margin-left: 12px;*/
 	padding: 3px 3px 0;
-	/*width: 250px;*/
-	width: 315px;
+	/*width: 315px;*/
 }
 #sidebar-2 {
-	width: 355px;
+	/*width: 355px;*/
 }
 
 #map {
@@ -553,6 +552,15 @@ a:hover.button span {
 #project-list-nav a, #client-list-nav a {
 	/*font-family: "Lucida Grande", "Lucida Sans Unicode", Verdana, sans-serif;*/
 	font-size: 85%;
+}
+
+#project-images {
+	margin-top: 20px;
+}
+
+.project-image {
+	display: inline-block;
+	margin: 0 20px 20px 0;
 }
 
 .project-row {

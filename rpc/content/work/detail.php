@@ -104,7 +104,9 @@ $params_str = http_build_query($params);
     </div>
 </div>
 
-<div id="main-2">
+<div class="">
+
+<div id="main-2" class="col-xs-12 col-sm-12 col-md-9">
 
     <?php if (!empty($media_files)): ?>
     <div id="project-images">
@@ -120,7 +122,8 @@ $params_str = http_build_query($params);
 
             $file_path_a  = IMG_APP_MEDIA_FILE_PATH . $file_nm;
 
-            echo '<img src="'. $file_path_a .'" alt="'. $file_desc .'" width="625" height="350" />';
+            //  width="625" height="350"
+            echo '<div class="project-image"><img width="300" src="'. $file_path_a .'" srcset="' . $file_path_a .' 1x, ' . $file_path_a .' 2x" alt="'. $file_desc .'" /></div>';
         }
 
         ?>
@@ -131,6 +134,7 @@ $params_str = http_build_query($params);
 
     <?php endif; ?>
 
+    <?php /*
     <?php if (count($media_files) > 1): ?>
     <div id="project-views" class="clearfix">
 
@@ -154,6 +158,7 @@ $params_str = http_build_query($params);
 
     </div>
     <?php endif; ?>
+    */ ?>
 
     <div id="project-details">
         <?php if ($cmnt): ?>
@@ -171,7 +176,7 @@ $params_str = http_build_query($params);
 
 </div>
 
-<div id="sidebar-2">
+<div id="sidebar-2" class="col-xs-12 col-sm-12 col-md-2">
 
     <?php if ($client_nm or $url): ?>
     <div class="submodule clearfix">
@@ -272,6 +277,8 @@ $params_str = http_build_query($params);
     <?php endif; ?>
 </div>
 
+</div>
+
 <script type="text/javascript">
 
 $(function() {
@@ -280,22 +287,22 @@ $(function() {
 	set_page_title('<?php echo js_escape_string(PAGE_TITLE_BASE . PAGE_TITLE_SEPERATOR . 'Work' . PAGE_TITLE_SEPERATOR . $app_nm) ?>');
   add_ajax_request_handlers();
 
-	if ($('#project-thumbs')) {
-		$('#project-images').cycle({
-	        fx:      'scrollHorz',
-	        speed:   500,
-	        timeout: 6500,
-	        easing:  'easeInOutQuad',
-	        pager:   '#project-thumbs',
-	        pagerAnchorBuilder: function(idx, slide) {
-	            return '#project-thumbs li:eq(' + (idx) + ') a';
-	        }
-	    });
-	}
+	// if ($('#project-thumbs')) {
+	// 	$('#project-images').cycle({
+	//         fx:      'scrollHorz',
+	//         speed:   500,
+	//         timeout: 6500,
+	//         easing:  'easeInOutQuad',
+	//         pager:   '#project-thumbs',
+	//         pagerAnchorBuilder: function(idx, slide) {
+	//             return '#project-thumbs li:eq(' + (idx) + ') a';
+	//         }
+	//     });
+	// }
 
 
 
-    <?php if (GOOGLE_ANALYTICS_ACCT): ?>
+  <?php if (GOOGLE_ANALYTICS_ACCT): ?>
 	_gaq.push(['_trackPageview', '/work/detail/<?php echo urlencode( $app_nm ) ?>']);
 	<?php endif; ?>
 });
