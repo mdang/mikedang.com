@@ -1187,6 +1187,32 @@ h3.headline {
     color: #fff;
 }
 
+
+.item {
+  width:  142px;
+  height: 142px;
+  display: inline-block;
+  overflow: hidden;
+  /*margin: 0 5px 5px 0;
+  padding: 5px;*/
+  border-radius: 5px;
+  color: #fff;
+  font-size: 12px;
+}
+
+.item.w2 { width:  300px; padding-right: 7px; }
+.item.h2 { height: 300px; }
+
+.item.w1 {  }
+
+.ias-spinner, .ias-noneleft {
+  position: absolute;
+  bottom: 10px;
+  width: 100%;
+  text-align: center;
+  margin-left: -16px;
+}
+
 /*#soc-intro {
 	height: 1000px;
 }*/

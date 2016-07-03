@@ -44,7 +44,7 @@ if (!isset( $tab ))
 <link rel="stylesheet" href="<?php echo STATIC_ROOT ?>/css/mobile.css" type="text/css" media="all" />
 <?php endif; ?>
 
-<script src="//code.jquery.com/jquery-2.0.0.min.js"></script>
+<script src="//ajax.googleapis.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
 <script type="text/javascript">
 var reloader=document.location.hash.substr(1);if(reloader){if(reloader.charAt(0)=='/'){if(window.opener){window.opener.location.href=reloader;window.close();}else{location.href=reloader;}}}
 </script>

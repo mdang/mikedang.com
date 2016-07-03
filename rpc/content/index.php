@@ -21,7 +21,7 @@ $photo_options = array(
   'image_size[1]' => 600
   );
 
-$featured_photos = get_featured_photos($photo_options);
+$featured_photos = get_500px_photos($photo_options)->photos;
 $debug[] = Zend_Debug::dump($featured_photos, 'Featured Photos', 0);
 
 // $third_party_posts = get_third_party_posts(null, 15);
