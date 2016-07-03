@@ -219,7 +219,7 @@ $params_str = http_build_query($params);
 </div>
 
 <div class="container-fluid bg-3">
-<div id="main" class="col-xs-12 col-sm-12 col-md-8">
+<div id="main" class="col-xs-12 col-sm-12 col-md-9">
 
 <div id="project-list">
 
@@ -353,7 +353,7 @@ $params_str = http_build_query($params);
 </div>
 
 <?php if (!is_mobile_browser()): ?>
-<div id="sidebar" class="col-xs-12 col-sm-12 col-md-4">
+<div id="sidebar" class="col-xs-12 col-sm-12 col-md-2">
     <?php /*
     <div class="submodule clearfix">
         <h4>At a Glance</h4>

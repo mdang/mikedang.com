@@ -16,7 +16,7 @@ img {
 }
 
 h2 {
-	margin: .4em 0 0;
+	margin: .4em 0 20px 0;
 	font: 3.2em/1em Plantin, "Plantin std", "Plantin", "Baskerville", Georgia, "Times New Roman", serif;
 	float: left;
 }
@@ -459,7 +459,7 @@ a:hover.button span {
 	clear: both;
 }
 #main {
-	margin: 35px 0 0;
+	margin: 0 34px 0 0;
 	padding: 0 12px 4px 2px;
 	/*width: 715px;*/
 	float: left;
@@ -474,6 +474,7 @@ a:hover.button span {
 }
 #title {
 	clear: both;
+	padding-bottom: 20px;
 }
 #sidebar, #sidebar-2 {
 	float: left;
@@ -722,8 +723,18 @@ a:hover.button span {
 #my-photo {
 	float: right;
 	margin: 3px 2px 10px 25px;
-	padding: 3px;
+}
+#my-photo img {
 	border: 1px solid #ccc;
+	padding: 3px;
+	margin: 0 auto;
+}
+@media screen and (max-width: 768px)  {
+	#my-photo {
+		clear: both;
+		float: none;
+		margin: 0 0 20px;
+	}
 }
 
 #msg {
