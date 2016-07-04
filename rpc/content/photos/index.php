@@ -22,7 +22,7 @@ $photo_options = array(
 $photo_results = get_500px_photos($photo_options);
 $initial_photos = $photo_results->photos;
 $total_pages = $photo_results->total_pages;
-//$debug[] = Zend_Debug::dump($photo_results, 'Initial Photos', 0);
+$debug[] = Zend_Debug::dump($photo_results, 'Initial Photos', 0);
 
 ?>
 <div id="title">
@@ -69,7 +69,7 @@ $(function() {
     var msnry = new Masonry( container, {
       // options
       itemSelector: '.item',
-      gutter: 10
+      gutter: 8
     });
 
     var ias = $.ias({
@@ -90,10 +90,7 @@ $(function() {
     });
 
     ias.extension(new IASSpinnerExtension());
-    ias.extension(new IASNoneLeftExtension({html: '<div class="ias-noneleft" style="text-align:center"><p><em>You reached the end!</em></p></div>'}));
-
-
-
+    //ias.extension(new IASNoneLeftExtension({html: '<div class="ias-noneleft" style="text-align:center"><p><em>You reached the end!</em></p></div>'}));
 
     <?php if (GOOGLE_ANALYTICS_ACCT): ?>
   	_gaq.push(['_trackPageview', '/about/index']);

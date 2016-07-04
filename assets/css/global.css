@@ -1189,8 +1189,8 @@ h3.headline {
 
 
 .item {
-  width:  142px;
-  height: 142px;
+  width:  145px;
+  height: 145px;
   display: inline-block;
   overflow: hidden;
   /*margin: 0 5px 5px 0;
@@ -1200,7 +1200,7 @@ h3.headline {
   font-size: 12px;
 }
 
-.item.w2 { width:  300px; padding-right: 7px; }
+.item.w2 { width:  300px;  }
 .item.h2 { height: 300px; }
 
 .item.w1 {  }
