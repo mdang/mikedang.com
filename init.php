@@ -35,8 +35,11 @@ else
     error_reporting(0);
 
     define('APP_ROOT',    realpath(dirname(dirname(__FILE__))) . DIRECTORY_SEPARATOR . 'mikedang.com');
-    define('STATIC_ROOT', 'http://static.mikedang.com/v4');
-    $include_base_path =  realpath(dirname(dirname(__FILE__)) . DIRECTORY_SEPARATOR .'lib'. DIRECTORY_SEPARATOR . 'mikedang.com');
+
+    define('STATIC_ROOT', '/assets');
+    $include_base_path =  realpath(dirname(__FILE__) . DIRECTORY_SEPARATOR .'lib');
+    // define('STATIC_ROOT', 'http://static.mikedang.com/v4');
+    // $include_base_path =  realpath(dirname(dirname(__FILE__)) . DIRECTORY_SEPARATOR .'lib'. DIRECTORY_SEPARATOR . 'mikedang.com');
 }
 
 set_include_path(get_include_path() . PATH_SEPARATOR . $include_base_path);
