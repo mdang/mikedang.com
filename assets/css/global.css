@@ -833,7 +833,6 @@ html #footersubnav .fb_share_button {
 	display: none;
 	background: #F17022;
 	color: #fff;
-	font-weight: bold;
 	margin: 5px auto;
 	padding: 3px 8px;
 	z-index: 1000;
@@ -1189,7 +1188,6 @@ h3.headline {
     color: #fff;
 }
 
-
 .item {
   width:  145px;
   height: 145px;
@@ -1206,6 +1204,16 @@ h3.headline {
 .item.h2 { height: 300px; }
 
 .item.w1 {  }
+
+.featured-photo {
+	width: 145px;
+	height: 145px;
+	display: inline-block;
+  overflow: hidden;
+	border-radius: 5px;
+}
+.featured-photo.w2 { width: 300px; }
+.featured-photo.h2 { height: 300px; }
 
 .ias-spinner, .ias-noneleft {
   position: absolute;

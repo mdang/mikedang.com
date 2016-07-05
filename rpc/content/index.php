@@ -100,7 +100,25 @@ FEATURE;
 
 <h3 class="headline">I also dabble in photography</h3>
 
-<div class="container-fluid bg-3 text-center">
+<div class="container-fluid bg-3" style="clear: both">
+  <div class="featured-photos">
+    <?php
+    // '' = regular size
+    // 'w2' = double the width
+    // 'h2' = double the height
+    $random_sizes = ['featured-photo w2 h2', 'featured-photo w1 h1'];
+
+    foreach ($featured_photos as $photo)
+    {
+      $random_index = array_rand($random_sizes);
+      echo '<div class="' . $random_sizes[$random_index] . '"><img class="img-responsive" src="' . $photo->image_url[0] . '" srcset="' . $photo->image_url[0] .' 1x, ' . $photo->image_url[1] .' 2x"></div>';
+    }
+
+    ?>
+  </div>
+</div>
+
+<?php /* <div class="container-fluid bg-3 text-center">
   <div class="row">
     <?php
 
@@ -119,6 +137,7 @@ FEATURE;
     ?>
   </div>
 </div>
+*/ ?>
 
 <p class="link-prompt clearfix"><a class="ajax" href="/photos/">see more photos</a></p>
 
@@ -133,6 +152,33 @@ $(function() {
 
 	$container.imagesLoaded(function() {
 		fadeInProjects();
+
+    var container = document.querySelector('.featured-photos');
+    var msnry = new Masonry( container, {
+      // options
+      itemSelector: '.featured-photo',
+      gutter: 8
+    });
+
+    var ias = $.ias({
+      container: ".featured-photos",
+      item: ".featured-photo",
+      pagination: "#pagination",
+      next: ".next a",
+      delay: 1200
+    });
+
+    ias.on('render', function(items) {
+      $(items).css({ opacity: 0 });
+    });
+
+    ias.on('rendered', function(items) {
+      msnry.appended(items);
+    });
+
+    ias.extension(new IASSpinnerExtension({
+        src: '<?php echo STATIC_ROOT ?>/i/loading-animation.svg',
+    }));
 	});
 
 	<?php if (GOOGLE_ANALYTICS_ACCT): ?>
