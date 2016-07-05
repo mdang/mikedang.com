@@ -101,7 +101,7 @@ FEATURE;
 <h3 class="headline">I also dabble in photography</h3>
 
 <div class="container-fluid bg-3" style="clear: both">
-  <div class="featured-photos">
+  <div class="featured-photos" style="display: none">
     <?php
     // '' = regular size
     // 'w2' = double the width
@@ -148,12 +148,13 @@ $(function() {
 	setPageTitle('<?php echo PAGE_TITLE_BASE . PAGE_TITLE_SEPERATOR . 'Home' ?>');
 	addAjaxRequestHandlers();
 
-	var $container = $('.feature-set');
-
-	$container.imagesLoaded(function() {
+	$('.feature-set').imagesLoaded(function() {
 		fadeInProjects();
+	});
 
-    $('.featured-photos').masonry({
+  $('.featured-photos').imagesLoaded(function() {
+    $('.featured-photos').show();
+		$('.featured-photos').masonry({
       itemSelector: '.featured-photo',
       gutter: 8
     });
