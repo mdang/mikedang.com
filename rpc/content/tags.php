@@ -43,10 +43,10 @@ $debug[] = Zend_Debug::dump($tags, 'Tags', 0);
 
 $(function() {
     
-    select_tab('<?php echo $tab; ?>');
-    set_page_title('<?php echo PAGE_TITLE_BASE . PAGE_TITLE_SEPERATOR .'Tags' ?>');
+    selectTab('<?php echo $tab; ?>');
+    setPageTitle('<?php echo PAGE_TITLE_BASE . PAGE_TITLE_SEPERATOR .'Tags' ?>');
 
-    add_ajax_request_handlers();
+    addAjaxRequestHandlers();
 
     <?php if (GOOGLE_ANALYTICS_ACCT): ?>
 	_gaq.push(['_trackPageview', '/tags']);

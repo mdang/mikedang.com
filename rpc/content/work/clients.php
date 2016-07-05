@@ -27,8 +27,8 @@ $tab = 'tab2';
 
 $(function() {
     
-    select_tab('<?php echo $tab; ?>');
-    set_page_title('<?php echo PAGE_TITLE_BASE . PAGE_TITLE_SEPERATOR . 'Clients' ?>');
+    selectTab('<?php echo $tab; ?>');
+    setPageTitle('<?php echo PAGE_TITLE_BASE . PAGE_TITLE_SEPERATOR . 'Clients' ?>');
 
     <?php if (GOOGLE_ANALYTICS_ACCT): ?>
 	_gaq.push(['_trackPageview', '/work/clients']);

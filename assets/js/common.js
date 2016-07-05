@@ -1,6 +1,5 @@
 
 function load(url, callback) {
-
 	var script  = document.createElement('script');
 	script.type = "text/javascript";
 
@@ -25,22 +24,22 @@ function load(url, callback) {
 	document.getElementsByTagName('head')[0].appendChild(script);
 }
 
-function fbs_click() {
+function fbsClick() {
 	u=location.href;
 	t=document.title;
 	window.open('http://www.facebook.com/sharer.php?u='+encodeURIComponent(u)+'&t='+encodeURIComponent(t),'sharer','toolbar=0,status=0,width=626,height=436');
 	return false;
 }
 
-function set_page_title(page_title) {
+function setPageTitle(page_title) {
 	document.title = page_title;
 }
 
-function select_tab(tab) {
+function selectTab(tab) {
 	$('body').attr('id', tab);
 };
 
-function init_feature_cyle() {
+function initFeatureCycle() {
 	if ($('#feature')) {
 		$('#feature').cycle({
 	        fx:     'scrollUp',
@@ -54,7 +53,7 @@ function init_feature_cyle() {
 
 };
 
-function init_tweet_control() {
+function initTweetControl() {
 	$('#twitter').hover(
 	    function() { $('#twitter-ctrl').fadeIn(); },
 	    function() { $('#twitter-ctrl').fadeOut(); }
@@ -77,7 +76,7 @@ function gridAnimationSocial(item) {
     });
 }
 
-function fade_in_projects() {
+function fadeInProjects() {
 	// Calculate the height of the area to be filled in
 	var cCnt = 5;
   var gH = $(".feature-item").height();
@@ -97,7 +96,7 @@ function fade_in_projects() {
     gridAnimationProjects(fitems.shift());
 }
 
-function fade_in_social() {
+function fadeInSocial() {
 	gitems = new Array();
     $(".soc-item").each(function () {
         gitems.push($(this));
@@ -106,8 +105,8 @@ function fade_in_social() {
     gridAnimationSocial(gitems.shift());
 }
 
-function load_third_party_posts(third_party_id) {
-	show_loading_indicator();
+function loadThirdPartyPosts(third_party_id) {
+	showLoadingIndicator();
 
 	$.ajax({
 	    url: '/rpc/post_builder.php',
@@ -118,16 +117,16 @@ function load_third_party_posts(third_party_id) {
 			$('#soc-intro').html(content);
 
 			var $container = $('#soc-intro');
-			show_loading_indicator();
+			showLoadingIndicator();
 
 			$container.imagesLoaded( function(){
 			  $container.masonry({
 			    itemSelector : '.soc-item'
 			  });
 
-			  fade_in_social();
+			  fadeInSocial();
 
-			  setTimeout('hide_loading_indicator()', 7000);
+			  setTimeout('hideLoadingIndicator()', 7000);
 			});
 	    },
 	    error: function(XMLHttpRequest, textStatus, errorThrown) {
@@ -139,19 +138,11 @@ function load_third_party_posts(third_party_id) {
 	});
 }
 
-
-
 /* navigation */
-
-
-$(function() {
-	setInterval('check_anchor()', 300);
-});
-
 var current_anchor = null;
 var scrolling      = true;
 
-show_loading_indicator = function() {
+var showLoadingIndicator = function() {
 	//var current_pos = $(window).scrollTop();
 	//$('#loader2').css('top', current_pos);
 	/*
@@ -168,14 +159,14 @@ show_loading_indicator = function() {
 	$('#loader2').show();
 };
 
-hide_loading_indicator = function() {
+var hideLoadingIndicator = function() {
 	$('#loader2').hide();
 };
 
-check_anchor = function() {
+var checkAnchor = function() {
 
 	var hash = document.location.hash.substr(1);
-	var is_ie_browser = is_ie();
+	var isIE_browser = isIE();
 
 	if (hash) {
 
@@ -189,10 +180,10 @@ check_anchor = function() {
 			current_anchor = hash;
 
 			//$('#progress').show();
-			show_loading_indicator();
+			showLoadingIndicator();
 
 			// IE will return distorted content if this is used
-			if (!is_ie_browser) {
+			if (!isIE_browser) {
 				$('#content').fadeTo('fast', 0.2);
 			}
 
@@ -207,7 +198,7 @@ check_anchor = function() {
 
 					$('#content').html(content);
 
-					if (!is_ie_browser) {
+					if (!isIE_browser) {
 						$('#content').fadeTo('fast', 1);
 					}
 
@@ -217,7 +208,7 @@ check_anchor = function() {
 			        	$.scrollTo(0, { duration: 1000 });
 			        }
 			        else {
-			        	enable_scrolling();
+			        	enableScrolling();
 			        }
 			    },
 			    error: function(XMLHttpRequest, textStatus, errorThrown) {
@@ -227,22 +218,22 @@ check_anchor = function() {
 			    complete: function(XMLHttpRequest, textStatus) {
 
 			        //$('#progress').hide();
-			    	hide_loading_indicator();
+			    	hideLoadingIndicator();
 			    }
 			});
 		}
 	}
 };
 
-get_page = function(page_nm, tab, scrolling) {
+var getPage = function(page_nm, tab, scrolling) {
 	if (tab) {
-		select_tab(tab);
+		selectTab(tab);
 	}
 	if (scrolling == undefined) {
 		scrolling = true;
 	}
 	if (scrolling == false) {
-		disable_scrolling();
+		disableScrolling();
 	}
 
 	// IE changes the href value to be a fully qualified url for some reason
@@ -253,22 +244,22 @@ get_page = function(page_nm, tab, scrolling) {
 	window.location = '#' + page_nm;
 };
 
-disable_scrolling = function() {
+var disableScrolling = function() {
 	scrolling = false;
 };
 
-enable_scrolling = function() {
+var enableScrolling = function() {
 	scrolling = true;
 };
 
-is_ie = function() {
+var isIE = function() {
 	return /msie/i.test(navigator.userAgent) && !/opera/i.test(navigator.userAgent);
 };
 
-add_ajax_request_handlers = function() {
+var addAjaxRequestHandlers = function() {
 	$('.ajax').each(function() {
 		$(this).click(function() {
-			get_page($(this).attr('href'), $(this).attr('rel'));
+			getPage($(this).attr('href'), $(this).attr('rel'));
 			// $('#fullnav .nav li').removeClass('active');
 			$('#fullnav li').removeClass('active');
 			$(this).parent().addClass('active');
@@ -277,12 +268,15 @@ add_ajax_request_handlers = function() {
 	});
 };
 
-$('#logo h1 a').click(function() { get_page($(this).attr('href'), 'tab1', false); return false; });
+//$('#logo').click(function() { getPage($(this).attr('href'), 'tab1', false); return false; });
 
-$('.tab1 a').click(function() { get_page($(this).attr('href'), 'tab1', false); return false; });
-$('.tab2 a').click(function() { get_page($(this).attr('href'), 'tab2', false); return false; });
-$('.tab3 a').click(function() { get_page($(this).attr('href'), 'tab3', false); return false; });
-$('.tab4 a').click(function() { get_page($(this).attr('href'), 'tab4', false); return false; });
-//$('.tab5 a').click(function() { get_page($(this).attr('href'), 'tab5', false); return false; });
+$('.tab1 a').click(function() { getPage($(this).attr('href'), 'tab1', false); return false; });
+$('.tab2 a').click(function() { getPage($(this).attr('href'), 'tab2', false); return false; });
+$('.tab3 a').click(function() { getPage($(this).attr('href'), 'tab3', false); return false; });
+$('.tab4 a').click(function() { getPage($(this).attr('href'), 'tab4', false); return false; });
+//$('.tab5 a').click(function() { getPage($(this).attr('href'), 'tab5', false); return false; });
 
-add_ajax_request_handlers();
+$(function() {
+	addAjaxRequestHandlers();
+	setInterval('checkAnchor()', 300);
+});

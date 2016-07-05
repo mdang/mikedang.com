@@ -78,10 +78,10 @@ Tags
 <script type="text/javascript">
 
 $(function() {
-	select_tab('<?php echo $tab; ?>');
-    set_page_title('<?php echo PAGE_TITLE_BASE . PAGE_TITLE_SEPERATOR .'Sitemap' ?>');
+	selectTab('<?php echo $tab; ?>');
+    setPageTitle('<?php echo PAGE_TITLE_BASE . PAGE_TITLE_SEPERATOR .'Sitemap' ?>');
 
-    add_ajax_request_handlers();
+    addAjaxRequestHandlers();
 
     <?php if (GOOGLE_ANALYTICS_ACCT): ?>
 	_gaq.push(['_trackPageview', '/sitemap']);

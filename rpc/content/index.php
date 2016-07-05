@@ -198,9 +198,9 @@ FEATURE;
 <script type="text/javascript">
 
 $(function() {
-	select_tab('<?php echo $tab; ?>');
-	set_page_title('<?php echo PAGE_TITLE_BASE . PAGE_TITLE_SEPERATOR . 'Home' ?>');
-	add_ajax_request_handlers();
+	selectTab('<?php echo $tab; ?>');
+	setPageTitle('<?php echo PAGE_TITLE_BASE . PAGE_TITLE_SEPERATOR . 'Home' ?>');
+	addAjaxRequestHandlers();
 
 	var $container = $('.feature-set');
 
@@ -209,7 +209,7 @@ $(function() {
 		// 	itemSelector: '.soc-item'
 		// });
 
-		fade_in_projects();
+		fadeInProjects();
 	});
 
 	<?php if (GOOGLE_ANALYTICS_ACCT): ?>

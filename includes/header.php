@@ -33,16 +33,12 @@ if (!isset( $tab ))
 <link rel="shortcut icon" type="image/x-icon" href="/favicon.ico" />
 <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" type="text/css" media="all" />
 <link rel="stylesheet" href="<?php echo STATIC_ROOT ?>/css/global<?php echo ASSET_VERSION ?>.css" type="text/css" media="all" />
-<!--[if IE]><![endif]-->
 <!--[if IE 7]>
 <link rel="stylesheet" href="<?php echo STATIC_ROOT ?>/css/ie7.css" type="text/css" media="all" />
 <![endif]-->
 <!--[if IE 8]>
 <link rel="stylesheet" href="<?php echo STATIC_ROOT ?>/css/ie8.css" type="text/css" media="all" />
 <![endif]-->
-<?php if (is_mobile_browser()): ?>
-<link rel="stylesheet" href="<?php echo STATIC_ROOT ?>/css/mobile.css" type="text/css" media="all" />
-<?php endif; ?>
 
 <script src="//ajax.googleapis.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
 <script type="text/javascript">

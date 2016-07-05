@@ -417,8 +417,8 @@ $params_str = http_build_query($params);
 
 $(function() {
 
-	select_tab('<?php echo $tab; ?>');
-	set_page_title('<?php echo PAGE_TITLE_BASE . PAGE_TITLE_SEPERATOR . 'Work' ?>');
+	selectTab('<?php echo $tab; ?>');
+	setPageTitle('<?php echo PAGE_TITLE_BASE . PAGE_TITLE_SEPERATOR . 'Work' ?>');
 
 	$.localScroll({
         duration:1200,
@@ -431,7 +431,7 @@ $(function() {
         }
     });
 
-	add_ajax_request_handlers();
+	addAjaxRequestHandlers();
 
 	<?php if (GOOGLE_ANALYTICS_ACCT): ?>
 	_gaq.push(['_trackPageview', '/work/index']);

@@ -65,8 +65,8 @@ $debug[] = Zend_Debug::dump($photo_results, 'Initial Photos', 0);
 <script type="text/javascript">
 
 $(function() {
-    select_tab('<?php echo $tab; ?>');
-    set_page_title('<?php echo PAGE_TITLE_BASE . PAGE_TITLE_SEPERATOR . 'Photos' ?>');
+    selectTab('<?php echo $tab; ?>');
+    setPageTitle('<?php echo PAGE_TITLE_BASE . PAGE_TITLE_SEPERATOR . 'Photos' ?>');
 
     var container = document.querySelector('.photos');
     var msnry = new Masonry( container, {

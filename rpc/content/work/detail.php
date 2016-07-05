@@ -283,9 +283,9 @@ $params_str = http_build_query($params);
 
 $(function() {
 
-	select_tab('<?php echo $tab; ?>');
-	set_page_title('<?php echo js_escape_string(PAGE_TITLE_BASE . PAGE_TITLE_SEPERATOR . 'Work' . PAGE_TITLE_SEPERATOR . $app_nm) ?>');
-  add_ajax_request_handlers();
+	selectTab('<?php echo $tab; ?>');
+	setPageTitle('<?php echo js_escape_string(PAGE_TITLE_BASE . PAGE_TITLE_SEPERATOR . 'Work' . PAGE_TITLE_SEPERATOR . $app_nm) ?>');
+  addAjaxRequestHandlers();
 
 	// if ($('#project-thumbs')) {
 	// 	$('#project-images').cycle({

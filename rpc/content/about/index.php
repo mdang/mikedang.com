@@ -116,8 +116,8 @@ $tab = 'tab4';
 
 $(function() {
 
-    select_tab('<?php echo $tab; ?>');
-    set_page_title('<?php echo PAGE_TITLE_BASE . PAGE_TITLE_SEPERATOR . 'About' ?>');
+    selectTab('<?php echo $tab; ?>');
+    setPageTitle('<?php echo PAGE_TITLE_BASE . PAGE_TITLE_SEPERATOR . 'About' ?>');
 
     $.localScroll({
         duration:1200,

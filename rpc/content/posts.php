@@ -55,10 +55,10 @@ switch ( $third_party_id )
 
 $(function() {
 
-	load_third_party_posts('<?php echo $third_party_id ?>');
+	loadThirdPartyPosts('<?php echo $third_party_id ?>');
 	
 	$('.soc_filter').click(function() {
-		get_page('/posts?tpid=' + $(this).attr('data-tpid'), 'tab3', false);
+		getPage('/posts?tpid=' + $(this).attr('data-tpid'), 'tab3', false);
 
 		return false;
 	});

@@ -49,7 +49,7 @@ $(function() {
 	/*
 	load('<?php echo STATIC_ROOT ?>/js/twitter<?php echo ASSET_VERSION ?>.js', function() {
 		twitter_search('dang :)', 50, 'init_tweets');
-		init_tweet_control();
+		initTweetControl();
 
 		setInterval('refresh_timestamps()', 30000);
 	});

@@ -247,8 +247,8 @@ MESSAGE;
 
 $(function() {
 
-	select_tab('<?php echo $tab; ?>');
-	set_page_title('<?php echo PAGE_TITLE_BASE . PAGE_TITLE_SEPERATOR . 'Contact Me' ?>');
+	selectTab('<?php echo $tab; ?>');
+	setPageTitle('<?php echo PAGE_TITLE_BASE . PAGE_TITLE_SEPERATOR . 'Contact Me' ?>');
 
     var loader = $('<div id="loader">Sending..</div>')
         .css({ position: 'absolute', top: '0', left: '0' })
@@ -259,7 +259,7 @@ $(function() {
 
     });
 
-    $('#phone').mask('(999) 999-9999', { placeholder:' ' });
+    //$('#phone').mask('(999) 999-9999', { placeholder:' ' });
     /*
     $('.expanding').autogrow({
         maxHeight: 500
