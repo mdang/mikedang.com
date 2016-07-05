@@ -98,6 +98,9 @@ a:link, a:visited, a:active {
     border-bottom: 1px dotted #777;
     color: #333;
 }
+.navbar a:link, .navbar a:visited, .navbar a:active {
+	border-bottom: 0;
+}
 a:hover {
     text-decoration: none;
     border-bottom: 1px solid #333;

@@ -39,7 +39,7 @@ var reloader=document.location.hash.substr(1);if(reloader){if(reloader.charAt(0)
 <nav class="navbar navbar-inverse">
   <div class="container-fluid">
     <div class="navbar-header">
-		<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#fullnav">
+		<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#fullnav">
 			<span class="icon-bar"></span>
 			<span class="icon-bar"></span>
 			<span class="icon-bar"></span>
@@ -48,7 +48,7 @@ var reloader=document.location.hash.substr(1);if(reloader){if(reloader.charAt(0)
     </div>
     <div class="collapse navbar-collapse" id="fullnav">
 			<ul class="nav navbar-nav navbar-right">
-				<li class="active"><a class="ajax" href="/">Home</a></li>
+				<li class="active"><a class="ajax nav-link" href="/">Home</a></li>
 				<li><a class="ajax nav-link" href="/work/">Development</a></li>
 				<li><a class="ajax nav-link" href="/photos">Photos</a></li>
 				<li><a class="ajax nav-link" href="/about/">About</a></li>

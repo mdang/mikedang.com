@@ -265,7 +265,8 @@ var addAjaxRequestHandlers = function() {
 
       // If the hamburger menu is showing and it's not closed, click to hide it
       if ($(this).hasClass('nav-link') && !$('.navbar-toggle').filter(':first').hasClass('collapsed')) {
-        $('.navbar-toggle').click();
+        // This keeps it from firing off in desktop view
+        $('.navbar-toggle').filter(':visible').click();
       }
       return false;
     });
