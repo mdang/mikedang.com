@@ -49,10 +49,10 @@ var reloader=document.location.hash.substr(1);if(reloader){if(reloader.charAt(0)
     <div class="collapse navbar-collapse" id="fullnav">
 			<ul class="nav navbar-nav navbar-right">
 				<li class="active"><a class="ajax" href="/">Home</a></li>
-				<li><a class="ajax" href="/work/">Development</a></li>
-				<li><a class="ajax" href="/photos">Photos</a></li>
-				<li><a class="ajax" href="/about/">About</a></li>
-				<li><a class="ajax" href="/contact/">Contact</a></li>
+				<li><a class="ajax nav-link" href="/work/">Development</a></li>
+				<li><a class="ajax nav-link" href="/photos">Photos</a></li>
+				<li><a class="ajax nav-link" href="/about/">About</a></li>
+				<li><a class="ajax nav-link" href="/contact/">Contact</a></li>
 			</ul>
     </div>
   </div>

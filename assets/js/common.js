@@ -188,7 +188,6 @@ var checkAnchor = function() {
 			}
 
 			$.ajax({
-
 			    url: '/rpc/content' + hash,
 			    type: 'GET',
 			    data: '',
@@ -263,6 +262,10 @@ var addAjaxRequestHandlers = function() {
 			// $('#fullnav .nav li').removeClass('active');
 			$('#fullnav li').removeClass('active');
 			$(this).parent().addClass('active');
+
+			if ($(this).hasClass('nav-link')) {
+				$('.navbar-toggle').click();
+			}
 			return false;
 		});
 	});
