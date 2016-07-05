@@ -267,20 +267,20 @@ $(function() {
 <?php if (DISPLAY_GOOGLE_MAPS): ?>
 <script type="text/javascript" src="http://www.google.com/jsapi?key=<?php echo GOOGLE_MAPS_API_KEY ?>"></script>
 <script type="text/javascript">
-    google.load('maps', '2');
+  google.load('maps', '2');
 
-    function initMap() {
-        var map = new google.maps.Map2(document.getElementById('map'));
-        map.setCenter(new google.maps.LatLng(32.79651, -96.797791), 13);
-        map.setZoom(5);
+  function initMap() {
+      var map = new google.maps.Map2(document.getElementById('map'));
+      map.setCenter(new google.maps.LatLng(32.79651, -96.797791), 13);
+      map.setZoom(5);
 
-        var point  = new GPoint(-96.797791, 32.79651);
-        var marker = new GMarker(point);
+      var point  = new GPoint(-96.797791, 32.79651);
+      var marker = new GMarker(point);
 
-        map.addOverlay(marker);
-    }
+      map.addOverlay(marker);
+  }
 
-    google.setOnLoadCallback(initMap);
+  google.setOnLoadCallback(initMap);
 
 </script>
 <?php endif; ?>

@@ -22,12 +22,12 @@ if (!isset($tab))
 <title><?php echo $page_title ?></title>
 <link rel="canonical" href="http://www.mikedang.com/" />
 <link rel="shortcut icon" type="image/x-icon" href="/favicon.ico" />
-<link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" type="text/css" media="all" />
+<link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/<?php echo BOOTSTRAP_VERSION ?>/css/bootstrap.min.css" type="text/css" media="all" />
 <link rel="stylesheet" href="<?php echo STATIC_ROOT ?>/css/global<?php echo ASSET_VERSION ?>.css" type="text/css" media="all" />
 <!--[if IE 8]>
 <link rel="stylesheet" href="<?php echo STATIC_ROOT ?>/css/ie8.css" type="text/css" media="all" />
 <![endif]-->
-<script src="//ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+<script src="//ajax.googleapis.com/ajax/libs/jquery/<?php echo JQUERY_VERSION ?>/jquery.min.js"></script>
 <script type="text/javascript">
 var reloader=document.location.hash.substr(1);if(reloader){if(reloader.charAt(0)=='/'){if(window.opener){window.opener.location.href=reloader;window.close();}else{location.href=reloader;}}}
 </script>

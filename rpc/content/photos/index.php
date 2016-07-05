@@ -68,41 +68,41 @@ $debug[] = Zend_Debug::dump($photo_results, 'Initial Photos', 0);
 <script type="text/javascript">
 
 $(function() {
-    selectTab('<?php echo $tab; ?>');
-    setPageTitle('<?php echo PAGE_TITLE_BASE . PAGE_TITLE_SEPERATOR . 'Photos' ?>');
+  selectTab('<?php echo $tab; ?>');
+  setPageTitle('<?php echo PAGE_TITLE_BASE . PAGE_TITLE_SEPERATOR . 'Photos' ?>');
 
-    var container = document.querySelector('.photos');
-    var msnry = new Masonry( container, {
-      // options
-      itemSelector: '.item',
-      gutter: 8
-    });
+  var container = document.querySelector('.photos');
+  var msnry = new Masonry( container, {
+    // options
+    itemSelector: '.item',
+    gutter: 8
+  });
 
-    var ias = $.ias({
-      container: ".photos",
-      item: ".item",
-      pagination: "#pagination",
-      next: ".next a",
-      delay: 1200
-    });
+  var ias = $.ias({
+    container: ".photos",
+    item: ".item",
+    pagination: "#pagination",
+    next: ".next a",
+    delay: 1200
+  });
 
-    ias.on('render', function(items) {
-      $(items).css({ opacity: 0 });
-    });
+  ias.on('render', function(items) {
+    $(items).css({ opacity: 0 });
+  });
 
-    ias.on('rendered', function(items) {
-      msnry.appended(items);
-    });
+  ias.on('rendered', function(items) {
+    msnry.appended(items);
+  });
 
-    ias.extension(new IASSpinnerExtension({
-        src: '<?php echo STATIC_ROOT ?>/i/loading-animation.svg',
-    }));
+  ias.extension(new IASSpinnerExtension({
+      src: '<?php echo STATIC_ROOT ?>/i/loading-animation.svg',
+  }));
 
-    //ias.extension(new IASNoneLeftExtension({html: '<div class="ias-noneleft" style="text-align:center"><p><em>You reached the end!</em></p></div>'}));
+  //ias.extension(new IASNoneLeftExtension({html: '<div class="ias-noneleft" style="text-align:center"><p><em>You reached the end!</em></p></div>'}));
 
-    <?php if (GOOGLE_ANALYTICS_ACCT): ?>
-  	_gaq.push(['_trackPageview', '/photos/index']);
-  	<?php endif; ?>
+  <?php if (GOOGLE_ANALYTICS_ACCT): ?>
+	_gaq.push(['_trackPageview', '/photos/index']);
+	<?php endif; ?>
 });
 
 </script>

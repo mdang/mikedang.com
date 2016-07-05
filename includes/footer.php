@@ -20,7 +20,7 @@
 	</ul>
 </footer>
 
-<script type="text/javascript" src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+<script type="text/javascript" src="//maxcdn.bootstrapcdn.com/bootstrap/<?php echo BOOTSTRAP_VERSION ?>/js/bootstrap.min.js"></script>
 <script type="text/javascript" src="<?php echo STATIC_ROOT ?>/js/common<?php echo ASSET_VERSION ?>.js"></script>
 <script type="text/javascript" src="<?php echo STATIC_ROOT ?>/js/jquery.plugins.20160702.min.js"></script>
 <script type="text/javascript">

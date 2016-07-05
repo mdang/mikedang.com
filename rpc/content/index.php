@@ -41,57 +41,57 @@ $debug[] = Zend_Debug::dump($featured_photos, 'Featured Photos', 0);
 
 <div id="dev-preview">
 	<div id="feature" class="clearfix">
-        <?php
+      <?php
 
-        $i = 0;
+      $i = 0;
 
-        echo '<div class="feature-set clearfix">';
+      echo '<div class="feature-set clearfix">';
 
-        foreach ($featured as $app)
-        {
-            if ($i !== 0 and ($i % 5 == 0))
-            {
-                //echo PHP_EOL .'</div>'. PHP_EOL .'<div class="feature-set clearfix">'. PHP_EOL;
-            }
+      foreach ($featured as $app)
+      {
+          if ($i !== 0 and ($i % 5 == 0))
+          {
+              //echo PHP_EOL .'</div>'. PHP_EOL .'<div class="feature-set clearfix">'. PHP_EOL;
+          }
 
-            $preview_file_nm = $app['preview_file_nm'];
-            $app_id          = $app['app_id'];
-            $app_nm          = $app['app_nm'];
-            $client_id       = $app['client_id'];
-            $client_nm       = $app['client_nm'];
-            $app_desc        = $app['app_desc'];
-            $url             = $app['url'];
+          $preview_file_nm = $app['preview_file_nm'];
+          $app_id          = $app['app_id'];
+          $app_nm          = $app['app_nm'];
+          $client_id       = $app['client_id'];
+          $client_nm       = $app['client_nm'];
+          $app_desc        = $app['app_desc'];
+          $url             = $app['url'];
 
-            if ($preview_file_nm)
-            {
-                $img_tag = '<img src="'. IMG_APP_MEDIA_FILE_PATH . $preview_file_nm .'" width="175" height="150" alt="'. $app_nm .'" />';
-            }
-            else
-            {
-                $img_tag = '<img src="' . STATIC_ROOT . '/i/blank.gif" class="feature-divider" width="175" height="150" alt="'. $app_nm .'" />';
-            }
+          if ($preview_file_nm)
+          {
+              $img_tag = '<img src="'. IMG_APP_MEDIA_FILE_PATH . $preview_file_nm .'" width="175" height="150" alt="'. $app_nm .'" />';
+          }
+          else
+          {
+              $img_tag = '<img src="' . STATIC_ROOT . '/i/blank.gif" class="feature-divider" width="175" height="150" alt="'. $app_nm .'" />';
+          }
 
-            if ($client_nm)
-            {
-                $client_str = '<p><a class="ajax" href="/work/?client='. $client_id .'">'. $client_nm .'</a></p>';
-            }
+          if ($client_nm)
+          {
+              $client_str = '<p><a class="ajax" href="/work/?client='. $client_id .'">'. $client_nm .'</a></p>';
+          }
 
-            echo PHP_EOL;
-            echo <<<FEATURE
-                <div class="feature-item" style="display: none">
+          echo PHP_EOL;
+          echo <<<FEATURE
+              <div class="feature-item" style="display: none">
 
-                    <a class="ajax" href="/work/detail?id=$app_id">$img_tag</a>
+                  <a class="ajax" href="/work/detail?id=$app_id">$img_tag</a>
 
-                    <h4><a class="ajax truncate" href="/work/detail?id=$app_id">$app_nm</a></h4>
-                    $client_str
-                </div>
+                  <h4><a class="ajax truncate" href="/work/detail?id=$app_id">$app_nm</a></h4>
+                  $client_str
+              </div>
 FEATURE;
-            $i++;
-        }
+          $i++;
+      }
 
-        echo PHP_EOL .'</div>';
+      echo PHP_EOL .'</div>';
 
-        ?>
+      ?>
     </div>
 
     <p class="link-prompt clearfix"><a class="ajax" href="/work/">see all projects</a></p>
