@@ -358,7 +358,7 @@ footer {
 #footersubnav {
   float: right;
   clear: both;
-  padding: 10px 0 30px 4px;
+  padding: 3px 0 30px 4px;
 }
 #footersubnav li {
   float: right;
@@ -805,7 +805,7 @@ html #footersubnav .fb_share_button {
 #loader2 {
   position: fixed;
   top: 5px;
-  left: 40%;
+  left: 39%;
   display: none;
   background: #F17022;
   color: #fff;

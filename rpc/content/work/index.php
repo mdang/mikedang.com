@@ -16,19 +16,10 @@ $main_title = 'The best of all teachers, experience';
 
 $base_link = '#/work/';
 $page_num  = (isset($_GET['page']) and is_numeric($_GET['page'])) ? $_GET['page'] : 1;
-$limit     = 10;
+$limit     = 15;
 
 //$highlight_color = '#ff9900';
 $highlight_color = '#F17022';
-
-if (isset($browser_info['msie']))
-{
-    if ($browser_info['msie'] < 7)
-    {
-        $base_link       = '/work/';
-        $highlight_color = '#ffffff';
-    }
-}
 
 $page_nav_bar = '';
 $clients      = array();
