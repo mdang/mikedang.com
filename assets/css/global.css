@@ -1019,14 +1019,12 @@ label.error {
 }
 .feature-item {
 	display: inline-block;
-
 	float: left;
 	margin: 3px 7px 3px 0;
 	width: 185px;
-	padding: 4px 7px;
+	padding: 4px 3px;
 	border: 1px solid #fff;
 	text-align: center;
-
 	-moz-border-radius: 5px;
   -webkit-border-radius: 5px;
   border-radius: 5px;
@@ -1207,10 +1205,14 @@ h3.headline {
 
 .ias-spinner, .ias-noneleft {
   position: absolute;
-  bottom: 10px;
+  bottom: -7px;
   width: 100%;
   text-align: center;
-  margin-left: -16px;
+  margin: 0 auto;
+}
+.ias-spinner img {
+	text-align: center;
+	margin: 0 auto;
 }
 
 /*#soc-intro {

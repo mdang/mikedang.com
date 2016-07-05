@@ -12,6 +12,9 @@ $current_page = (isset($_GET['page']) && is_numeric($_GET['page']) ? $_GET['page
 // 500px image sizes: https://github.com/500px/api-documentation/blob/master/basics/formats_and_terms.md#image-urls-and-image-sizes
 $photo_options = array(
   'consumer_key' => _500PX_CONSUMER_KEY,
+  'api_version' => _500PX_API_VERSION,
+  'user_id' => _500PX_USER_ID,
+  'gallery' => _500PX_GALLERY_NAME,
   'rpp' => _500PX_RECORDS_PER_PAGE,
   'sort' => 'taken_at',
   'page' => $current_page,
@@ -89,7 +92,10 @@ $(function() {
       msnry.appended(items);
     });
 
-    ias.extension(new IASSpinnerExtension());
+    ias.extension(new IASSpinnerExtension({
+        src: '<?php echo STATIC_ROOT ?>/i/loading-animation.svg',
+    }));
+
     //ias.extension(new IASNoneLeftExtension({html: '<div class="ias-noneleft" style="text-align:center"><p><em>You reached the end!</em></p></div>'}));
 
     <?php if (GOOGLE_ANALYTICS_ACCT): ?>

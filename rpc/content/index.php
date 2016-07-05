@@ -15,6 +15,10 @@ $debug[] = Zend_Debug::dump($featured, 'Featured Projects', 0);
 // 500px image sizes: https://github.com/500px/api-documentation/blob/master/basics/formats_and_terms.md#image-urls-and-image-sizes
 $photo_options = array(
   'consumer_key' => _500PX_CONSUMER_KEY,
+  'api_version' => _500PX_API_VERSION,
+  'user_id' => _500PX_USER_ID,
+  'gallery' => _500PX_GALLERY_NAME,
+  'rpp' => _500PX_RECORDS_PER_PAGE,
   'rpp' => 20,
   'sort' => '_score',
   'image_size[0]' => 3,
