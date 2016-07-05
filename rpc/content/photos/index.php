@@ -40,11 +40,12 @@ $debug[] = Zend_Debug::dump($photo_results, 'Initial Photos', 0);
     // 'h2' = double the height
     $random_sizes = ['item w2 h2', 'item w1 h1'];
 
-    foreach ($initial_photos as $photo) {
+    foreach ($initial_photos as $photo)
+    {
       $random_index = array_rand($random_sizes);
       echo '<div class="' . $random_sizes[$random_index] . '"><img class="img-responsive" src="' . $photo->image_url[0] . '" srcset="' . $photo->image_url[0] .' 1x, ' . $photo->image_url[1] .' 2x"></div>';
     }
-    
+
     ?>
   </div>
 
@@ -53,7 +54,8 @@ $debug[] = Zend_Debug::dump($photo_results, 'Initial Photos', 0);
 
     $next_page = ($current_page == $total_pages) ? null : $current_page + 1;
 
-    for ($i=1; $i<=$total_pages; $i++) {
+    for ($i=1; $i<=$total_pages; $i++)
+    {
       $next_class = ($i === $next_page) ? 'class="next"' : '';
       echo '<li ' . $next_class . '><a href="/photos/?page=' . $i . '">' . $i . '</a></li>';
     }
@@ -99,7 +101,7 @@ $(function() {
     //ias.extension(new IASNoneLeftExtension({html: '<div class="ias-noneleft" style="text-align:center"><p><em>You reached the end!</em></p></div>'}));
 
     <?php if (GOOGLE_ANALYTICS_ACCT): ?>
-  	_gaq.push(['_trackPageview', '/about/index']);
+  	_gaq.push(['_trackPageview', '/photos/index']);
   	<?php endif; ?>
 });
 

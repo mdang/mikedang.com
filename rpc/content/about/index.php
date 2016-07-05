@@ -115,21 +115,20 @@ $tab = 'tab4';
 <script type="text/javascript">
 
 $(function() {
+  selectTab('<?php echo $tab; ?>');
+  setPageTitle('<?php echo PAGE_TITLE_BASE . PAGE_TITLE_SEPERATOR . 'About' ?>');
 
-    selectTab('<?php echo $tab; ?>');
-    setPageTitle('<?php echo PAGE_TITLE_BASE . PAGE_TITLE_SEPERATOR . 'About' ?>');
-
-    $.localScroll({
-        duration:1200,
-        onBefore:function(e, anchor, $target) {
-			$(anchor).effect("highlight", { color: "" }, 1700);
+  $.localScroll({
+    duration:1200,
+    onBefore:function(e, anchor, $target) {
+  		$(anchor).effect("highlight", { color: "" }, 1700);
         },
-        onAfter:function(anchor){
+    onAfter:function(anchor){
 
-        }
-    });
+    }
+  });
 
-    <?php if (GOOGLE_ANALYTICS_ACCT): ?>
+  <?php if (GOOGLE_ANALYTICS_ACCT): ?>
 	_gaq.push(['_trackPageview', '/about/index']);
 	<?php endif; ?>
 });

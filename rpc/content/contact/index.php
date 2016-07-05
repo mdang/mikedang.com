@@ -56,7 +56,7 @@ if (isset($_POST['send']))
 	  //   {
 	  //   	$result = $recaptcha->verify(
   	// 			$_POST['recaptcha_challenge_field'],
-  	// 	   		$_POST['recaptcha_response_field']
+  	// 	   	$_POST['recaptcha_response_field']
   	// 		);
 	  //   }
 	  //   catch (Exception $ex)
@@ -110,10 +110,6 @@ if (isset($_POST['send']))
             $errors[] = 'Sorry, something that shouldn\'t have happened did. I\'ve been notified and will look into it as soon as I can.';
         }
     }
-}
-else
-{
-
 }
 
 if ($sent)
@@ -172,7 +168,6 @@ MESSAGE;
     }
 
 ?>
-
 <div id="contact-frm">
 <div class="footnote">Required fields are denoted by *</div>
 
@@ -189,10 +184,12 @@ MESSAGE;
             <input type="text" id="email" name="email" title="Is this a valid email address?" class="required email" maxlength="120" size="30" value="<?php echo $email_addr ?>" />
         </div>
 
-        <!-- <div>
+        <?php /*
+        <div>
             <label for="phone">Phone Number</label>
             <input type="text" id="phone" name="phone" value="<?php echo $phone_num ?>" />
-        </div> -->
+        </div>
+        */ ?>
     </fieldset>
     <fieldset>
     	<legend>Your Message</legend>
@@ -200,14 +197,12 @@ MESSAGE;
             <textarea id="msg" name="msg" title="What did you want to say?" class="expanding required" maxlength="1000"><?php echo $msg_txt ?></textarea>
         </div>
     </fieldset>
-    <?php /*
-    <?php if (!isset($browser_info['msie'])): ?>
-    <fieldset>
-    	<legend>Are you a human or robot</legend>
-    	<?php echo $recaptcha->getHTML(); ?>
-    </fieldset>
-    <?php endif; ?>
-    */ ?>
+    <?php /* if (!isset($browser_info['msie'])): ?>
+      <fieldset>
+      	<legend>Are you a human or robot</legend>
+      	<?php echo $recaptcha->getHTML(); ?>
+      </fieldset>
+      <?php endif; */ ?>
     <div>
         <input type="submit" name="send" id="send" class="submit large orange" value="Send it" />
     </div>
@@ -246,26 +241,23 @@ MESSAGE;
 <script type="text/javascript">
 
 $(function() {
-
 	selectTab('<?php echo $tab; ?>');
 	setPageTitle('<?php echo PAGE_TITLE_BASE . PAGE_TITLE_SEPERATOR . 'Contact Me' ?>');
 
-    var loader = $('<div id="loader">Sending..</div>')
-        .css({ position: 'absolute', top: '0', left: '0' })
-        .appendTo('body')
-        .hide();
+  var loader = $('<div id="loader">Sending..</div>')
+      .css({ position: 'absolute', top: '0', left: '0' })
+      .appendTo('body')
+      .hide();
 
-    $('#form').validate({
+  $('#form').validate({});
 
-    });
+  //$('#phone').mask('(999) 999-9999', { placeholder:' ' });
 
-    //$('#phone').mask('(999) 999-9999', { placeholder:' ' });
-    /*
-    $('.expanding').autogrow({
-        maxHeight: 500
-    });
-	*/
-    <?php if (GOOGLE_ANALYTICS_ACCT): ?>
+  // $('.expanding').autogrow({
+  //     maxHeight: 500
+  // });
+
+  <?php if (GOOGLE_ANALYTICS_ACCT): ?>
 	_gaq.push(['_trackPageview', '/contact/index']);
 	<?php endif; ?>
 });
@@ -275,7 +267,6 @@ $(function() {
 <?php if (DISPLAY_GOOGLE_MAPS): ?>
 <script type="text/javascript" src="http://www.google.com/jsapi?key=<?php echo GOOGLE_MAPS_API_KEY ?>"></script>
 <script type="text/javascript">
-
     google.load('maps', '2');
 
     function initMap() {

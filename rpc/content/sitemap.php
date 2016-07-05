@@ -1,6 +1,6 @@
-<?php 
+<?php
 
-if (!defined('APP_INIT')) 
+if (!defined('APP_INIT'))
 {
     require_once '../../init.php';
 }
@@ -40,16 +40,14 @@ $debug[]  = Zend_Debug::dump($projects, 'Projects', 0);
 <a class="ajax" href="/work">Development</a>
 
 <ul>
-    
-    <?php 
-    
+    <?php
+
     foreach ($projects as $project)
     {
         echo '<li><a class="ajax tag" href="/work/detail?id='. $project['app_id'] .'">'. $project['app_nm'] .'</a> - <a class="ajax" href="/work/?client='. $project['client_id'] .'">'. $project['client_nm'] .'</a></li>';
     }
-    
-    ?>
 
+    ?>
 </ul>
 
 </div>
@@ -59,31 +57,27 @@ $debug[]  = Zend_Debug::dump($projects, 'Projects', 0);
 Tags
 
 <ul>
-    
-    <?php 
-    
+    <?php
+
     foreach ($tags as $tag)
     {
         echo '<li><a class="ajax tag" href="/work/?tag='. $tag['tag_id'] .'">'. $tag['tag_nm'] .'</a> ('. $tag['cnt'] .')</li>';
     }
-    
+
     ?>
-    
 </ul>
 
 </div>
-
 </div>
 
 <script type="text/javascript">
 
 $(function() {
 	selectTab('<?php echo $tab; ?>');
-    setPageTitle('<?php echo PAGE_TITLE_BASE . PAGE_TITLE_SEPERATOR .'Sitemap' ?>');
+  setPageTitle('<?php echo PAGE_TITLE_BASE . PAGE_TITLE_SEPERATOR .'Sitemap' ?>');
+  addAjaxRequestHandlers();
 
-    addAjaxRequestHandlers();
-
-    <?php if (GOOGLE_ANALYTICS_ACCT): ?>
+  <?php if (GOOGLE_ANALYTICS_ACCT): ?>
 	_gaq.push(['_trackPageview', '/sitemap']);
 	<?php endif; ?>
 });

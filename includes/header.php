@@ -34,62 +34,30 @@ var reloader=document.location.hash.substr(1);if(reloader){if(reloader.charAt(0)
 </head>
 <?php flush(); ?>
 <body id="<?php echo $tab ?>" class="theme3">
-<a name="top"></a>
+<a name="top-nav"></a>
 
 <nav class="navbar navbar-inverse">
   <div class="container-fluid">
     <div class="navbar-header">
-      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#fullnav">
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
-      </button>
-			<h1><a class="ajax navbar-brand" href="/">Mike Dang</a></h1>
+		<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#fullnav">
+			<span class="icon-bar"></span>
+			<span class="icon-bar"></span>
+			<span class="icon-bar"></span>
+		</button>
+		<h1><a class="ajax navbar-brand" href="/">Mike Dang</a></h1>
     </div>
     <div class="collapse navbar-collapse" id="fullnav">
-      <ul class="nav navbar-nav navbar-right">
+			<ul class="nav navbar-nav navbar-right">
 				<li class="active"><a class="ajax" href="/">Home</a></li>
 				<li><a class="ajax" href="/work/">Development</a></li>
 				<li><a class="ajax" href="/photos">Photos</a></li>
 				<li><a class="ajax" href="/about/">About</a></li>
 				<li><a class="ajax" href="/contact/">Contact</a></li>
-      </ul>
+			</ul>
     </div>
   </div>
 </nav>
+<a name="top"></a>
 
 <div id="loader2">Loading...</div>
-
 <div id="container">
-<!-- <div id="header">
-
-  <div id="logo">
-      <h1><a href="/"><img src="<?php echo STATIC_ROOT ?>/i/logo_min.gif" width="145" height="37" alt="Mike Dang" /></a></h1>
-      <span>Code monkey for hire</span>
-  </div>
-
-	<?php if (!is_mobile_browser()): ?>
-    <div id="twitter">
-        <div id="twitter-ctrl">
-            <a href="#" id="twitter-prev">previous</a>
-            <a href="#" id="twitter-next">next</a>
-        </div>
-    	<div id="tweets" class="clearfix"></div>
-    </div>
-    <?php endif; ?>
-
-    <div id="loader2">Working...</div>
-</div> -->
-
-
-
-<a name="top-nav"></a>
-
-<!-- <ul id="tabnav">
-	<li class="tab1"><a href="/">Home</a></li>
-	<li class="tab2"><a href="/work/">Development</a></li>
-	<li class="tab3"><a href="/posts">Posts</a></li>
-	<li class="tab4"><a href="/about/">About</a></li>
-	<li id="tab-cta" class="tab5"><a href="/contact/">Contact</a></li>
-</ul>
-<ul id="subnav"></ul> -->

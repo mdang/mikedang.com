@@ -1,6 +1,6 @@
-<?php 
+<?php
 
-if (!defined('APP_INIT')) 
+if (!defined('APP_INIT'))
 {
     require_once '../../../init.php';
 }
@@ -26,11 +26,10 @@ $tab = 'tab2';
 <script type="text/javascript">
 
 $(function() {
-    
-    selectTab('<?php echo $tab; ?>');
-    setPageTitle('<?php echo PAGE_TITLE_BASE . PAGE_TITLE_SEPERATOR . 'Clients' ?>');
+  selectTab('<?php echo $tab; ?>');
+  setPageTitle('<?php echo PAGE_TITLE_BASE . PAGE_TITLE_SEPERATOR . 'Clients' ?>');
 
-    <?php if (GOOGLE_ANALYTICS_ACCT): ?>
+  <?php if (GOOGLE_ANALYTICS_ACCT): ?>
 	_gaq.push(['_trackPageview', '/work/clients']);
 	<?php endif; ?>
 });

@@ -213,7 +213,6 @@ else
 $params_str = http_build_query($params);
 
 ?>
-
 <div id="title">
     <h2><?php echo $main_title ?></h2>
 </div>
@@ -292,7 +291,6 @@ $params_str = http_build_query($params);
             echo '<div class="tags-list">';
             if (isset($app_tags[$app_id]))
             {
-                //echo '<span>Tags:</span> ';
                 $tag_str = '';
 
                 foreach ($app_tags[$app_id] as $tag_id=>$tag_nm)
@@ -310,7 +308,6 @@ $params_str = http_build_query($params);
             </div>
             <p><?php echo nl2br($result['app_desc']) ?></p>
             <p><a class="ajax" href="/work/detail?id=<?php echo $result['app_id'] ?>&<?php echo $params_str ?>">see more</a></p>
-
         </div>
     </div>
 
@@ -352,7 +349,6 @@ $params_str = http_build_query($params);
 </div>
 </div>
 
-<?php if (!is_mobile_browser()): ?>
 <div id="sidebar" class="col-xs-12 col-sm-12 col-md-2">
     <?php /*
     <div class="submodule clearfix">
@@ -391,9 +387,9 @@ $params_str = http_build_query($params);
         </div>
 
     </div>
-    <!--
+    <?php /*
     <div class="submodule clearfix">
-        <h4><a class="ajax" href="/tags">see all</a>Related Tags</h4>
+        <h4>Related Tags</h4>
 
         <div class="subcontent">
             <ul id="tag-list-nav">
@@ -401,37 +397,36 @@ $params_str = http_build_query($params);
 
                 foreach ($distinct_app_tags as $tag_id=>$tag_nm)
                 {
-                    echo '<li><a class="ajax" href="/work/?tag='. $tag_id .'">'. $tag_nm .'</a></li>';
+                    echo '<li><a class="ajax tag" href="/work/?tag='. $tag_id .'">'. $tag_nm .'</a></li>';
                 }
 
                 ?>
             </ul>
         </div>
     </div>
-    -->
+    */ ?>
+
 </div>
-<?php endif; ?>
+
 </div>
 
 <script type="text/javascript">
 
 $(function() {
-
 	selectTab('<?php echo $tab; ?>');
 	setPageTitle('<?php echo PAGE_TITLE_BASE . PAGE_TITLE_SEPERATOR . 'Work' ?>');
+  addAjaxRequestHandlers();
 
 	$.localScroll({
-        duration:1200,
-        onBefore:function( e, anchor, $target ){
+    duration:1200,
+    onBefore:function( e, anchor, $target ){
 
-            $(anchor).effect("highlight", { color: "<?php echo $highlight_color ?>" }, 1700);
-        },
-        onAfter:function( anchor ){
+        $(anchor).effect("highlight", { color: "<?php echo $highlight_color ?>" }, 1700);
+    },
+    onAfter:function( anchor ){
 
-        }
-    });
-
-	addAjaxRequestHandlers();
+    }
+  });
 
 	<?php if (GOOGLE_ANALYTICS_ACCT): ?>
 	_gaq.push(['_trackPageview', '/work/index']);

@@ -87,7 +87,6 @@ else
 $params_str = http_build_query($params);
 
 ?>
-
 <div id="title">
     <h2><?php echo $app_nm ?></h2>
 
@@ -107,7 +106,6 @@ $params_str = http_build_query($params);
 <div class="container-fluid bg-3">
 
 <div id="main-2" class="col-xs-12 col-sm-12 col-md-9">
-
     <?php if (!empty($media_files)): ?>
     <div id="project-images">
 
@@ -134,41 +132,11 @@ $params_str = http_build_query($params);
 
     <?php endif; ?>
 
-    <?php /*
-    <?php if (count($media_files) > 1): ?>
-    <div id="project-views" class="clearfix">
-
-        <ul id="project-thumbs">
-        	<?php
-
-            foreach ($media_files as $file)
-            {
-                $file_id      = $file['media_file_id'];
-                $file_nm      = $file['media_file_nm'];
-                $file_type_cd = $file['media_file_type_cd'];
-                $file_desc    = $file['media_file_desc'];
-
-                $file_path    = IMG_APP_MEDIA_FILE_PATH . IMG_THUMBNAIL_PREFIX . $file_nm;
-
-                echo '<li><a href="#"><img src="'. $file_path .'" width="75" height="42" alt="'. $file_desc .'" /></a></li>';
-            }
-
-            ?>
-        </ul>
-
-    </div>
-    <?php endif; ?>
-    */ ?>
-
     <div id="project-details">
         <?php if ($cmnt): ?>
-
-        <p><?php echo nl2br($cmnt); ?></p>
-
+          <p><?php echo nl2br($cmnt); ?></p>
         <?php elseif ($app_desc): ?>
-
-        <p><?php echo nl2br($app_desc); ?></p>
-
+          <p><?php echo nl2br($app_desc); ?></p>
         <?php endif; ?>
 
         <div class="project-details-ret"><a class="ajax" href="/work/?<?php echo $params_str ?>">go back to project results</a></div>
@@ -177,22 +145,18 @@ $params_str = http_build_query($params);
 </div>
 
 <div id="sidebar-2" class="col-xs-12 col-sm-12 col-md-2">
-
     <?php if ($client_nm or $url): ?>
     <div class="submodule clearfix">
         <h4>General Info</h4>
 
         <div class="subcontent">
-
             <?php if ($client_nm): ?>
-            <a class="ajax" href="/work/?client=<?php echo $client_id ?>"><?php echo $client_nm ?></a><br />
+              <a class="ajax" href="/work/?client=<?php echo $client_id ?>"><?php echo $client_nm ?></a><br />
             <?php endif; ?>
-
             <?php if ($url): ?>
-            <a href="<?php echo $full_url ?>" target="_new"><?php echo $url ?></a>
+              <a href="<?php echo $full_url ?>" target="_new"><?php echo $url ?></a>
             <?php endif; ?>
         </div>
-
     </div>
     <?php endif; ?>
 
@@ -201,11 +165,8 @@ $params_str = http_build_query($params);
         <h4>Responsibilities</h4>
 
         <div class="subcontent">
-
             <?php echo nl2br($app_resp) ?>
-
         </div>
-
     </div>
     <?php endif; ?>
 
@@ -216,7 +177,6 @@ $params_str = http_build_query($params);
         <div class="subcontent">
             <?php echo $workplace_nm ?>
         </div>
-
     </div>
     <?php endif; ?>
 
@@ -239,7 +199,6 @@ $params_str = http_build_query($params);
             echo $tag_str;
 
             ?>
-
         	<p><a class="ajax" href="/tags">see all</a></p>
         </div>
 
@@ -282,25 +241,9 @@ $params_str = http_build_query($params);
 <script type="text/javascript">
 
 $(function() {
-
 	selectTab('<?php echo $tab; ?>');
 	setPageTitle('<?php echo js_escape_string(PAGE_TITLE_BASE . PAGE_TITLE_SEPERATOR . 'Work' . PAGE_TITLE_SEPERATOR . $app_nm) ?>');
   addAjaxRequestHandlers();
-
-	// if ($('#project-thumbs')) {
-	// 	$('#project-images').cycle({
-	//         fx:      'scrollHorz',
-	//         speed:   500,
-	//         timeout: 6500,
-	//         easing:  'easeInOutQuad',
-	//         pager:   '#project-thumbs',
-	//         pagerAnchorBuilder: function(idx, slide) {
-	//             return '#project-thumbs li:eq(' + (idx) + ') a';
-	//         }
-	//     });
-	// }
-
-
 
   <?php if (GOOGLE_ANALYTICS_ACCT): ?>
 	_gaq.push(['_trackPageview', '/work/detail/<?php echo urlencode( $app_nm ) ?>']);

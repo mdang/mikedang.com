@@ -32,66 +32,11 @@ $debug[] = Zend_Debug::dump($featured_photos, 'Featured Photos', 0);
 // $debug[]    = Zend_Debug::dump($third_party_posts, 'All posts', 0);
 
 ?>
-
 <div id="title">
     <h2>Hi, come see what's been keeping me busy</h2>
 </div>
 
 <div id="all">
-<?php /*
-<h3 class="headline">Wish your site was more social? I got you covered</h3>
-
-<div id="soc-intro" class="clearfix">
-	<?php
-
-	foreach ($third_party_posts as $post)
-	{
-		$soc_logo = '';
-
-		if (strtotime($post['third_party_create_tmsp']) > strtotime('3 days ago'))
-		{
-			$soc_logo = 'label_new_red.png';
-		}
-
-		switch ( $post['post_type'] )
-		{
-			case 'photo':
-				?>
-				<div class="soc-item soc-photo soc-<?php echo $post['third_party_id'] ?>">
-					<img src="<?php echo $post['img_normal'] ?>" alt="<?php echo $post['text'] ?>" width="315" />
-					<?php echo $post['text'] ?>
-					<span>Posted <?php echo DateDifference::getString(new DateTime( $post['third_party_create_tmsp'] )) ?> on <a href="<?php echo $_social['url'][$post['third_party_id']] ?>" target="_new"><?php echo $post['third_party_nm'] ?></a></span>
-					<?php if ( $soc_logo ): ?>
-					<div class="soc-logo"><img src="<?php echo STATIC_ROOT ?>/i/<?php echo $soc_logo ?>" alt="" /></div>
-					<?php endif; ?>
-				</div>
-
-				<?php
-
-				break;
-			case 'status':
-			default:
-				?>
-				<div class="soc-item soc-<?php echo $post['third_party_id'] ?>">
-					<?php echo $post['text'] ?>
-					<span>Posted <?php echo DateDifference::getString(new DateTime( $post['third_party_create_tmsp'] )) ?> on <a href="<?php echo $_social['url'][$post['third_party_id']] ?>" target="_new"><?php echo $post['third_party_nm'] ?></a></span>
-					<?php if ( $soc_logo ): ?>
-					<div class="soc-logo"><img src="<?php echo STATIC_ROOT ?>/i/<?php echo $soc_logo ?>" alt="" /></div>
-					<?php endif; ?>
-				</div>
-
-				<?php
-
-				break;
-		}
-	}
-
-	?>
-</div>
-
-<p class="link-prompt"><a class="ajax" href="/posts">see all posts</a></p>
-*/
-?>
 <h3 class="headline">I help some of the world's most recognizable brands market on the web</h3>
 
 <div id="dev-preview">
@@ -128,7 +73,7 @@ $debug[] = Zend_Debug::dump($featured_photos, 'Featured Photos', 0);
 
             if ($client_nm)
             {
-                $client_str = '<p><!--<span>Client:</span> --><a class="ajax" href="/work/?client='. $client_id .'">'. $client_nm .'</a></p>';
+                $client_str = '<p><a class="ajax" href="/work/?client='. $client_id .'">'. $client_nm .'</a></p>';
             }
 
             echo PHP_EOL;
@@ -147,15 +92,11 @@ FEATURE;
         echo PHP_EOL .'</div>';
 
         ?>
-
     </div>
 
     <p class="link-prompt clearfix"><a class="ajax" href="/work/">see all projects</a></p>
 </div>
 </div>
-
-<!-- </div> -->
-<!-- </div> -->
 
 <h3 class="headline">I also dabble in photography</h3>
 
@@ -164,8 +105,10 @@ FEATURE;
     <?php
 
     $i = 0;
-    foreach ($featured_photos as $photo) {
-      if ($i % 4 === 0) {
+    foreach ($featured_photos as $photo)
+    {
+      if ($i % 4 === 0)
+      {
         echo '</div>';
         echo '<div class="row">';
       }
@@ -179,22 +122,6 @@ FEATURE;
 
 <p class="link-prompt clearfix"><a class="ajax" href="/photos/">see more photos</a></p>
 
-
-
-<!-- testing -->
-<!-- <div style="clear: both;">
-<ul>
-  <?php
-
-  foreach ($featured_photos as $photo) {
-    echo '<li style="display:inline-block"><img src="' . $photo->image_url[0] . '" srcset="' . $photo->image_url[0] .' 1x, ' . $photo->image_url[1] .' 2x"></li>';
-  }
-
-  ?>
-</ul>
-</div> -->
-
-
 <script type="text/javascript">
 
 $(function() {
@@ -205,10 +132,6 @@ $(function() {
 	var $container = $('.feature-set');
 
 	$container.imagesLoaded(function() {
-		// $container.masonry({
-		// 	itemSelector: '.soc-item'
-		// });
-
 		fadeInProjects();
 	});
 
