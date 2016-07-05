@@ -44,6 +44,7 @@ $debug[] = Zend_Debug::dump($photo_results, 'Initial Photos', 0);
       $random_index = array_rand($random_sizes);
       echo '<div class="' . $random_sizes[$random_index] . '"><img class="img-responsive" src="' . $photo->image_url[0] . '" srcset="' . $photo->image_url[0] .' 1x, ' . $photo->image_url[1] .' 2x"></div>';
     }
+    
     ?>
   </div>
 
@@ -88,7 +89,6 @@ $(function() {
     });
 
     ias.on('rendered', function(items) {
-      console.log('got here', items);
       msnry.appended(items);
     });
 

@@ -1,20 +1,11 @@
 <?php
 
-// Redirect for IE6 users
-if (isset($browser_info['msie']))
-{
-	if ($browser_info['msie'] < 7)
-    {
-		redirect('/ie6.php');
-    }
-}
-
-if (!isset( $page_title ))
+if (!isset($page_title))
 {
     $page_title = PAGE_TITLE_BASE;
 }
 
-if (!isset( $tab ))
+if (!isset($tab))
 {
     $tab = 'tab1';
 }
@@ -33,21 +24,17 @@ if (!isset( $tab ))
 <link rel="shortcut icon" type="image/x-icon" href="/favicon.ico" />
 <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" type="text/css" media="all" />
 <link rel="stylesheet" href="<?php echo STATIC_ROOT ?>/css/global<?php echo ASSET_VERSION ?>.css" type="text/css" media="all" />
-<!--[if IE 7]>
-<link rel="stylesheet" href="<?php echo STATIC_ROOT ?>/css/ie7.css" type="text/css" media="all" />
-<![endif]-->
 <!--[if IE 8]>
 <link rel="stylesheet" href="<?php echo STATIC_ROOT ?>/css/ie8.css" type="text/css" media="all" />
 <![endif]-->
-
-<script src="//ajax.googleapis.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
+<script src="//ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
 <script type="text/javascript">
 var reloader=document.location.hash.substr(1);if(reloader){if(reloader.charAt(0)=='/'){if(window.opener){window.opener.location.href=reloader;window.close();}else{location.href=reloader;}}}
 </script>
-
 </head>
 <?php flush(); ?>
 <body id="<?php echo $tab ?>" class="theme3">
+<a name="top"></a>
 
 <nav class="navbar navbar-inverse">
   <div class="container-fluid">
@@ -57,7 +44,7 @@ var reloader=document.location.hash.substr(1);if(reloader){if(reloader.charAt(0)
         <span class="icon-bar"></span>
         <span class="icon-bar"></span>
       </button>
-      <a class="ajax navbar-brand" href="/">Mike Dang</a>
+			<h1><a class="ajax navbar-brand" href="/">Mike Dang</a></h1>
     </div>
     <div class="collapse navbar-collapse" id="fullnav">
       <ul class="nav navbar-nav navbar-right">
@@ -71,9 +58,9 @@ var reloader=document.location.hash.substr(1);if(reloader){if(reloader.charAt(0)
   </div>
 </nav>
 
-<div id="container">
-<a name="top"></a>
+<div id="loader2">Loading...</div>
 
+<div id="container">
 <!-- <div id="header">
 
   <div id="logo">

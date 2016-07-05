@@ -15,6 +15,10 @@ img {
 	display: block;
 }
 
+h1 {
+	padding: 0;
+	margin: 0;
+}
 h2 {
 	margin: .4em 0 20px 0;
 	font: 3.2em/1em Plantin, "Plantin std", "Plantin", "Baskerville", Georgia, "Times New Roman", serif;
@@ -826,17 +830,17 @@ html #footersubnav .fb_share_button {
 	position: fixed;
 	top: 5px;
 	left: 50%;
-	/* left: 10px; */
 	display: none;
 	background: #F17022;
 	color: #fff;
+	font-weight: bold;
 	margin: 5px auto;
-	padding: 3px 5px;
+	padding: 3px 8px;
 	z-index: 1000;
-	border: 1px solid #fff;
+	/*border: 1px solid #fff;
 	-moz-border-radius: 4px;
 	-webkit-border-radius: 4px;
-	border-radius: 4px;
+	border-radius: 4px;*/
 }
 span > div#loader2 {
 	position: fixed;
