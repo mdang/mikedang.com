@@ -263,7 +263,8 @@ var addAjaxRequestHandlers = function() {
 			$('#fullnav li').removeClass('active');
 			$(this).parent().addClass('active');
 
-			if ($(this).hasClass('nav-link')) {
+			// If the hamburger menu is showing and it's not closed, click to hide it
+			if ($(this).hasClass('nav-link') && !$('.navbar-toggle').filter(':first').hasClass('collapsed')) {
 				$('.navbar-toggle').click();
 			}
 			return false;

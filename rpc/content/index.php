@@ -153,32 +153,10 @@ $(function() {
 	$container.imagesLoaded(function() {
 		fadeInProjects();
 
-    var container = document.querySelector('.featured-photos');
-    var msnry = new Masonry( container, {
-      // options
+    $('.featured-photos').masonry({
       itemSelector: '.featured-photo',
       gutter: 8
     });
-
-    var ias = $.ias({
-      container: ".featured-photos",
-      item: ".featured-photo",
-      pagination: "#pagination",
-      next: ".next a",
-      delay: 1200
-    });
-
-    ias.on('render', function(items) {
-      $(items).css({ opacity: 0 });
-    });
-
-    ias.on('rendered', function(items) {
-      msnry.appended(items);
-    });
-
-    ias.extension(new IASSpinnerExtension({
-        src: '<?php echo STATIC_ROOT ?>/i/loading-animation.svg',
-    }));
 	});
 
 	<?php if (GOOGLE_ANALYTICS_ACCT): ?>
