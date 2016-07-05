@@ -17,6 +17,7 @@ hr{border:1px solid #ccc}
 blockquote{display:block;font:145%/135% georgia,helvetica,arial,sans-serif;color:#000;background:transparent url(/assets/i/openquote.gif) left top no-repeat;opacity:.5;-ms-filter:progid:DXImageTransform.Microsoft.Alpha(Opacity=50);filter:alpha(opacity=50)}
 blockquote p{padding:0 57px;background:transparent url(/assets/i/closequote.gif) right bottom no-repeat}
 a:link,a:visited,a:active{text-decoration:none;border-bottom:1px dotted #777;color:#333}
+.navbar a:link,.navbar a:visited,.navbar a:active{border-bottom:0}
 a:hover{text-decoration:none;border-bottom:1px solid #333;color:#000}
 #container{text-align:left;margin:0 auto}
 #header{margin:5px 0 0}
@@ -49,6 +50,9 @@ ul#tabnav li#tab-cta a{background-color:#F17022;color:#fff;border:1px solid #F17
 #subnav a:link,#subnav a:visited,#subnav a:active{text-decoration:none;color:#333}
 #subnav a:hover{text-decoration:underline;color:#000}
 #content{margin:4px 0 4px 10px;padding:6px 0 6px 3px;clear:both}
+@media screen and (max-width: 768px) {
+#content{margin:4px 0 4px 4px}
+}
 .img-responsive{width:100%;padding-bottom:6px}
 #footer{margin:35px 6px 0;padding:5px 3px 30px;clear:both}
 footer{margin-top:40px;background:#101010;clear:both;padding:20px 40px 2px}
@@ -87,7 +91,7 @@ a:hover.button span{text-decoration:underline}
 #all{clear:both}
 #main{margin:0 34px 0 0;padding:0 12px 4px 2px;float:left;clear:both}
 #main-2{margin:0 34px 0 0;padding:0 12px 4px 2px;float:left;clear:both}
-#title{clear:both;padding-bottom:20px}
+#title{clear:both;padding:0 3px 20px}
 #sidebar,#sidebar-2{float:left;padding:3px 3px 0}
 #map{width:230px;height:230px}
 .submodule{padding-bottom:10px;background:#f8f8f8;font-family:arial,helvetica,sans-serif}
@@ -156,7 +160,7 @@ html #footersubnav .fb_share_button{font-size:80%;text-decoration:none}
 .theme3 .tag{border:0;text-decoration:none;background:#77BED2;color:#fff;padding:4px 10px;margin:0;font-family:helvetica,arial,sans-serif;font-size:88%;-moz-border-radius:4px;-webkit-border-radius:4px;border-radius:4px}
 #progress{position:absolute;top:155px;text-align:center;background:#f90;color:#fff;padding:3px 5px;display:none}
 #loader{background:#ccc;padding:6px 5px}
-#loader2{position:fixed;top:5px;left:50%;display:none;background:#F17022;color:#fff;margin:5px auto;padding:3px 8px;z-index:1000}
+#loader2{position:fixed;top:5px;left:40%;display:none;background:#F17022;color:#fff;margin:5px auto;padding:3px 8px;z-index:1000}
 span> div#loader2{position:fixed}
 #errors{font:115%/150% arial,verdana,sans-serif;color:#fff;margin:5px 3px;width:90%;clear:both}
 #errors li{padding:4px 12px 2px;background:red;border:1px solid #fff;margin:4px 0 2px;float:left;clear:both}
@@ -190,9 +194,10 @@ legend{font-weight:400;text-transform:uppercase;padding:2px 5px;margin-left:4px;
 label{line-height:1.8;vertical-align:top;width:115px;display:inline-block;margin-left:15px}
 label.req{font-weight:700}
 label.error{margin-left:15px;padding:0 7px;width:auto;color:#fff;background:red}
+#send-container{text-align:right}
 #feature{float:left;padding-top:10px}
 .truncate{width:165px;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
-.feature-item{display:inline-block;float:left;margin:3px 7px 3px 0;width:185px;padding:4px 3px;border:1px solid #fff;text-align:center;-moz-border-radius:5px;-webkit-border-radius:5px;border-radius:5px}
+.feature-item{display:inline-block;float:left;margin:3px 1px 3px 0;width:180px;padding:4px 3px;border:1px solid #fff;text-align:center;-moz-border-radius:5px;-webkit-border-radius:5px;border-radius:5px}
 .feature-item h4,.feature-item p{text-align:left;text-transform:none}
 .feature-item:hover{background:#eee;border:1px solid #ccc}
 .feature-item h4 a{text-decoration:none;font-size:88%;border:none;border-top:3px solid #2B3E42;padding-top:8px;margin-top:11px;display:block}

@@ -64,11 +64,11 @@ $debug[] = Zend_Debug::dump($featured_photos, 'Featured Photos', 0);
 
           if ($preview_file_nm)
           {
-              $img_tag = '<img src="'. IMG_APP_MEDIA_FILE_PATH . $preview_file_nm .'" width="175" height="150" alt="'. $app_nm .'" />';
+              $img_tag = '<img src="'. IMG_APP_MEDIA_FILE_PATH . $preview_file_nm .'" width="170" alt="'. $app_nm .'" />';
           }
           else
           {
-              $img_tag = '<img src="' . STATIC_ROOT . '/i/blank.gif" class="feature-divider" width="175" height="150" alt="'. $app_nm .'" />';
+              $img_tag = '<img src="' . STATIC_ROOT . '/i/blank.gif" class="feature-divider" width="170" alt="'. $app_nm .'" />';
           }
 
           if ($client_nm)

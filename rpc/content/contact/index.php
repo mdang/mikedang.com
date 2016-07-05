@@ -203,7 +203,7 @@ MESSAGE;
       	<?php echo $recaptcha->getHTML(); ?>
       </fieldset>
       <?php endif; */ ?>
-    <div>
+    <div id="send-container">
         <input type="submit" name="send" id="send" class="submit large orange" value="Send it" />
     </div>
 </form>
