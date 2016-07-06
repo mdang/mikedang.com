@@ -206,8 +206,11 @@ legend{font-weight:400;text-transform:uppercase;font-size:100%;padding:2px 5px;m
 label{line-height:1.8;vertical-align:top;width:115px;display:inline-block;margin-left:15px}
 label.req{font-weight:700}
 label.error{margin-left:15px;padding:0 7px;width:auto;color:#fff;background:red}
-#send-container{text-align:right}
+#send-container{text-align:center}
 #send{border-radius:5px;border:0;width:100%}
+@media screen and (max-width: 768px) {
+#send{width:90%;padding-right:10px}
+}
 #feature{float:left;padding-top:10px}
 .truncate{width:165px;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
 .feature-item{display:inline-block;float:left;margin:3px 1px 3px 0;width:180px;padding:4px 3px;border:1px solid #fff;text-align:center;-moz-border-radius:5px;-webkit-border-radius:5px;border-radius:5px}

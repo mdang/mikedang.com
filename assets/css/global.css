@@ -1017,12 +1017,18 @@ label.error {
   background: red;
 }
 #send-container {
-	text-align: right;
+	text-align: center;
 }
 #send {
 	border-radius: 5px;
 	border: 0;
 	width: 100%;
+}
+@media screen and (max-width: 768px) {
+	#send {
+		width: 90%;
+		padding-right: 10px;
+	}
 }
 
 /* home css */
