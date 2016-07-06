@@ -217,14 +217,12 @@ MESSAGE;
     <div class="submodule clearfix">
         <h3 class="headline">Get social</h3>
         <div class="subcontent">
-            <h5>Facebook</h5>
-            <a href="http://www.facebook.com/dangmike" target="_blank">facebook.com/dangmike</a>
-
-            <h5>Twitter</h5>
-            <a href="http://twitter.com/mikedang" target="_blank">twitter.com/mikedang</a>
-
-            <h5>LinkedIn</h5>
-            <a href="http://www.linkedin.com/in/dangmike" target="_blank">linkedin.com/in/dangmike</a>
+          <ul>
+            <li><i class="fa fa-linkedin fa-lg" aria-hidden="true"></i> &nbsp;<a href="https://www.linkedin.com/in/dangmike" target="_blank">dangmike</a></li>
+            <li><i class="fa fa-instagram fa-lg" aria-hidden="true"></i> &nbsp;<a href="https://www.instagram.com/mikedang/" target="_blank">mikedang</a></li>
+            <li><i class="fa fa-facebook-square fa-lg" aria-hidden="true"></i> &nbsp;<a href="https://www.facebook.com/dangmike" target="_blank">dangmike</a></li>
+            <li><i class="fa fa-twitter fa-lg" aria-hidden="true"></i> &nbsp;<a href="https://twitter.com/mikedang" target="_blank">mikedang</a></li>
+          </ul>
         </div>
     </div>
 
