@@ -258,8 +258,8 @@ h3.headline{background:#F17022;color:#fff;float:left;clear:both;font-size:119%;p
 .featured-photo.w2{width:292px}
 .featured-photo.h2{height:292px}
 @media screen and (max-width: 768px) {
-.item.w1,.item.w2,.featured-photo.w1,.featured-photo.w2{width:310px}
-.item.h1,.item.h2,.featured-photo.h1,.featured-photo.h2{height:310px}
+.item.w1,.item.w2,.featured-photo.w1,.featured-photo.w2{width:315px}
+.item.h1,.item.h2,.featured-photo.h1,.featured-photo.h2{height:315px}
 }
 .ias-spinner,.ias-noneleft{position:absolute;bottom:-40px;width:100%;text-align:center;margin:0 auto}
 .ias-spinner img{text-align:center;margin:0 auto}

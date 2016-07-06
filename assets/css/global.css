@@ -1247,10 +1247,10 @@ h3.headline {
 }
 @media screen and (max-width: 768px) {
 	.item.w1, .item.w2, .featured-photo.w1, .featured-photo.w2 {
-	  width: 310px;
+	  width: 315px;
 	}
 	.item.h1, .item.h2, .featured-photo.h1, .featured-photo.h2 {
-	  height: 310px;
+	  height: 315px;
 	}
 }
 
