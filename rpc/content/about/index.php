@@ -88,7 +88,7 @@ $tab = 'tab4';
     <div class="submodule clearfix">
         <h3 class="headline">Education</h3>
         <div class="subcontent">
-            <a href="http://www.utexas.edu/" target="_new"><img class="img-responsive" src="<?php echo STATIC_ROOT ?>/i/texas_longhorns.png" srcset="<?php echo STATIC_ROOT ?>/i/texas_longhorns.png 1x, <?php echo STATIC_ROOT ?>/i/texas_longhorns.png 2x" width="171" alt="UT Longhorns" /></a>
+            <a href="http://www.utexas.edu/" target="_new"><img class="img-responsive" src="<?php echo STATIC_ROOT ?>/i/longhorn-logo.png" srcset="<?php echo STATIC_ROOT ?>/i/longhorn-logo.png 1x, <?php echo STATIC_ROOT ?>/i/longhorn-logo.png 2x" width="171" alt="UT Longhorns" /></a>
             <a href="http://www.utexas.edu/" target="_new">University of Texas</a> @ Austin
         </div>
 
