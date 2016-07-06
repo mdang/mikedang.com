@@ -222,6 +222,7 @@ MESSAGE;
             <li><i class="fa fa-instagram fa-lg" aria-hidden="true"></i> &nbsp;<a href="https://www.instagram.com/mikedang/" target="_blank">mikedang</a></li>
             <li><i class="fa fa-facebook-square fa-lg" aria-hidden="true"></i> &nbsp;<a href="https://www.facebook.com/dangmike" target="_blank">dangmike</a></li>
             <li><i class="fa fa-twitter fa-lg" aria-hidden="true"></i> &nbsp;<a href="https://twitter.com/mikedang" target="_blank">mikedang</a></li>
+            <li><i class="fa fa-500px fa-lg" aria-hidden="true"></i> &nbsp;<a href="https://500px.com/mdang" target="_blank">mdang</a></li>
           </ul>
         </div>
     </div>

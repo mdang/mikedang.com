@@ -80,15 +80,15 @@ $tab = 'tab4';
     <div class="submodule clearfix">
         <h3 class="headline">Current Work</h3>
         <div class="subcontent">
-            <a href="http://www.travelocity.com/" target="_new"><img src="<?php echo STATIC_ROOT ?>/i/travelocity_logo.png" width="171" height="80" alt="Travelocity" /></a>
-            Senior UI Developer @ <a href="http://www.travelocity.com/" target="_new">Travelocity</a>
+            <a href="https://generalassemb.ly" target="_new"><img class="img-responsive" src="<?php echo STATIC_ROOT ?>/i/generalassembly-logo.jpg" srcset="<?php echo STATIC_ROOT ?>/i/generalassembly-logo.jpg 1x, <?php echo STATIC_ROOT ?>/i/generalassembly-logo.jpg 2x" width="171" alt="General Assembly" /></a>
+            Web Development Instructor @ <a href="https://generalassemb.ly" target="_new">General Assembly</a>
         </div>
     </div>
 
     <div class="submodule clearfix">
         <h3 class="headline">Education</h3>
         <div class="subcontent">
-            <a href="http://www.utexas.edu/" target="_new"><img src="<?php echo STATIC_ROOT ?>/i/texas_longhorns.png" width="171" height="80" alt="UT Longhorns" /></a>
+            <a href="http://www.utexas.edu/" target="_new"><img class="img-responsive" src="<?php echo STATIC_ROOT ?>/i/texas_longhorns.png" srcset="<?php echo STATIC_ROOT ?>/i/texas_longhorns.png 1x, <?php echo STATIC_ROOT ?>/i/texas_longhorns.png 2x" width="171" alt="UT Longhorns" /></a>
             <a href="http://www.utexas.edu/" target="_new">University of Texas</a> @ Austin
         </div>
 
