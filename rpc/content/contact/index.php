@@ -215,7 +215,7 @@ MESSAGE;
 
 <div id="sidebar" class="col-xs-12 col-sm-12 col-md-2">
     <div class="submodule clearfix">
-        <h4>Get Social</h4>
+        <h3 class="headline">Get social</h3>
         <div class="subcontent">
             <h5>Facebook</h5>
             <a href="http://www.facebook.com/dangmike" target="_blank">facebook.com/dangmike</a>

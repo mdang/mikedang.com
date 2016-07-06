@@ -78,7 +78,7 @@ $tab = 'tab4';
 <div id="sidebar" class="col-xs-12 col-sm-12 col-md-2">
 
     <div class="submodule clearfix">
-        <h4>Current Work</h4>
+        <h3 class="headline">Current Work</h3>
         <div class="subcontent">
             <a href="http://www.travelocity.com/" target="_new"><img src="<?php echo STATIC_ROOT ?>/i/travelocity_logo.png" width="171" height="80" alt="Travelocity" /></a>
             Senior UI Developer @ <a href="http://www.travelocity.com/" target="_new">Travelocity</a>
@@ -86,7 +86,7 @@ $tab = 'tab4';
     </div>
 
     <div class="submodule clearfix">
-        <h4>Education</h4>
+        <h3 class="headline">Education</h3>
         <div class="subcontent">
             <a href="http://www.utexas.edu/" target="_new"><img src="<?php echo STATIC_ROOT ?>/i/texas_longhorns.png" width="171" height="80" alt="UT Longhorns" /></a>
             <a href="http://www.utexas.edu/" target="_new">University of Texas</a> @ Austin
@@ -95,7 +95,7 @@ $tab = 'tab4';
     </div>
 
     <div class="submodule clearfix">
-        <h4>Current Addictions</h4>
+        <h3 class="headline">Current Addictions</h3>
         <div class="subcontent">
             <ul>
                 <li>Good music</li>

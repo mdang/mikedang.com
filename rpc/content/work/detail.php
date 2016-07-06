@@ -146,7 +146,7 @@ $params_str = http_build_query($params);
 <div id="sidebar-2" class="col-xs-12 col-sm-12 col-md-2">
     <?php if ($client_nm or $url): ?>
     <div class="submodule clearfix">
-        <h4>General Info</h4>
+        <h3 class="headline">General Info</h3>
 
         <div class="subcontent">
             <?php if ($client_nm): ?>
@@ -161,7 +161,7 @@ $params_str = http_build_query($params);
 
     <?php if ($app_resp): ?>
     <div class="submodule clearfix">
-        <h4>Responsibilities</h4>
+        <h3 class="headline">Responsibilities</h3>
 
         <div class="subcontent">
             <?php echo nl2br($app_resp) ?>
@@ -171,7 +171,7 @@ $params_str = http_build_query($params);
 
     <?php if ($workplace_nm): ?>
     <div class="submodule clearfix">
-        <h4>Workplace</h4>
+        <h3 class="headline">Workplace</h3>
 
         <div class="subcontent">
             <?php echo $workplace_nm ?>
@@ -181,7 +181,7 @@ $params_str = http_build_query($params);
 
     <?php if (!empty($tags)): ?>
     <div class="submodule clearfix">
-        <h4>Tags</h4>
+        <h3 class="headline">Tags</h3>
 
         <div class="subcontent">
             <?php
@@ -206,7 +206,7 @@ $params_str = http_build_query($params);
 
     <?php if (!empty($related_work)): ?>
     <div class="submodule clearfix">
-        <h4>More Client Work</h4>
+        <h3 class="headline">More Client Work</h3>
         <div class="subcontent">
             <?php
 

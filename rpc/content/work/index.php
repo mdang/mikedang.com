@@ -362,7 +362,7 @@ $params_str = http_build_query($params);
     */ ?>
 
     <div class="submodule clearfix">
-        <h4>Client Overview</h4>
+        <h3 class="headline">Client Overview</h3>
         <div class="subcontent">
             <ul id="client-list-nav">
                 <?php
