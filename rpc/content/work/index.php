@@ -329,7 +329,7 @@ $params_str = http_build_query($params);
 
     <?php endif; ?>
 
-    <div class="top-link"><a href="#top-nav">back to top</a></div>
+    <div class="top-link"><a href="#top">back to top</a></div>
 
     <?php else: ?>
 

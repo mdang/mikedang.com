@@ -100,7 +100,7 @@ FEATURE;
 
 <h3 class="headline">I also dabble in photography</h3>
 
-<div class="container-fluid bg-3" style="clear: both">
+<div class="container-fluid bg-3 featured-photos-container">
   <div class="featured-photos" style="display: none">
     <?php
     // '' = regular size

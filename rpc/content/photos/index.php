@@ -71,32 +71,34 @@ $(function() {
   selectTab('<?php echo $tab; ?>');
   setPageTitle('<?php echo PAGE_TITLE_BASE . PAGE_TITLE_SEPERATOR . 'Photos' ?>');
 
-  var container = document.querySelector('.photos');
-  var msnry = new Masonry( container, {
-    // options
-    itemSelector: '.item',
-    gutter: 8
-  });
+  //$('.photos').imagesLoaded(function() {
+    var container = document.querySelector('.photos');
+    var msnry = new Masonry( container, {
+      // options
+      itemSelector: '.item',
+      gutter: 8
+    });
 
-  var ias = $.ias({
-    container: ".photos",
-    item: ".item",
-    pagination: "#pagination",
-    next: ".next a",
-    delay: 1200
-  });
+    var ias = $.ias({
+      container: ".photos",
+      item: ".item",
+      pagination: "#pagination",
+      next: ".next a",
+      delay: 1200
+    });
 
-  ias.on('render', function(items) {
-    $(items).css({ opacity: 0 });
-  });
+    ias.on('render', function(items) {
+      $(items).css({ opacity: 0 });
+    });
 
-  ias.on('rendered', function(items) {
-    msnry.appended(items);
-  });
+    ias.on('rendered', function(items) {
+      msnry.appended(items);
+    });
 
-  ias.extension(new IASSpinnerExtension({
+    ias.extension(new IASSpinnerExtension({
       src: '<?php echo STATIC_ROOT ?>/i/loading-animation.svg',
-  }));
+    }));
+	//});
 
   //ias.extension(new IASNoneLeftExtension({html: '<div class="ias-noneleft" style="text-align:center"><p><em>You reached the end!</em></p></div>'}));
 
