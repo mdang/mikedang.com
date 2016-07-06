@@ -43,7 +43,7 @@ $debug[] = Zend_Debug::dump($photo_results, 'Initial Photos', 0);
     foreach ($initial_photos as $photo)
     {
       $random_index = array_rand($random_sizes);
-      echo '<div class="' . $random_sizes[$random_index] . '"><img class="img-responsive" src="' . $photo->image_url[0] . '" srcset="' . $photo->image_url[0] .' 1x, ' . $photo->image_url[1] .' 2x"></div>';
+      echo '<div class="' . $random_sizes[$random_index] . '"><a href="https://500px.com' . $photo->url . '"><img class="img-responsive" src="' . $photo->image_url[0] . '" srcset="' . $photo->image_url[0] .' 1x, ' . $photo->image_url[1] .' 2x"></a></div>';
     }
 
     ?>
