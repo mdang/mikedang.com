@@ -970,7 +970,7 @@ input, textarea {
   border: 1px solid #ccc;
   padding: 3px 5px;
   margin-left: 12px;
-	width: 50%;
+	width: 60%;
 }
 input:focus {
   border: 1px solid #333;
@@ -1025,6 +1025,10 @@ label.error {
 	width: 100%;
 }
 @media screen and (max-width: 768px) {
+	input, textarea {
+	  margin-left: 5px;
+		width: 90%;
+	}
 	#send {
 		width: 90%;
 		padding-right: 10px;

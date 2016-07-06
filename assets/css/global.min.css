@@ -196,7 +196,7 @@ img.rss{padding-top:4px}
 .theme3 .orange.button2,.theme3 .orange.button2:visited{background-color:#F17022}
 .project-related img{margin:5px 0 10px}
 #contact-frm{width:90%;clear:both}
-input,textarea{border:1px solid #ccc;padding:3px 5px;margin-left:12px;width:50%}
+input,textarea{border:1px solid #ccc;padding:3px 5px;margin-left:12px;width:60%}
 input:focus{border:1px solid #333}
 input.error,textarea.error{border:1px solid red}
 textarea.expanding{line-height:18px}
@@ -209,6 +209,7 @@ label.error{margin-left:15px;padding:0 7px;width:auto;color:#fff;background:red}
 #send-container{text-align:center}
 #send{border-radius:5px;border:0;width:100%}
 @media screen and (max-width: 768px) {
+input,textarea{margin-left:5px;width:90%}
 #send{width:90%;padding-right:10px}
 }
 #feature{float:left;padding-top:10px}
