@@ -176,12 +176,12 @@ MESSAGE;
     	<legend>Contact Information</legend>
         <div>
             <label for="name" class="req">Name *</label>
-            <input type="text" id="name" name="name" title="Everyone has a name!" class="required" minlength="3" maxlength="60" size="30" value="<?php echo $name ?>" />
+            <input type="text" id="name" name="name" title="Everyone has a name!" class="required" minlength="3" maxlength="60" value="<?php echo $name ?>" />
         </div>
 
         <div>
             <label for="email" class="req">Email *</label>
-            <input type="text" id="email" name="email" title="Is this a valid email address?" class="required email" maxlength="120" size="30" value="<?php echo $email_addr ?>" />
+            <input type="text" id="email" name="email" title="Is this a valid email address?" class="required email" maxlength="120" value="<?php echo $email_addr ?>" />
         </div>
 
         <?php /*
@@ -204,7 +204,7 @@ MESSAGE;
       </fieldset>
       <?php endif; */ ?>
     <div id="send-container">
-        <input type="submit" name="send" id="send" class="submit large orange" value="Send it" />
+        <input type="submit" name="send" id="send" class="submit large orange" value="Send" />
     </div>
 </form>
 </div>

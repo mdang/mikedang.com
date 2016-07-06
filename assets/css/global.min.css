@@ -11,7 +11,7 @@ h3,h4,h5{margin-bottom:.3em;line-height:1.5em;clear:both}
 h3,h4,h5{font-family:"HelveticaNeue-Light","Helvetica Neue Light","Helvetica Neue",Helvetica,arial,sans-serif}
 h3 a:link,h3 a:visited,h3 a:active{text-decoration:none;font-weight:700;letter-spacing:.03em;border:none}
 h2 span{color:#ababab}
-p{font-size:1.2em;line-height:1.7em;margin-top:0;padding-bottom:.9em}
+p{font-size:1.1em;line-height:1.7em;margin-top:0;padding-bottom:.9em}
 ul,li{list-style-type:none}
 hr{border:1px solid #ccc}
 blockquote{display:block;font:145%/135% georgia,helvetica,arial,sans-serif;color:#000;background:transparent url(/assets/i/openquote.gif) left top no-repeat;opacity:.5;-ms-filter:progid:DXImageTransform.Microsoft.Alpha(Opacity=50);filter:alpha(opacity=50)}
@@ -149,7 +149,7 @@ a:hover.button span{text-decoration:underline}
 .project-details-ret{margin-top:37px;padding:10px 8px;background:#eee;float:left}
 @media screen and (max-width: 768px) {
 #project-details{padding:10px 0 0}
-.project-details-ret{margin:24px 0 0;padding:10px 8px;float:right}
+.project-details-ret{display:none}
 }
 .link-prompt{background:#eee;padding:5px 16px;text-align:right;clear:both;margin:15px 20px 10px 0;float:right}
 .tags-list{margin:.3em 0}
@@ -196,7 +196,7 @@ img.rss{padding-top:4px}
 .theme3 .orange.button2,.theme3 .orange.button2:visited{background-color:#F17022}
 .project-related img{margin:5px 0 10px}
 #contact-frm{width:90%;clear:both}
-input,textarea{border:1px solid #ccc;padding:3px 5px;margin-left:12px}
+input,textarea{border:1px solid #ccc;padding:3px 5px;margin-left:12px;width:50%}
 input:focus{border:1px solid #333}
 input.error,textarea.error{border:1px solid red}
 textarea.expanding{line-height:18px}
@@ -207,7 +207,7 @@ label{line-height:1.8;vertical-align:top;width:115px;display:inline-block;margin
 label.req{font-weight:700}
 label.error{margin-left:15px;padding:0 7px;width:auto;color:#fff;background:red}
 #send-container{text-align:right}
-#send{border-radius:5px;border:0}
+#send{border-radius:5px;border:0;width:100%}
 #feature{float:left;padding-top:10px}
 .truncate{width:165px;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
 .feature-item{display:inline-block;float:left;margin:3px 1px 3px 0;width:180px;padding:4px 3px;border:1px solid #fff;text-align:center;-moz-border-radius:5px;-webkit-border-radius:5px;border-radius:5px}
