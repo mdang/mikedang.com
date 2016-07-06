@@ -3,7 +3,7 @@
 
 <footer class="container-fluid text-center">
 	<div id="copyright">
-		&copy;<?php echo date('Y') ?> Mike Dang
+		&copy;2002-<?php echo date('Y') ?> Mike Dang
 	</div>
 
 	<ul id="footernav">

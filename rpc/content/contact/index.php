@@ -127,7 +127,7 @@ else
     <h2><?php echo $main_title ?></h2>
 </div>
 
-<div class="container-fluid bg-3">
+<div>
 <div id="main" class="col-xs-12 col-sm-12 col-md-9">
 
 <?php

@@ -32,7 +32,7 @@ $debug[] = Zend_Debug::dump($photo_results, 'Initial Photos', 0);
     <h2>Photos, photos, photos!</h2>
 </div>
 
-<div id="all" class="container-fluid bg-3">
+<div id="all">
   <div class="photos">
     <?php
     // '' = regular size

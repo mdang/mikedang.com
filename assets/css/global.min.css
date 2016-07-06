@@ -2,16 +2,16 @@
 body{background:#f9f9f9;text-align:center;font:1.5em/1.9em Georgia,serif;color:#345}
 img{display:block}
 h1{padding:0;margin:0}
-h2{margin:.4em 0 20px;font:3.2em/1em Plantin,"Plantin std",Plantin,Baskerville,Georgia,"Times New Roman",serif;float:left}
-h3{font-size:1.7em;font-weight:400;letter-spacing:.03em;margin-right:10px}
+h2{margin:.4em 0 20px;font:2.6em/1em Plantin,"Plantin std",Plantin,Baskerville,Georgia,"Times New Roman",serif;float:left}
+h3{font-size:1.7em;font-weight:400;letter-spacing:.03em;margin-right:10px;margin-top:6px}
 h4{font-size:1em;text-transform:lowercase;font-weight:700}
 h5{font-size:1.4em}
-h3,h4,h5{margin-bottom:.3em;line-height:1.6em;clear:both}
+h3,h4,h5{margin-bottom:.3em;line-height:1.5em;clear:both}
 .row{clear:both;margin-bottom:20px}
 h3,h4,h5{font-family:"HelveticaNeue-Light","Helvetica Neue Light","Helvetica Neue",Helvetica,arial,sans-serif}
 h3 a:link,h3 a:visited,h3 a:active{text-decoration:none;font-weight:700;letter-spacing:.03em;border:none}
 h2 span{color:#ababab}
-p{font-size:1.12em;line-height:1.7em;margin-top:0;padding-bottom:.9em}
+p{font-size:1.2em;line-height:1.7em;margin-top:0;padding-bottom:.9em}
 ul,li{list-style-type:none}
 hr{border:1px solid #ccc}
 blockquote{display:block;font:145%/135% georgia,helvetica,arial,sans-serif;color:#000;background:transparent url(/assets/i/openquote.gif) left top no-repeat;opacity:.5;-ms-filter:progid:DXImageTransform.Microsoft.Alpha(Opacity=50);filter:alpha(opacity=50)}
@@ -49,9 +49,9 @@ ul#tabnav li#tab-cta a{background-color:#F17022;color:#fff;border:1px solid #F17
 #subnav li{float:left;padding-left:14px;font-size:.9em}
 #subnav a:link,#subnav a:visited,#subnav a:active{text-decoration:none;color:#333}
 #subnav a:hover{text-decoration:underline;color:#000}
-#content{margin:4px 0 4px 10px;padding:6px 0 6px 3px;clear:both}
+#content{margin:4px 30px;padding:6px 0 6px 3px;clear:both}
 @media screen and (max-width: 768px) {
-#content{margin:4px 0 4px 4px}
+#content{margin:4px 12px}
 }
 .img-responsive{width:100%;padding-bottom:6px}
 #footer{margin:35px 6px 0;padding:5px 3px 30px;clear:both}
@@ -91,7 +91,7 @@ a:hover.button span{text-decoration:underline}
 #all{clear:both}
 #main{margin:0 34px 0 0;padding:0 12px 4px 2px;float:left;clear:both}
 #main-2{margin:0 34px 0 0;padding:0 12px 4px 2px;float:left;clear:both}
-#title{clear:both;padding:0 3px 20px}
+#title{clear:both;padding:0 0 15px}
 #sidebar,#sidebar-2{float:left;padding:3px 3px 0}
 #map{width:230px;height:230px}
 .submodule{padding-bottom:10px;background:#f8f8f8;font-family:arial,helvetica,sans-serif}
@@ -101,12 +101,13 @@ a:hover.button span{text-decoration:underline}
 .submodule h4 a{float:right;font-size:9px;margin-top:1px;padding-top:0;text-decoration:none;border-bottom:0;letter-spacing:normal}
 .submodule h4 a:hover{text-decoration:underline}
 .submodule h5{margin-top:7px}
-.subcontent{padding:8px 30px 8px 10px;padding:10px;clear:both}
+.subcontent{padding:8px 30px 8px 10px;clear:both}
 .subcontent ul li{padding:3px 0;clear:both}
 .subcontent ul{margin:3px 3px 0 6px}
 .subcontent span{font-weight:700;color:#777}
 #project-list{float:left;width:100%}
-#project-list-nav a,#client-list-nav a{font-size:85%}
+#project-list-nav a,#client-list-nav a{font-size:96%}
+#client-list-nav{line-height:1.6em}
 #project-images{margin-top:20px}
 .project-image{display:inline-block;margin:0 20px 20px 0}
 .project-row{clear:both;border:1px solid #fff;border-top:1px solid #eee;margin:0 0 7px;padding:14px 0 2px}
@@ -118,14 +119,17 @@ a:hover.button span{text-decoration:underline}
 .project-col img{border:1px solid #ccc;padding:2px;margin:2px 2px 5px}
 .project-col img:hover{border:1px solid #fff}
 .project-col .marker{position:absolute;top:-3px;left:8px}
-.project-col p{font-size:95%}
+.project-col p{font-size:105%}
 .submodule p{font-size:95%;padding-bottom:0;margin-bottom:0}
 .project-col span{font-weight:700;font-family:helvetica,arial,sans-serif}
-.project-col h3{font-size:1.1em}
+.project-col h3{font-size:1.3em}
 .project-col h3 a{border-bottom:none}
 .project-col-dtl{padding:0 20px}
 .footnote{color:#ccc;font-size:80%;text-align:right}
 #pager-summary{padding:4px;text-align:right}
+@media screen and (max-width: 768px) {
+#pager-summary{padding:4px 4px 4px 0;text-align:left}
+}
 #pager-summary span{font-weight:700}
 #pager{clear:both;padding:10px 4px;border-top:1px solid #eee;border-bottom:1px solid #eee;width:100%}
 #pager-nav{float:left;padding:4px 0}
@@ -141,12 +145,13 @@ a:hover.button span{text-decoration:underline}
 #project-views a:focus{outline:none}
 #project-views img{border:none;display:block}
 #project-thumbs li{float:left;margin:2px 0 3px}
-#project-details{padding:20px 12px}
+#project-details{padding:20px 20px 0 0;font-size:1.18em}
 .project-details-ret{margin-top:37px;padding:10px 8px;background:#eee;float:left}
 @media screen and (max-width: 768px) {
 .project-details-ret{margin:24px 23px 0 0;padding:10px 4px;float:right}
 }
 .link-prompt{background:#eee;padding:5px 16px;text-align:right;clear:both;margin:15px 20px 10px 0;float:right}
+.tags-list{margin:.3em 0}
 #my-photo{float:right;margin:3px 2px 10px 25px}
 #my-photo img{border:1px solid #ccc;padding:3px;margin:0 auto}
 @media screen and (max-width: 768px) {
@@ -196,22 +201,28 @@ input.error,textarea.error{border:1px solid red}
 textarea.expanding{line-height:18px}
 form div{margin:5px 3px;padding:5px 3px}
 fieldset{border:1px solid #eee;margin-bottom:18px}
-legend{font-weight:400;text-transform:uppercase;padding:2px 5px;margin-left:4px;color:#ccc;border-bottom:0;width:inherit}
+legend{font-weight:400;text-transform:uppercase;font-size:100%;padding:2px 5px;margin-left:4px;color:#ccc;border-bottom:0;width:inherit}
 label{line-height:1.8;vertical-align:top;width:115px;display:inline-block;margin-left:15px}
 label.req{font-weight:700}
 label.error{margin-left:15px;padding:0 7px;width:auto;color:#fff;background:red}
 #send-container{text-align:right}
+#send{border-radius:5px;border:0}
 #feature{float:left;padding-top:10px}
 .truncate{width:165px;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
 .feature-item{display:inline-block;float:left;margin:3px 1px 3px 0;width:180px;padding:4px 3px;border:1px solid #fff;text-align:center;-moz-border-radius:5px;-webkit-border-radius:5px;border-radius:5px}
-.feature-item h4,.feature-item p{text-align:left;text-transform:none}
+.feature-item h4,.feature-item p{text-align:left;text-transform:none;padding-left:3px;padding-right:3px}
 .feature-item:hover{background:#eee;border:1px solid #ccc}
 .feature-item h4 a{text-decoration:none;font-size:88%;border:none;border-top:3px solid #2B3E42;padding-top:8px;margin-top:11px;display:block}
 .feature-item span{font-size:90%;font-family:arial,verdana,sans-serif}
 .feature-item p{font-size:90%}
-.feature-item img{border:1px solid #ccc;padding:2px;margin:0 auto 5px}
+.feature-item img{border:1px solid #ccc;padding:2px;margin:0 auto 5px;width:170px}
 .feature-item img:hover{border:1px solid #fff}
 .feature-divider{background:#2B3E42}
+@media screen and (max-width: 768px) {
+.feature-item{width:170px;margin:3px 1px 3px 0}
+.feature-item img{width:160px}
+.truncate{width:155px}
+}
 #dev-preview{margin-top:11px;clear:both}
 h3.headline{background:#F17022;color:#fff;float:left;clear:both;font-size:119%;padding:4px 9px}
 #soc-intro{clear:both;margin:18px 0 30px}
@@ -239,13 +250,17 @@ h3.headline{background:#F17022;color:#fff;float:left;clear:both;font-size:119%;p
 .submit{padding:.3em 1em;background:#F17022;color:#fff}
 ::-moz-selection{background-color:#F2583E;color:#fff}
 ::selection{background-color:#F2583E;color:#fff}
-.item{width:141px;height:141px;display:inline-block;overflow:hidden;border-radius:5px;color:#fff;font-size:12px;padding-right:2px}
+.item{width:142px;height:142px;display:inline-block;overflow:hidden;border-radius:5px;color:#fff;font-size:12px;padding-right:2px}
 .item.w2{width:292px}
 .item.h2{height:292px}
 .featured-photos-container{clear:both}
 .featured-photo{width:142px;height:142px;display:inline-block;overflow:hidden;border-radius:5px}
 .featured-photo.w2{width:292px}
 .featured-photo.h2{height:292px}
+@media screen and (max-width: 768px) {
+.item.w1,.item.w2,.featured-photo.w1,.featured-photo.w2{width:310px}
+.item.h1,.item.h2,.featured-photo.h1,.featured-photo.h2{height:310px}
+}
 .ias-spinner,.ias-noneleft{position:absolute;bottom:-40px;width:100%;text-align:center;margin:0 auto}
 .ias-spinner img{text-align:center;margin:0 auto}
 #pagination{display:none}

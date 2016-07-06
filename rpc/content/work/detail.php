@@ -108,7 +108,6 @@ $params_str = http_build_query($params);
 <div id="main-2" class="col-xs-12 col-sm-12 col-md-9">
     <?php if (!empty($media_files)): ?>
     <div id="project-images">
-
         <?php
 
         foreach ($media_files as $file)

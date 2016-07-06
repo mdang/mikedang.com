@@ -208,7 +208,7 @@ $params_str = http_build_query($params);
     <h2><?php echo $main_title ?></h2>
 </div>
 
-<div class="container-fluid bg-3">
+<div>
 <div id="main" class="col-xs-12 col-sm-12 col-md-9">
 
 <div id="project-list">
@@ -329,7 +329,7 @@ $params_str = http_build_query($params);
 
     <?php endif; ?>
 
-    <div class="top-link"><a href="#top">back to top</a></div>
+    <div class="top-link"><a href="#top-nav">back to top</a></div>
 
     <?php else: ?>
 

@@ -22,7 +22,7 @@ h1 {
 }
 h2 {
   margin: .4em 0 20px 0;
-  font: 3.2em/1em Plantin, "Plantin std", "Plantin", "Baskerville", Georgia, "Times New Roman", serif;
+  font: 2.6em/1em Plantin, "Plantin std", "Plantin", "Baskerville", Georgia, "Times New Roman", serif;
   float: left;
 }
 h3 {
@@ -30,6 +30,7 @@ h3 {
   font-weight: normal;
   letter-spacing: .03em;
   margin-right: 10px;
+	margin-top: 6px;
 }
 h4 {
   font-size: 1.0em;
@@ -41,7 +42,7 @@ h5 {
 }
 h3, h4, h5 {
   margin-bottom: 0.3em;
-  line-height: 1.6em;
+  line-height: 1.5em;
   clear: both;
 }
 .row {
@@ -69,7 +70,8 @@ h2 span {
   color: #ababab;
 }
 p {
-  font-size: 1.12em;
+  /*font-size: 1.12em;*/
+	font-size: 1.2em;
   line-height: 1.7em;
   margin-top: 0;
   padding-bottom: .9em;
@@ -298,13 +300,13 @@ ul#tabnav li#tab-cta a:hover {
   color: #000;
 }
 #content {
-  margin: 4px 0 4px 10px;
+  margin: 4px 30px 4px;
   padding: 6px 0 6px 3px;
   clear: both;
 }
 @media screen and (max-width: 768px) {
 	#content {
-	  margin: 4px 0 4px 4px;
+	  margin: 4px 12px 4px;
 	}
 }
 .img-responsive {
@@ -467,7 +469,7 @@ a:hover.button span {
 }
 #title {
   clear: both;
-  padding: 0 3px 20px;
+  padding: 0 0 15px;
 }
 #sidebar, #sidebar-2 {
   float: left;
@@ -521,7 +523,7 @@ a:hover.button span {
 }
 .subcontent {
   padding: 8px 30px 8px 10px;
-  padding: 10px;
+  /*padding: 2px;*/
   clear: both;
 }
 .subcontent ul li {
@@ -541,7 +543,10 @@ a:hover.button span {
 }
 #project-list-nav a, #client-list-nav a {
   /*font-family: "Lucida Grande", "Lucida Sans Unicode", Verdana, sans-serif;*/
-  font-size: 85%;
+  font-size: 96%;
+}
+#client-list-nav {
+	line-height: 1.6em;
 }
 #project-images {
   margin-top: 20px;
@@ -594,7 +599,7 @@ a:hover.button span {
   left: 8px;
 }
 .project-col p {
-  font-size: 95%;
+  font-size: 105%;
 }
 .submodule p {
   font-size: 95%;
@@ -606,7 +611,7 @@ a:hover.button span {
   font-family: helvetica, arial, sans-serif;
 }
 .project-col h3 {
-  font-size: 1.1em;
+  font-size: 1.3em;
 }
 .project-col h3 a {
   border-bottom: none;
@@ -623,6 +628,12 @@ a:hover.button span {
 #pager-summary {
   padding: 4px;
   text-align: right;
+}
+@media screen and (max-width: 768px) {
+	#pager-summary {
+	  padding: 4px 4px 4px 0;
+	  text-align: left;
+	}
 }
 #pager-summary span {
   font-weight: bold;
@@ -694,7 +705,8 @@ a:hover.button span {
   margin: 2px 0 3px;
 }
 #project-details {
-  padding: 20px 12px;
+  padding: 20px 20px 0 0;
+	font-size: 1.18em;
 }
 .project-details-ret {
   margin-top: 37px;
@@ -716,6 +728,9 @@ a:hover.button span {
   clear: both;
   margin: 15px 20px 10px 0;
   float: right;
+}
+.tags-list {
+	margin: .3em 0;
 }
 #my-photo {
   float: right;
@@ -861,6 +876,9 @@ span> div#loader2 {
   font-family: Lucidabright, "Lucida Serif", Lucida, "DejaVu Serif", "Bitstream Vera Serif", "Liberation Serif", Georgia, serif;
   display: none;
 }
+@media screen and (max-width: 768px) {
+
+}
 img.rss {
   padding-top: 4px;
 }
@@ -972,6 +990,7 @@ fieldset {
 legend {
   font-weight: normal;
   text-transform: uppercase;
+	font-size: 100%;
   padding: 2px 5px;
   margin-left: 4px;
   color: #ccc;
@@ -997,6 +1016,10 @@ label.error {
 }
 #send-container {
 	text-align: right;
+}
+#send {
+	border-radius: 5px;
+	border: 0;
 }
 
 /* home css */
@@ -1027,6 +1050,8 @@ label.error {
 .feature-item h4, .feature-item p {
   text-align: left;
   text-transform: none;
+	padding-left: 3px;
+	padding-right: 3px;
 }
 .feature-item:hover {
   background: #eee;
@@ -1052,12 +1077,25 @@ label.error {
   border: 1px solid #ccc;
   padding: 2px;
   margin: 0 auto 5px;
+	width: 170px;
 }
 .feature-item img:hover {
   border: 1px solid #fff;
 }
 .feature-divider {
   background: #2B3E42;
+}
+@media screen and (max-width: 768px) {
+	.feature-item {
+	  width: 170px;
+		margin: 3px 1px 3px 0;
+	}
+	.feature-item img {
+		width: 160px;
+	}
+	.truncate {
+	  width: 155px;
+	}
 }
 #dev-preview {
   margin-top: 11px;
@@ -1173,8 +1211,8 @@ h3.headline {
   color: #fff;
 }
 .item {
-  width: 141px;
-  height: 141px;
+  width: 142px;
+  height: 142px;
   display: inline-block;
   overflow: hidden;
   /*margin: 0 5px 5px 0;
@@ -1207,6 +1245,15 @@ h3.headline {
 .featured-photo.h2 {
   height: 292px;
 }
+@media screen and (max-width: 768px) {
+	.item.w1, .item.w2, .featured-photo.w1, .featured-photo.w2 {
+	  width: 310px;
+	}
+	.item.h1, .item.h2, .featured-photo.h1, .featured-photo.h2 {
+	  height: 310px;
+	}
+}
+
 .ias-spinner, .ias-noneleft {
   position: absolute;
   bottom: -40px;

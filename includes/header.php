@@ -48,11 +48,11 @@ var reloader=document.location.hash.substr(1);if(reloader){if(reloader.charAt(0)
     </div>
     <div class="collapse navbar-collapse" id="fullnav">
 			<ul class="nav navbar-nav navbar-right">
-				<li class="active"><a class="ajax nav-link" href="/">Home</a></li>
-				<li><a class="ajax nav-link" href="/work/">Development</a></li>
-				<li><a class="ajax nav-link" href="/photos">Photos</a></li>
-				<li><a class="ajax nav-link" href="/about/">About</a></li>
-				<li><a class="ajax nav-link" href="/contact/">Contact</a></li>
+				<li class="<?php echo ($tab == 'tab1') ? 'active' : '' ?>"><a class="ajax nav-link" href="/">Home</a></li>
+				<li class="<?php echo ($tab == 'tab2') ? 'active' : '' ?>"><a class="ajax nav-link" href="/work/">Development</a></li>
+				<li class="<?php echo ($tab == 'tab3') ? 'active' : '' ?>"><a class="ajax nav-link" href="/photos">Photos</a></li>
+				<li class="<?php echo ($tab == 'tab4') ? 'active' : '' ?>"><a class="ajax nav-link" href="/about/">About</a></li>
+				<li class="<?php echo ($tab == 'tab5') ? 'active' : '' ?>"><a class="ajax nav-link" href="/contact/">Contact</a></li>
 			</ul>
     </div>
   </div>

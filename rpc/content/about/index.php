@@ -12,7 +12,6 @@ $tab = 'tab4';
     <h2>A glimpse into my world</h2>
 </div>
 
-<div class="container-fluid bg-3">
 <div id="main" class="col-xs-12 col-sm-12 col-md-9">
 
   <div id="my-photo">
@@ -110,7 +109,6 @@ $tab = 'tab4';
 
 </div>
 
-</div>
 
 <script type="text/javascript">
 
