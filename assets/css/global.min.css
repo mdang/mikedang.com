@@ -3,7 +3,7 @@ body{background:#f9f9f9;text-align:center;font:1.5em/1.9em Georgia,serif;color:#
 img{display:block}
 h1{padding:0;margin:0}
 h2{margin:.4em 0 20px;font:2.6em/1em Plantin,"Plantin std",Plantin,Baskerville,Georgia,"Times New Roman",serif;float:left}
-h3{font-size:1.7em;font-weight:400;letter-spacing:.03em;margin-right:10px;margin-top:6px}
+h3{font-size:1.4em;font-weight:400;letter-spacing:.03em;margin-right:10px;margin-top:6px}
 h4{font-size:1em;text-transform:lowercase;font-weight:700}
 h5{font-size:1.4em}
 h3,h4,h5{margin-bottom:.3em;line-height:1.5em;clear:both}
@@ -94,7 +94,7 @@ a:hover.button span{text-decoration:underline}
 #title{clear:both;padding:0 0 15px}
 #sidebar,#sidebar-2{float:left;padding:3px 3px 0}
 #map{width:230px;height:230px}
-.submodule{padding-bottom:10px;background:#f8f8f8;font-family:arial,helvetica,sans-serif}
+.submodule{padding-bottom:6px;background:#f8f8f8;font-family:arial,helvetica,sans-serif}
 .theme3 .submodule{background:none}
 .submodule h4{border-top:0;border-bottom:1px solid #fff;padding:3px 10px;background:#eee;color:#888;clear:both;letter-spacing:.05em}
 .theme3 .submodule h4{background:#F17022;color:#fff;float:left}
@@ -148,7 +148,8 @@ a:hover.button span{text-decoration:underline}
 #project-details{padding:20px 20px 0 0;font-size:1.18em}
 .project-details-ret{margin-top:37px;padding:10px 8px;background:#eee;float:left}
 @media screen and (max-width: 768px) {
-.project-details-ret{margin:24px 23px 0 0;padding:10px 4px;float:right}
+#project-details{padding:10px 0 0}
+.project-details-ret{margin:24px 0 0;padding:10px 8px;float:right}
 }
 .link-prompt{background:#eee;padding:5px 16px;text-align:right;clear:both;margin:15px 20px 10px 0;float:right}
 .tags-list{margin:.3em 0}

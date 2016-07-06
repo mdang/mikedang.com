@@ -26,7 +26,7 @@ h2 {
   float: left;
 }
 h3 {
-  font-size: 1.7em;
+  font-size: 1.4em;
   font-weight: normal;
   letter-spacing: .03em;
   margin-right: 10px;
@@ -485,7 +485,7 @@ a:hover.button span {
   height: 230px;
 }
 .submodule {
-  padding-bottom: 10px;
+  padding-bottom: 6px;
   background: #f8f8f8;
   font-family: arial, helvetica, sans-serif;
 }
@@ -715,9 +715,12 @@ a:hover.button span {
   float: left;
 }
 @media screen and (max-width: 768px) {
+	#project-details {
+	  padding: 10px 0 0 0;
+	}
 	.project-details-ret {
-		margin: 24px 23px 0 0;
-	  padding: 10px 4px 10px;
+		margin: 24px 0 0 0;
+	  padding: 10px 8px 10px;
 	  float: right;
 	}
 }
