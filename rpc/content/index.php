@@ -73,7 +73,7 @@ $debug[] = Zend_Debug::dump($featured_photos, 'Featured Photos', 0);
 
           if ($client_nm)
           {
-              $client_str = '<p><a class="ajax" href="/work/?client='. $client_id .'">'. $client_nm .'</a></p>';
+              $client_str = '<p><i class="fa fa-user" aria-hidden="true"></i> <a class="ajax" href="/work/?client='. $client_id .'">'. $client_nm .'</a></p>';
           }
 
           echo PHP_EOL;

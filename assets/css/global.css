@@ -496,7 +496,7 @@ a:hover.button span {
 .submodule {
   padding-bottom: 6px;
   background: #f8f8f8;
-  font-family: arial, helvetica, sans-serif;
+  /*font-family: arial, helvetica, sans-serif;*/
 }
 .theme3 .submodule {
   background: none;
@@ -745,13 +745,24 @@ a:hover.button span {
   float: right;
 }
 .tags-list {
-	margin: .3em 0;
+	margin: .3em 0 .6em;
 }
 .fa-tags {
 	padding-right: 3px;
 }
 .fa-user {
 	padding-right: 9px;
+}
+.feature-set .fa-user {
+	padding-right: 3px;
+}
+@media screen and (max-width: 768px) {
+	.fa-tags {
+		display: none;
+	}
+	.fa-user {
+		display: none;
+	}
 }
 #my-photo {
   float: right;
