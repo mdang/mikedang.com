@@ -98,7 +98,7 @@ $params_str = http_build_query($params);
     -->
     <?php endif; ?>
 </div>
-<div class="details-ret">
+<div class="details-ret details-ret-first">
   <a class="ajax" href="/work/?<?php echo $params_str ?>">go back to project results</a>
 </div>
 

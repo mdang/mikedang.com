@@ -436,6 +436,11 @@ a:hover.button span {
 .details-ret a.active_link {
   border-bottom: 2px solid #F17022;
 }
+@media screen and (max-width: 768px) {
+	.details-ret-first {
+	  display: none;
+	}
+}
 .client-meta {
   border-top: 1px solid #ccc;
   border-bottom: 1px solid #ccc;
@@ -547,7 +552,7 @@ a:hover.button span {
   margin-top: 7px;
 }
 .subcontent {
-  padding: 8px 30px 8px 10px;
+  padding: 8px;
   /*padding: 2px;*/
   clear: both;
 }
@@ -577,7 +582,7 @@ a:hover.button span {
 	line-height: 1.7em;
 }
 #project-images {
-  margin-top: 20px;
+
 }
 .project-image {
   display: inline-block;
@@ -701,7 +706,7 @@ a:hover.button span {
 }
 .project-related {
   margin: 0 0 7px;
-  padding: 4px;
+  padding-bottom: 4px;
   /*text-align: center;*/
 }
 #project-views {
@@ -830,9 +835,10 @@ html #footersubnav .fb_share_button {
 .marker {
   border: 2px solid #fff;
   background: #ff9900;
+	text-align: center;
   padding: 2px;
   margin: 0 6px 0 0;
-  /*width: 20px;*/
+  min-width: 26px;
   float: left;
   text-align: center;
   color: #fff;
