@@ -81,14 +81,14 @@ $tab = 'tab4';
         <h3 class="headline">Current Work</h3>
         <div class="subcontent">
             <a href="https://generalassemb.ly" target="_new"><img class="img-responsive" src="<?php echo STATIC_ROOT ?>/i/generalassembly-logo.jpg" srcset="<?php echo STATIC_ROOT ?>/i/generalassembly-logo.jpg 1x, <?php echo STATIC_ROOT ?>/i/generalassembly-logo.jpg 2x" width="171" alt="General Assembly" /></a>
-            Web Development Instructor
+            <a href="https://generalassemb.ly/education/web-development-immersive" target="_new">Web Development Instructor</a>
         </div>
     </div>
 
     <div class="submodule clearfix">
         <h3 class="headline">Education</h3>
         <div class="subcontent">
-            <a href="http://www.utexas.edu/" target="_new"><img class="img-responsive" src="<?php echo STATIC_ROOT ?>/i/longhorn-logo.png" srcset="<?php echo STATIC_ROOT ?>/i/longhorn-logo.png 1x, <?php echo STATIC_ROOT ?>/i/longhorn-logo.png 2x" width="171" alt="UT Longhorns" /></a>
+            <a href="http://www.utexas.edu/" target="_new"><img class="img-responsive longhorn-logo" src="<?php echo STATIC_ROOT ?>/i/longhorn-logo.png" srcset="<?php echo STATIC_ROOT ?>/i/longhorn-logo.png 1x, <?php echo STATIC_ROOT ?>/i/longhorn-logo.png 2x" width="171" alt="UT Longhorns" /></a>
             <a href="http://www.utexas.edu/" target="_new">University of Texas</a> @ Austin
         </div>
 
@@ -98,11 +98,12 @@ $tab = 'tab4';
         <h3 class="headline">Current Addictions</h3>
         <div class="subcontent">
             <ul>
-                <li>Good music</li>
-                <li>Facebook</li>
-                <li>StarCraft II</li>
-                <li>Modern Family</li>
-                <li>Coffee shops</li>
+                <li><div class="submodule-icon"><i class="fa fa-spotify" aria-hidden="true"></i></div> Good music</li>
+                <li><div class="submodule-icon"><i class="fa fa-camera-retro" aria-hidden="true"></i></div> Photography</li>
+                <li><div class="submodule-icon"><i class="fa fa-coffee" aria-hidden="true"></i></div> Coffee shops</li>
+                <li><div class="submodule-icon"><i class="fa fa-facebook" aria-hidden="true"></i></div> Facebook</li>
+                <li><div class="submodule-icon"><i class="fa fa-tv" aria-hidden="true"></i></div> Game of Thrones</li>
+                <li><div class="submodule-icon"><i class="fa fa-tv" aria-hidden="true"></i></div> Silicon Valley</li>
             </ul>
         </div>
     </div>

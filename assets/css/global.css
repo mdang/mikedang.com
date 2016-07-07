@@ -496,7 +496,13 @@ a:hover.button span {
 .submodule {
   padding-bottom: 6px;
   background: #f8f8f8;
+	line-height: 1.6em;
   /*font-family: arial, helvetica, sans-serif;*/
+}
+.submodule-icon {
+	float: left;
+	width: 30px;
+	text-align: center;
 }
 .theme3 .submodule {
   background: none;
@@ -1206,6 +1212,10 @@ h3.headline {
 }
 .soc-logo img {
   border: 0;
+}
+img.longhorn-logo {
+	padding: 7px 10px 5px;
+	background: #fff;
 }
 .theme1 .soc-1 {
   background: #3b5998;
