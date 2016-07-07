@@ -558,7 +558,7 @@ a:hover.button span {
   font-size: 96%;
 }
 #client-list-nav {
-	line-height: 1.6em;
+	line-height: 1.7em;
 }
 #project-images {
   margin-top: 20px;
@@ -638,7 +638,7 @@ a:hover.button span {
   text-align: right;
 }
 #pager-summary {
-  padding: 4px;
+  padding: 0 0 4px;
   text-align: right;
 }
 @media screen and (max-width: 768px) {
@@ -746,6 +746,12 @@ a:hover.button span {
 }
 .tags-list {
 	margin: .3em 0;
+}
+.fa-tags {
+	padding-right: 3px;
+}
+.fa-user {
+	padding-right: 9px;
 }
 #my-photo {
   float: right;

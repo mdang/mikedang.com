@@ -270,7 +270,7 @@ $params_str = http_build_query($params);
 
             if ($result['client_id'])
             {
-                echo '<!--<span>Client:</span> --><a class="ajax" href="/work/?client='. $result['client_id'] .'">'. $result['client_nm'] .'</a>';
+                echo '<i class="fa fa-user" aria-hidden="true"></i> <a class="ajax" href="/work/?client='. $result['client_id'] .'">'. $result['client_nm'] .'</a>';
             }
 
             ?>
@@ -279,7 +279,7 @@ $params_str = http_build_query($params);
 
             $app_id = $result['app_id'];
 
-            echo '<div class="tags-list">';
+            echo '<div class="tags-list"><i class="fa fa-tags" aria-hidden="true"></i> ' ;
             if (isset($app_tags[$app_id]))
             {
                 $tag_str = '';

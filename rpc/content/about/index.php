@@ -81,7 +81,7 @@ $tab = 'tab4';
         <h3 class="headline">Current Work</h3>
         <div class="subcontent">
             <a href="https://generalassemb.ly" target="_new"><img class="img-responsive" src="<?php echo STATIC_ROOT ?>/i/generalassembly-logo.jpg" srcset="<?php echo STATIC_ROOT ?>/i/generalassembly-logo.jpg 1x, <?php echo STATIC_ROOT ?>/i/generalassembly-logo.jpg 2x" width="171" alt="General Assembly" /></a>
-            Web Development Instructor @ <a href="https://generalassemb.ly" target="_new">General Assembly</a>
+            Web Development Instructor
         </div>
     </div>
 
