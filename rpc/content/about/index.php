@@ -41,35 +41,20 @@ $tab = 'tab4';
   <p>I developed this site from the ground up a few years ago and have been revising and improving on it whenever I can find spare time. My tasks included everything from the design, development, to database administration of it. Below are some highlights of what's hidden beneath the surface. </p>
 
   <ul class="list">
-  	<li><a href="http://php.net/" target="_new">PHP 5</a> / <a href="http://framework.zend.com/" target="_new">Zend Framework</a></li>
-
-      <li><a href="http://www.mysql.com/" target="_new">MySQL 5</a></li>
-
-      <li><a href="http://jquery.com/" target="_new">jQuery</a></li>
-
-      <li><a href="http://www.learnwebdesignonline.com/roadmap/css/benefits-tableless-layout" target="_new">CSS layout</a></li>
-
-      <li>Cross browser compatibility across the major web browsers - IE7+, Firefox, Safari, Chrome</li>
-
-      <li><a href="http://developers.facebook.com/docs/reference/api/" target="_new">Facebook Graph API</a> integration</li>
-
-      <li><a href="https://dev.twitter.com/docs" target="_new">Twitter Search API</a> integration</li>
-
-      <li><a href="http://www.flickr.com/services/api/" target="_new">Flickr API</a> integration</li>
-
-      <li><a href="http://httpd.apache.org/docs/1.3/mod/mod_rewrite.html" target="_new">Mod-rewrite</a> for friendlier URL's and ensuring future compatibility</li>
-
-      <li>Tracking ROI with <a href="http://www.google.com/analytics/" target="_new">Google Analytics</a></li>
-
-  	  <li><a href="http://subversion.apache.org/" target="_new">Subversion</a> for version control</li>
-
-      <li>Developed to be search engine friendly despite the use of AJAX throughout. Search engine spiders will have no difficulty crawling the site because it was built in a way so that a user can still navigate through the site even with JavaScript disabled.</li>
-
-      <li>Code was structured in a way to maximize performance in regards to response times. For example, CSS and JavaScript files were minified and consolidated to decrease the number of HTTP requests made and to allow for faster download times.</li>
-
-  	<li><a href="https://developers.google.com/speed/pagespeed/insights/?url=www.mikedang.com" target="_new">Google PageSpeed</a> and <a href="http://developer.yahoo.com/yslow/" target="_new">YSlow</a> for performance optimizations</li>
-
-  	<li><a href="http://www.pingdom.com/" target="_new">Pingdom</a> for uptime monitoring</li>
+  	<li><a href="http://php.net/" target="_new">PHP</a> / <a href="http://framework.zend.com/" target="_new">Zend Framework</a></li>
+    <li><a href="http://www.mysql.com/" target="_new">MySQL</a></li>
+    <li><a href="http://www.learnwebdesignonline.com/roadmap/css/benefits-tableless-layout" target="_new">Responsive Layout</a></li>
+    <li><a href="http://getbootstrap.com/" target="_new">Bootstrap Framework</a></li>
+    <li><a href="http://jquery.com/" target="_new">jQuery</a></li>
+    <li>Developed to be search engine friendly despite the use of AJAX throughout. Search engine spiders will have no difficulty crawling the site because it was built in a way so that a user can still navigate through the site even with JavaScript disabled.</li>
+    <li>Cross browser compatibility across the major web browsers - Chrome, Safari, IE9+, Firefox</li>
+    <li><a href="https://github.com/500px/api-documentation" target="_new">500px API</a></li>
+    <li><a href="http://httpd.apache.org/docs/1.3/mod/mod_rewrite.html" target="_new">Mod-rewrite</a> for friendlier URL's and ensuring future compatibility</li>
+    <li>Tracking ROI with <a href="http://www.google.com/analytics/" target="_new">Google Analytics</a></li>
+    <li><a href="https://git-scm.com/" target="_new">Git</a> + <a href="https://github.com/" target="_new">GitHub</a> for version control</li>
+    <li>Code was structured in a way to maximize performance in regards to response times. For example, CSS and JavaScript files were minified and consolidated to decrease the number of HTTP requests made and to allow for faster download times.</li>
+    <li><a href="https://developers.google.com/speed/pagespeed/insights/?url=www.mikedang.com" target="_new">Google PageSpeed</a> and <a href="http://developer.yahoo.com/yslow/" target="_new">YSlow</a> for performance optimizations</li>
+    <li><a href="http://www.pingdom.com/" target="_new">Pingdom</a> for uptime monitoring</li>
   </ul>
 
   <div class="top-link"><a href="#top-nav">back to top</a></div>
