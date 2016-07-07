@@ -12,7 +12,7 @@ $tab = 'tab4';
     <h2>A glimpse into my world</h2>
 </div>
 
-<div id="main" class="col-xs-12 col-sm-12 col-md-9">
+<div id="main" class="about-container col-xs-12 col-sm-12 col-md-9">
 
   <div id="my-photo">
       <img src="<?php echo STATIC_ROOT ?>/i/me.png" alt="Me" />

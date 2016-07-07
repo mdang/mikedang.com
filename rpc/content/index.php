@@ -37,7 +37,7 @@ $debug[] = Zend_Debug::dump($featured_photos, 'Featured Photos', 0);
 </div>
 
 <div id="all">
-<h3 class="headline"><i class="fa fa-code" aria-hidden="true"></i> I help some of the world's most recognizable brands market on the web</h3>
+<h3 class="headline">I help some of the world's most recognizable brands market on the web <i class="fa fa-code" aria-hidden="true"></i></h3>
 
 <div id="dev-preview">
 	<div id="feature" class="clearfix">
@@ -98,7 +98,7 @@ FEATURE;
 </div>
 </div>
 
-<h3 class="headline"><i class="fa fa-camera-retro" aria-hidden="true"></i> I also dabble in photography </h3>
+<h3 class="headline">I also dabble in photography <i class="fa fa-camera-retro" aria-hidden="true"></i></h3>
 
 <div class="container-fluid bg-3 featured-photos-container">
   <div class="featured-photos" style="display: none">

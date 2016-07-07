@@ -315,7 +315,7 @@ ul#tabnav li#tab-cta a:hover {
 }
 @media screen and (max-width: 768px) {
 	#content {
-	  margin: 4px 22px 4px;
+	  margin: 4px 18px 4px;
 	}
 }
 .img-responsive {
@@ -493,6 +493,10 @@ a:hover.button span {
 	  float: left;
 	  clear: both;
 	}
+}
+.about-container {
+	padding-left: 22px;
+	padding-right: 22px;
 }
 #title {
   clear: both;
