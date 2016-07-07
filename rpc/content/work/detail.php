@@ -97,10 +97,9 @@ $params_str = http_build_query($params);
     </div>
     -->
     <?php endif; ?>
-
-	<div id="details-ret">
-      <a class="ajax" href="/work/?<?php echo $params_str ?>">go back to project results</a>
-    </div>
+</div>
+<div class="details-ret">
+  <a class="ajax" href="/work/?<?php echo $params_str ?>">go back to project results</a>
 </div>
 
 <div class="container-fluid bg-3">
@@ -138,22 +137,22 @@ $params_str = http_build_query($params);
           <p><?php echo nl2br($app_desc); ?></p>
         <?php endif; ?>
 
-        <div class="project-details-ret"><a class="ajax" href="/work/?<?php echo $params_str ?>">go back to project results</a></div>
+        <!-- <div class="project-details-ret"><a class="ajax" href="/work/?<?php echo $params_str ?>">go back to project results</a></div> -->
     </div>
 
 </div>
 
-<div id="sidebar-2" class="col-xs-12 col-sm-12 col-md-2">
+<div id="sidebar-2" class="col-xs-12 col-sm-12 col-md-3">
     <?php if ($client_nm or $url): ?>
     <div class="submodule clearfix">
-        <h3 class="headline">General Info</h3>
+        <h3 class="headline">Client</h3>
 
         <div class="subcontent">
             <?php if ($client_nm): ?>
               <i class="fa fa-user" aria-hidden="true"></i> <a class="ajax" href="/work/?client=<?php echo $client_id ?>"><?php echo $client_nm ?></a><br />
             <?php endif; ?>
             <?php if ($url): ?>
-              <i class="fa fa-external-link" aria-hidden="true"></i> <a href="<?php echo $full_url ?>" target="_new">Website</a>
+              <i class="fa fa-external-link" aria-hidden="true"></i> <a href="<?php echo $full_url ?>" target="_new">website</a>
             <?php endif; ?>
         </div>
     </div>
@@ -235,6 +234,10 @@ $params_str = http_build_query($params);
     <?php endif; ?>
 </div>
 
+</div>
+
+<div class="details-ret">
+  <a class="ajax" href="/work/?<?php echo $params_str ?>">go back to project results</a>
 </div>
 
 <script type="text/javascript">

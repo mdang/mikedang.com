@@ -20,7 +20,7 @@ $photo_options = array(
   'gallery' => _500PX_GALLERY_NAME,
   'rpp' => _500PX_RECORDS_PER_PAGE,
   'rpp' => 20,
-  'sort' => '_score',
+  'sort' => 'rating',
   'image_size[0]' => 3,
   'image_size[1]' => 600
   );
@@ -37,7 +37,7 @@ $debug[] = Zend_Debug::dump($featured_photos, 'Featured Photos', 0);
 </div>
 
 <div id="all">
-<h3 class="headline">I help some of the world's most recognizable brands market on the web</h3>
+<h3 class="headline"><i class="fa fa-code" aria-hidden="true"></i> I help some of the world's most recognizable brands market on the web</h3>
 
 <div id="dev-preview">
 	<div id="feature" class="clearfix">
@@ -73,7 +73,7 @@ $debug[] = Zend_Debug::dump($featured_photos, 'Featured Photos', 0);
 
           if ($client_nm)
           {
-              $client_str = '<p><i class="fa fa-user" aria-hidden="true"></i> <a class="ajax" href="/work/?client='. $client_id .'">'. $client_nm .'</a></p>';
+              $client_str = '<p><!--<i class="fa fa-user" aria-hidden="true"></i> --><a class="ajax" href="/work/?client='. $client_id .'">'. $client_nm .'</a></p>';
           }
 
           echo PHP_EOL;
@@ -98,7 +98,7 @@ FEATURE;
 </div>
 </div>
 
-<h3 class="headline">I also dabble in photography</h3>
+<h3 class="headline"><i class="fa fa-camera-retro" aria-hidden="true"></i> I also dabble in photography </h3>
 
 <div class="container-fluid bg-3 featured-photos-container">
   <div class="featured-photos" style="display: none">

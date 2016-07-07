@@ -340,7 +340,7 @@ $params_str = http_build_query($params);
 </div>
 </div>
 
-<div id="sidebar" class="col-xs-12 col-sm-12 col-md-2">
+<div id="sidebar" class="col-xs-12 col-sm-12 col-md-3">
     <?php /*
     <div class="submodule clearfix">
         <h4>At a Glance</h4>

@@ -424,16 +424,16 @@ a:hover.button span {
   margin-right: 25px;
   padding-right: 4px;
 }
-#details-ret {
+.details-ret {
   float: right;
-  margin: 24px 23px 0 0;
+  margin: 0 23px 0 0;
   padding: 10px 4px 10px;
   background: #eee;
 }
-#details-ret a {
+.details-ret a {
   margin: 0 4px 0;
 }
-#details-ret a.active_link {
+.details-ret a.active_link {
   border-bottom: 2px solid #F17022;
 }
 .client-meta {
@@ -462,16 +462,22 @@ a:hover.button span {
 #all {
   clear: both;
 }
+@media screen and (min-width: 768px) {
+	#tab3 #all {
+		padding: 0;
+		margin: 0;
+	}
+}
 #main {
-  margin: 0 34px 0 0;
-  padding: 0 12px 4px 2px;
+  /*margin: 0 34px 0 0;*/
+  padding: 0 4em 24px 2px;
   /*width: 715px;*/
   float: left;
   clear: both;
 }
 #main-2 {
-  margin: 0 34px 0 0;
-  padding: 0 12px 4px 2px;
+  /*margin: 0 34px 0 0;*/
+  padding: 0 2em 24px 2px;
   /*width: 627px;*/
   float: left;
   clear: both;
@@ -507,8 +513,9 @@ a:hover.button span {
 .theme3 .submodule {
   background: none;
 }
-.submodule h3 {
+.submodule h3.headline {
 	text-transform: lowercase;
+	font-size: 110%;
 }
 .submodule h4 {
   border-top: 0;
@@ -517,7 +524,7 @@ a:hover.button span {
   background: #eee;
   color: #888;
   clear: both;
-  letter-spacing: .05em;
+  /*letter-spacing: .05em;*/
 }
 .theme3 .submodule h4 {
   background: #F17022;
@@ -531,7 +538,7 @@ a:hover.button span {
   padding-top: 0;
   text-decoration: none;
   border-bottom: 0;
-  letter-spacing: normal;
+  /*letter-spacing: normal;*/
 }
 .submodule h4 a:hover {
   text-decoration: underline;
@@ -554,6 +561,9 @@ a:hover.button span {
 .subcontent span {
   font-weight: bold;
   color: #777;
+}
+.subcontent img {
+	max-width: 225px;
 }
 #project-list {
   float: left;
@@ -727,6 +737,7 @@ a:hover.button span {
 }
 #project-details p {
   font-size: 1.18em;
+	padding-bottom: 0;
 }
 .project-details-ret {
   margin-top: 37px;
@@ -1098,7 +1109,7 @@ label.error {
 .feature-item {
   display: inline-block;
   float: left;
-  margin: 3px 1px 3px 3px;
+  margin: 3px 5px 3px 0;
   width: 180px;
   padding: 4px 3px;
   border: 1px solid #fff;
@@ -1132,7 +1143,7 @@ label.error {
 }
 .feature-item p {
   font-size: 90%;
-	padding-bottom: .3em;
+	padding-bottom: .1em;
 }
 .feature-item img {
   border: 1px solid #ccc;
@@ -1264,7 +1275,7 @@ img.longhorn-logo {
 }
 .submit {
   padding: .3em 1em;
-  background: #F17022;
+  background: #77BED2;
   color: #fff;
 }
 ::-moz-selection {
@@ -1296,6 +1307,12 @@ img.longhorn-logo {
 .item.w1 {}
 .featured-photos-container {
 	clear: both;
+}
+@media screen and (min-width: 768px) {
+	.featured-photos-container {
+		margin: 0;
+		padding: 0;
+	}
 }
 .featured-photo {
   width: 142px;

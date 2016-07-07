@@ -61,13 +61,13 @@ $tab = 'tab4';
 
       <li>Tracking ROI with <a href="http://www.google.com/analytics/" target="_new">Google Analytics</a></li>
 
-  	<li><a href="http://subversion.apache.org/" target="_new">Subversion</a> for version control</li>
+  	  <li><a href="http://subversion.apache.org/" target="_new">Subversion</a> for version control</li>
 
       <li>Developed to be search engine friendly despite the use of AJAX throughout. Search engine spiders will have no difficulty crawling the site because it was built in a way so that a user can still navigate through the site even with JavaScript disabled.</li>
 
       <li>Code was structured in a way to maximize performance in regards to response times. For example, CSS and JavaScript files were minified and consolidated to decrease the number of HTTP requests made and to allow for faster download times.</li>
 
-  	<li><a href="http://developer.yahoo.com/yslow/" target="_new">YSlow</a> and <a href="http://pagespeed.googlelabs.com" target="_new">Google Page Speed</a> for performance optimizations</li>
+  	<li><a href="https://developers.google.com/speed/pagespeed/insights/?url=www.mikedang.com" target="_new">Google PageSpeed</a> and <a href="http://developer.yahoo.com/yslow/" target="_new">YSlow</a> for performance optimizations</li>
 
   	<li><a href="http://www.pingdom.com/" target="_new">Pingdom</a> for uptime monitoring</li>
   </ul>
@@ -75,7 +75,7 @@ $tab = 'tab4';
   <div class="top-link"><a href="#top-nav">back to top</a></div>
 </div>
 
-<div id="sidebar" class="col-xs-12 col-sm-12 col-md-2">
+<div id="sidebar" class="col-xs-12 col-sm-12 col-md-3">
 
     <div class="submodule clearfix">
         <h3 class="headline">Current Work</h3>
