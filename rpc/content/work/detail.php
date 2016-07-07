@@ -102,8 +102,6 @@ $params_str = http_build_query($params);
   <a class="ajax" href="/work/?<?php echo $params_str ?>">go back to project results</a>
 </div>
 
-<div class="container-fluid bg-3">
-
 <div id="main-2" class="col-xs-12 col-sm-12 col-md-9">
     <?php if (!empty($media_files)): ?>
     <div id="project-images">
@@ -119,7 +117,7 @@ $params_str = http_build_query($params);
             $file_path_a  = IMG_APP_MEDIA_FILE_PATH . $file_nm;
 
             //  width="625" height="350"
-            echo '<div class="project-image"><img width="300" src="'. $file_path_a .'" srcset="' . $file_path_a .' 1x, ' . $file_path_a .' 2x" alt="'. $file_desc .'" /></div>';
+            echo '<div class="project-image"><img src="'. $file_path_a .'" srcset="' . $file_path_a .' 1x, ' . $file_path_a .' 2x" alt="'. $file_desc .'" /></div>';
         }
 
         ?>
@@ -232,8 +230,6 @@ $params_str = http_build_query($params);
         </div>
     </div>
     <?php endif; ?>
-</div>
-
 </div>
 
 <div class="details-ret">

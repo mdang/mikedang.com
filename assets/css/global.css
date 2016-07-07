@@ -315,7 +315,7 @@ ul#tabnav li#tab-cta a:hover {
 }
 @media screen and (max-width: 768px) {
 	#content {
-	  margin: 4px 12px 4px;
+	  margin: 4px 22px 4px;
 	}
 }
 .img-responsive {
@@ -475,17 +475,24 @@ a:hover.button span {
 }
 #main {
   /*margin: 0 34px 0 0;*/
-  padding: 0 1em 24px 2px;
+  padding: 0 3em 24px 0;
   /*width: 715px;*/
   float: left;
   clear: both;
 }
 #main-2 {
   /*margin: 0 34px 0 0;*/
-  padding: 0 2em 24px 2px;
+  padding: 0 2em 24px 0;
   /*width: 627px;*/
   float: left;
   clear: both;
+}
+@media screen and (max-width: 768px) {
+	#main {
+	  padding: 0 0 24px;
+	  float: left;
+	  clear: both;
+	}
 }
 #title {
   clear: both;
@@ -582,11 +589,19 @@ a:hover.button span {
 	line-height: 1.7em;
 }
 #project-images {
-
+	padding-top: 3px;
 }
 .project-image {
   display: inline-block;
   margin: 0 20px 20px 0;
+}
+.project-image img {
+	width: 300px;
+}
+@media screen and (max-width: 768px) {
+	.project-image img {
+		width: 100%;
+	}
 }
 .project-row {
   clear: both;
@@ -652,6 +667,9 @@ a:hover.button span {
 .project-col-dtl {
   /*min-width: 475px;*/
   padding: 0 20px;
+}
+.project-col-dtl p {
+	padding-bottom: .6em;
 }
 .footnote {
   color: #ccc;

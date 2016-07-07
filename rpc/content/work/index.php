@@ -170,7 +170,7 @@ if (isset($_GET['client']) and is_numeric($_GET['client']))
 {
     if (isset($results[0]['client_nm']))
     {
-        $main_title = '<span>client / </span>'. $results[0]['client_nm'];
+        $main_title = '<span>client | </span>'. $results[0]['client_nm'];
     }
     if ($total > $limit)
     {
@@ -186,7 +186,7 @@ elseif (isset($_GET['tag']) and is_numeric($_GET['tag']))
 
     if (isset($distinct_app_tags[$requested_tag_id]))
     {
-        $main_title = '<span>tag / </span>'. $distinct_app_tags[$requested_tag_id];
+        $main_title = '<span>tag | </span>'. $distinct_app_tags[$requested_tag_id];
     }
     if ($total > $limit)
     {
