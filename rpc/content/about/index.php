@@ -15,7 +15,7 @@ $tab = 'tab4';
 <div id="main" class="about-container col-xs-12 col-sm-12 col-md-9">
 
   <div id="my-photo">
-      <img src="<?php echo STATIC_ROOT ?>/i/me.png" alt="Me" />
+      <img src="<?php echo STATIC_ROOT ?>/i/me-2.png" src="<?php echo STATIC_ROOT ?>/i/me-2.png" srcset="<?php echo STATIC_ROOT ?>/i/me-2.png 1x, <?php echo STATIC_ROOT ?>/i/me-2.png 2x" alt="Me" />
   </div>
 
   <p>I was born in a little city in Texas called <a href="http://en.wikipedia.org/wiki/Amarillo,_Texas" target="_new">Amarillo</a>. In case you haven't heard of it, Amarillo's kind of a big deal. At one point in time it was the helium capital of the world and there's a hit country song about it (<a href="http://en.wikipedia.org/wiki/Amarillo_by_Morning_(song)" target="_new">Amarillo by Morning</a>). Oh, and it just happens to be home to the <a href="http://www.bigtexan.com/free72.html" target="_new">72 oz. steak eating challenge</a>. My parents met and settled there shortly after they arrived in the states and I'm now the oldest of seven children. I've lived in just about every major city in Texas and currently call Dallas home.</p>

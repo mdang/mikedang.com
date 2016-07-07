@@ -826,6 +826,7 @@ a:hover.button span {
   border: 1px solid #ccc;
   padding: 3px;
   margin: 0 auto;
+	max-width: 310px;
 }
 @media screen and (max-width: 768px) {
   #my-photo {
