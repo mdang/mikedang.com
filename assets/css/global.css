@@ -753,8 +753,18 @@ a:hover.button span {
 .fa-user {
 	padding-right: 9px;
 }
+.submodule .fa-user {
+	padding-right: 6px;
+}
+.fa-external-link {
+	padding-right: 3px;
+}
 .feature-set .fa-user {
 	padding-right: 3px;
+}
+.fa-arrow-circle-left {
+	padding-right: 3px;
+	margin-right: 0;
 }
 @media screen and (max-width: 768px) {
 	.fa-tags {

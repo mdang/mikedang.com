@@ -118,7 +118,7 @@ if ($sent)
 }
 else
 {
-    $main_title = 'Want to chat?';
+    $main_title = 'Wanna chat?';
 }
 
 ?>
@@ -215,7 +215,7 @@ MESSAGE;
 
 <div id="sidebar" class="col-xs-12 col-sm-12 col-md-2">
     <div class="submodule clearfix">
-        <h3 class="headline">Get social</h3>
+        <h3 class="headline">Let's get social</h3>
         <div class="subcontent">
           <ul>
             <li><i class="fa fa-linkedin fa-lg" aria-hidden="true"></i> &nbsp;<a href="https://www.linkedin.com/in/dangmike" target="_blank">dangmike</a></li>

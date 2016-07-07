@@ -99,7 +99,7 @@ $params_str = http_build_query($params);
     <?php endif; ?>
 
 	<div id="details-ret">
-    	<a class="ajax" href="/work/?<?php echo $params_str ?>">go back to project results</a>
+      <a class="ajax" href="/work/?<?php echo $params_str ?>">go back to project results</a>
     </div>
 </div>
 
@@ -150,10 +150,10 @@ $params_str = http_build_query($params);
 
         <div class="subcontent">
             <?php if ($client_nm): ?>
-              <a class="ajax" href="/work/?client=<?php echo $client_id ?>"><?php echo $client_nm ?></a><br />
+              <i class="fa fa-user" aria-hidden="true"></i> <a class="ajax" href="/work/?client=<?php echo $client_id ?>"><?php echo $client_nm ?></a><br />
             <?php endif; ?>
             <?php if ($url): ?>
-              <a href="<?php echo $full_url ?>" target="_new"><?php echo $url ?></a>
+              <i class="fa fa-external-link" aria-hidden="true"></i> <a href="<?php echo $full_url ?>" target="_new">Website</a>
             <?php endif; ?>
         </div>
     </div>
