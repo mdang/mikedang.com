@@ -794,8 +794,8 @@ a:hover.button span {
 #project-details p {
   font-size: 1.18em;
 	padding-bottom: 0;
-	padding-left: 1em;
-	padding-right: 1em;
+	padding-left: .7em;
+	padding-right: .7em;
 }
 .project-details-ret {
   margin-top: 37px;
