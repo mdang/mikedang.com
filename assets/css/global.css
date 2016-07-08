@@ -117,7 +117,7 @@ a:link, a:visited, a:active {
 }
 h1 a {
 	font-family: 'Fjalla One', sans-serif;
-	text-transform: lowercase;
+	text-transform: uppercase;
 }
 .nav a {
 	font-family: 'Fjalla One', sans-serif;
@@ -964,6 +964,7 @@ html #footersubnav .fb_share_button {
   padding: 3px 8px;
   z-index: 1000;
 	font-family: 'Open Sans Condensed', sans-serif;
+	font-weight: bold;
   /*border: 1px solid #fff;
 	-moz-border-radius: 4px;
 	-webkit-border-radius: 4px;
