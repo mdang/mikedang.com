@@ -1,4 +1,4 @@
-@import 'https://fonts.googleapis.com/css?family=Fjalla+One|Open+Sans+Condensed:300|Roboto+Condensed';
+@import 'https://fonts.googleapis.com/css?family=Fjalla+One|Open+Sans+Condensed:300,700|Roboto+Condensed';
 
 * {
   margin: 0;
@@ -25,7 +25,7 @@ h1 {
 h2 {
   margin: .4em 0 .5em;
   /*font: 2.6em/1em Plantin, "Plantin std", "Plantin", "Baskerville", Georgia, "Times New Roman", serif;*/
-	font: 2.6em/1.1em 'Open Sans Condensed', sans-serif;
+	font: 2.6em/1.2em 'Open Sans Condensed', sans-serif;
   float: left;
 }
 @media screen and (max-width: 768px) {
@@ -683,7 +683,8 @@ a:hover.button span {
   font-family: helvetica, arial, sans-serif;
 }
 .project-col h3 {
-  font-size: 1.3em;
+	font: 1.4em 'Open Sans Condensed', sans-serif;
+	font-weight: bold;
 }
 .project-col h3 a {
   border-bottom: none;
