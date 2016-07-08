@@ -310,7 +310,7 @@ ul#tabnav li#tab-cta a:hover {
 }
 #content {
   margin: 4px 30px 4px;
-  padding: 6px 0 6px 3px;
+  padding: 6px 3px 6px;
   clear: both;
 }
 @media screen and (max-width: 768px) {
@@ -837,6 +837,9 @@ a:hover.button span {
     float: none;
     margin: 0 0 20px;
   }
+	#my-photo img {
+		padding: 0;
+	}
 }
 #msg {
   width: 87%;
