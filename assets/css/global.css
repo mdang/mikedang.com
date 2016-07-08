@@ -117,7 +117,7 @@ a:link, a:visited, a:active {
 }
 h1 a {
 	font-family: 'Fjalla One', sans-serif;
-	text-transform: lowercase;;
+	text-transform: lowercase;
 }
 .nav a {
 	font-family: 'Fjalla One', sans-serif;
@@ -794,6 +794,8 @@ a:hover.button span {
 #project-details p {
   font-size: 1.18em;
 	padding-bottom: 0;
+	padding-left: 1em;
+	padding-right: 1em;
 }
 .project-details-ret {
   margin-top: 37px;
@@ -862,7 +864,7 @@ a:hover.button span {
   border: 1px solid #ccc;
   padding: 3px;
   margin: 0 auto;
-	max-width: 310px;
+	max-width: 305px;
 }
 #my-photo span {
 	font-size: 80%;
