@@ -117,9 +117,13 @@ a:link, a:visited, a:active {
 }
 h1 a {
 	font-family: 'Fjalla One', sans-serif;
+	text-transform: lowercase;
 }
 .nav a {
 	font-family: 'Fjalla One', sans-serif;
+}
+.nav-link {
+	text-transform: uppercase;
 }
 a:hover {
   text-decoration: none;
@@ -750,8 +754,11 @@ a:hover.button span {
 .project-related {
   margin: 0 0 7px;
   padding-bottom: 4px;
+	font-family: 'Open Sans Condensed', sans-serif;
+	font-size: 100%;
   /*text-align: center;*/
 }
+
 #project-views {
   padding: 9px 20px;
   margin: 6px 0;
@@ -956,6 +963,7 @@ html #footersubnav .fb_share_button {
   margin: 5px auto;
   padding: 3px 8px;
   z-index: 1000;
+	font-family: 'Open Sans Condensed', sans-serif;
   /*border: 1px solid #fff;
 	-moz-border-radius: 4px;
 	-webkit-border-radius: 4px;
@@ -1125,6 +1133,7 @@ label {
   vertical-align: top;
   display: inline-block;
   margin-left: 15px;
+	padding-top: 7px;
 	font: 105% "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, arial, sans-serif;
 }
 label.req {
