@@ -345,8 +345,8 @@ footer {
 }
 #copyright {
   float: left;
-  font-size: 87%;
   color: #9d9d9d;
+	font: 95% 'Open Sans Condensed', sans-serif;
 }
 .navbar {
   margin-bottom: 0;
@@ -683,7 +683,7 @@ a:hover.button span {
   font-family: helvetica, arial, sans-serif;
 }
 .project-col h3 {
-	font: 1.4em 'Open Sans Condensed', sans-serif;
+	font: 1.3em 'Open Sans Condensed', sans-serif;
 	font-weight: bold;
 }
 .project-col h3 a {
@@ -1091,7 +1091,7 @@ input, textarea {
   border: 1px solid #ccc;
   padding: 3px 5px;
   margin-left: 12px;
-	width: 50%;
+	width: 60%;
 }
 input:focus {
   border: 1px solid #333;
@@ -1123,9 +1123,9 @@ legend {
 label {
   line-height: 1.8;
   vertical-align: top;
-  width: 115px;
   display: inline-block;
   margin-left: 15px;
+	font: 105% "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, arial, sans-serif;
 }
 label.req {
   font-weight: bold;
@@ -1145,6 +1145,7 @@ label.error {
 	border: 0;
 	width: 90%;
 	margin-right: 14px;
+	font: 120% "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, arial, sans-serif;
 }
 @media screen and (max-width: 768px) {
 	input, textarea {
@@ -1193,7 +1194,7 @@ label.error {
 }
 .feature-item h4 a {
   text-decoration: none;
-  font-size: 115%;
+  font-size: 100%;
   border: none;
   border-top: 3px solid #2B3E42;
   padding-top: 8px;
