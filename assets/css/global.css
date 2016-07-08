@@ -794,6 +794,9 @@ a:hover.button span {
 .fa-tags {
 	padding-right: 3px;
 }
+.tag {
+	line-height: 200%;
+}
 .fa-user {
 	padding-right: 9px;
 }
