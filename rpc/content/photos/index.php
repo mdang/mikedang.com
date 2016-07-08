@@ -63,6 +63,8 @@ $debug[] = Zend_Debug::dump($photo_results, 'Initial Photos', 0);
     ?>
   </ul>
 
+  <div class="top-link"><a href="#top-nav">back to top</a></div>
+
 </div>
 
 <script type="text/javascript">
@@ -98,6 +100,16 @@ $(function() {
     ias.extension(new IASSpinnerExtension({
       src: '<?php echo STATIC_ROOT ?>/i/loading-animation.svg',
     }));
+
+    $.localScroll({
+      duration:1200,
+      onBefore:function(e, anchor, $target) {
+    		$(anchor).effect("highlight", { color: "" }, 1700);
+          },
+      onAfter:function(anchor){
+
+      }
+    });
 	//});
 
   //ias.extension(new IASNoneLeftExtension({html: '<div class="ias-noneleft" style="text-align:center"><p><em>You reached the end!</em></p></div>'}));

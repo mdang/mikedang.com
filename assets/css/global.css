@@ -310,12 +310,13 @@ ul#tabnav li#tab-cta a:hover {
 }
 #content {
   margin: 4px 30px 4px;
-  padding: 6px 3px 6px;
+  padding: 6px 13px 6px;
   clear: both;
 }
 @media screen and (max-width: 768px) {
 	#content {
 	  margin: 4px 12px 4px;
+		padding: 6px 3px 6px;
 	}
 }
 .img-responsive {
@@ -480,6 +481,11 @@ a:hover.button span {
   float: left;
   clear: both;
 }
+/*#tab4 #main h3, #tab4 #main p {
+	padding-left: 10px;
+	padding-right: 10px;
+}*/
+
 #main-2 {
   /*margin: 0 34px 0 0;*/
   padding: 0 2em 24px 0;
@@ -824,12 +830,16 @@ a:hover.button span {
 #my-photo {
   float: right;
   margin: 3px 2px 10px 25px;
+	text-align: right;
 }
 #my-photo img {
   border: 1px solid #ccc;
   padding: 3px;
   margin: 0 auto;
 	max-width: 310px;
+}
+#my-photo span {
+	font-size: 80%;
 }
 @media screen and (max-width: 768px) {
   #my-photo {
@@ -1116,7 +1126,7 @@ label.error {
 	border-radius: 5px;
 	border: 0;
 	width: 90%;
-	margin-right: 12px;
+	margin-right: 14px;
 }
 @media screen and (max-width: 768px) {
 	input, textarea {
@@ -1146,7 +1156,7 @@ label.error {
   float: left;
   margin: 3px 5px 3px 0;
   width: 180px;
-  padding: 4px 3px;
+  padding: 4px 4px;
   border: 1px solid #fff;
   text-align: center;
   -moz-border-radius: 5px;

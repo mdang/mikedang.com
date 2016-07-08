@@ -411,7 +411,6 @@ $(function() {
 	$.localScroll({
     duration:1200,
     onBefore:function( e, anchor, $target ){
-
         $(anchor).effect("highlight", { color: "<?php echo $highlight_color ?>" }, 1700);
     },
     onAfter:function( anchor ){
