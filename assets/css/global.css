@@ -1,4 +1,4 @@
-@import 'https://fonts.googleapis.com/css?family=Fjalla+One|Roboto+Condensed';
+@import 'https://fonts.googleapis.com/css?family=Fjalla+One|Open+Sans+Condensed:300|Roboto+Condensed';
 
 * {
   margin: 0;
@@ -25,7 +25,7 @@ h1 {
 h2 {
   margin: .4em 0 .5em;
   /*font: 2.6em/1em Plantin, "Plantin std", "Plantin", "Baskerville", Georgia, "Times New Roman", serif;*/
-	font: 2.6em/1em 'Roboto Condensed', sans-serif;
+	font: 2.6em/1.1em 'Open Sans Condensed', sans-serif;
   float: left;
 }
 @media screen and (max-width: 768px) {
@@ -351,6 +351,9 @@ footer {
 .navbar {
   margin-bottom: 0;
   border-radius: 0;
+}
+.navbar-brand {
+	font-size: 24px;
 }
 #footernav {
   float: right;
@@ -1189,14 +1192,13 @@ label.error {
 }
 .feature-item h4 a {
   text-decoration: none;
-  font-size: 95%;
+  font-size: 115%;
   border: none;
   border-top: 3px solid #2B3E42;
   padding-top: 8px;
   margin-top: 11px;
   display: block;
-	font-family: 'Fjalla One', sans-serif;
-	font-weight: normal;
+	font-family: 'Open Sans Condensed', sans-serif;
 }
 .feature-item span {
   font-size: 90%;
