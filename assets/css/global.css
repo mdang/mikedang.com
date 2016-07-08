@@ -117,7 +117,7 @@ a:link, a:visited, a:active {
 }
 h1 a {
 	font-family: 'Fjalla One', sans-serif;
-	text-transform: uppercase;
+	text-transform: lowercase;;
 }
 .nav a {
 	font-family: 'Fjalla One', sans-serif;
@@ -735,6 +735,7 @@ a:hover.button span {
   background: #eee;
   padding: 4px 7px;
   text-decoration: none;
+	font-family: 'Roboto Condensed', sans-serif;
 }
 #pager a:hover {
   text-decoration: underline;
@@ -1155,7 +1156,7 @@ label.error {
 	border: 0;
 	width: 90%;
 	margin-right: 14px;
-	font: 120% "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, arial, sans-serif;
+	font: 120% "Roboto Condensed", sans-serif;
 }
 @media screen and (max-width: 768px) {
 	input, textarea {
