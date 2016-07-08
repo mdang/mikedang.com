@@ -1,3 +1,5 @@
+@import 'https://fonts.googleapis.com/css?family=Fjalla+One|Roboto+Condensed';
+
 * {
   margin: 0;
   padding: 0;
@@ -23,6 +25,8 @@ h1 {
 h2 {
   margin: .4em 0 .5em;
   font: 2.6em/1em Plantin, "Plantin std", "Plantin", "Baskerville", Georgia, "Times New Roman", serif;
+	font-family: 'Roboto Condensed', sans-serif;
+
   float: left;
 }
 @media screen and (max-width: 768px) {
@@ -111,6 +115,12 @@ a:link, a:visited, a:active {
 }
 .navbar a:link, .navbar a:visited, .navbar a:active {
   border-bottom: 0;
+}
+h1 a {
+	font-family: 'Roboto Condensed', sans-serif;
+}
+.nav a {
+	font-family: 'Fjalla One', sans-serif;
 }
 a:hover {
   text-decoration: none;
@@ -481,9 +491,11 @@ a:hover.button span {
   float: left;
   clear: both;
 }
-#tab4 #main h3, #tab4 #main p {
-	padding-left: 10px;
-	padding-right: 10px;
+@media screen and (max-width: 768px) {
+	#tab4 #main h3, #tab4 #main p {
+		padding-left: 10px;
+		padding-right: 10px;
+	}
 }
 
 #main-2 {
@@ -1178,12 +1190,14 @@ label.error {
 }
 .feature-item h4 a {
   text-decoration: none;
-  font-size: 88%;
+  font-size: 95%;
   border: none;
   border-top: 3px solid #2B3E42;
   padding-top: 8px;
   margin-top: 11px;
   display: block;
+	font-family: 'Fjalla One', sans-serif;
+	font-weight: normal;
 }
 .feature-item span {
   font-size: 90%;
