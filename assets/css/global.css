@@ -1185,7 +1185,7 @@ label.error {
 .feature-set {}
 .feature-item {
   display: inline-block;
-  float: left;
+  /*float: left;*/
   margin: 3px 5px 3px 0;
   width: 180px;
   padding: 4px 4px;

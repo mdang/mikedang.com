@@ -124,7 +124,7 @@ $params_str = http_build_query($params);
     </div>
     <?php else: ?>
 
-    <img src="<?php echo STATIC_ROOT ?>/i/blank.gif" style="background: #ccc;" width="625" height="350" alt="" />
+    <!-- <img src="<?php echo STATIC_ROOT ?>/i/blank.gif" style="background: #ccc;" width="95%" height="350" alt="" /> -->
 
     <?php endif; ?>
 
