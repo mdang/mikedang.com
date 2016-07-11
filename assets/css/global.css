@@ -1195,6 +1195,11 @@ label.error {
   -webkit-border-radius: 5px;
   border-radius: 5px;
 }
+@media screen and (max-width: 768px) {
+	.feature-item {
+	  float: left;
+	}
+}
 .feature-item h4, .feature-item p {
   text-align: left;
   text-transform: none;
