@@ -1,9 +1,14 @@
+@import https://fonts.googleapis.com/css?family=Fjalla+One|Open+Sans+Condensed:300,700|Roboto+Condensed;
 *{margin:0;padding:0;outline:0;border:0}
 body{background:#f9f9f9;text-align:center;font:1.5em/1.9em Georgia,serif;color:#345}
 img{display:block}
 h1{padding:0;margin:0}
-h2{margin:.4em 0 20px;font:2.6em/1em Plantin,"Plantin std",Plantin,Baskerville,Georgia,"Times New Roman",serif;float:left}
+h2{margin:.4em 0 .5em;font:2.6em/1.2em 'Open Sans Condensed',sans-serif;float:left}
+@media screen and (max-width: 768px) {
+h2{font-size:2.3em}
+}
 h3{font-size:1.4em;font-weight:400;letter-spacing:.03em;margin-right:10px;margin-top:6px}
+#tab4 #main h3{font-weight:700;font-size:1.2em}
 h4{font-size:1em;text-transform:lowercase;font-weight:700}
 h5{font-size:1.4em}
 h3,h4,h5{margin-bottom:.3em;line-height:1.5em;clear:both}
@@ -18,6 +23,9 @@ blockquote{display:block;font:145%/135% georgia,helvetica,arial,sans-serif;color
 blockquote p{padding:0 57px;background:transparent url(/assets/i/closequote.gif) right bottom no-repeat}
 a:link,a:visited,a:active{text-decoration:none;border-bottom:1px dotted #777;color:#333}
 .navbar a:link,.navbar a:visited,.navbar a:active{border-bottom:0}
+h1 a{font-family:'Fjalla One',sans-serif;text-transform:lowercase}
+.nav a{font-family:'Fjalla One',sans-serif}
+.nav-link{text-transform:uppercase}
 a:hover{text-decoration:none;border-bottom:1px solid #333;color:#000}
 #container{text-align:left;margin:0 auto}
 #header{margin:5px 0 0}
@@ -49,15 +57,16 @@ ul#tabnav li#tab-cta a{background-color:#F17022;color:#fff;border:1px solid #F17
 #subnav li{float:left;padding-left:14px;font-size:.9em}
 #subnav a:link,#subnav a:visited,#subnav a:active{text-decoration:none;color:#333}
 #subnav a:hover{text-decoration:underline;color:#000}
-#content{margin:4px 30px;padding:6px 0 6px 3px;clear:both}
+#content{margin:4px 30px;padding:6px 13px;clear:both}
 @media screen and (max-width: 768px) {
-#content{margin:4px 12px}
+#content{margin:4px 12px;padding:6px 3px}
 }
 .img-responsive{width:100%;padding-bottom:6px}
 #footer{margin:35px 6px 0;padding:5px 3px 30px;clear:both}
 footer{margin-top:40px;background:#101010;clear:both;padding:20px 40px 2px}
-#copyright{float:left;font-size:87%;color:#9d9d9d}
+#copyright{float:left;color:#9d9d9d;font:95% 'Open Sans Condensed',sans-serif}
 .navbar{margin-bottom:0;border-radius:0}
+.navbar-brand{font-size:24px}
 #footernav{float:right}
 #footernav li{float:left;padding-left:12px}
 @media screen and (max-width: 768px) {
@@ -79,9 +88,12 @@ a:hover.button span{text-decoration:underline}
 .listview ul{margin:15px 10px}
 .listview li{padding:4px 0}
 #client-logo{float:right;margin-right:25px;padding-right:4px}
-#details-ret{float:right;margin:24px 23px 0 0;padding:10px 4px;background:#eee}
-#details-ret a{margin:0 4px}
-#details-ret a.active_link{border-bottom:2px solid #F17022}
+.details-ret{float:right;margin:0 23px 0 0;padding:10px 4px;background:#eee}
+.details-ret a{margin:0 4px}
+.details-ret a.active_link{border-bottom:2px solid #F17022}
+@media screen and (max-width: 768px) {
+.details-ret-first{display:none}
+}
 .client-meta{border-top:1px solid #ccc;border-bottom:1px solid #ccc;background:#eee;padding:7px 6px}
 .client-meta p{clear:both}
 .client-meta a{display:block}
@@ -89,27 +101,44 @@ a:hover.button span{text-decoration:underline}
 .see-more{font-size:90%}
 .go{padding:12px 0 0;float:right}
 #all{clear:both}
-#main{margin:0 34px 0 0;padding:0 12px 4px 2px;float:left;clear:both}
-#main-2{margin:0 34px 0 0;padding:0 12px 4px 2px;float:left;clear:both}
+@media screen and (min-width: 768px) {
+#tab3 #all{padding:0;margin:0}
+}
+#main{padding:0 3em 24px 0;float:left;clear:both}
+@media screen and (max-width: 768px) {
+#tab4 #main h3,#tab4 #main p{padding-left:10px;padding-right:10px}
+}
+#main-2{padding:0 2em 24px 0;float:left;clear:both}
+@media screen and (max-width: 768px) {
+#main{padding:0 0 24px;float:left;clear:both}
+}
+.about-container{padding-left:22px;padding-right:22px}
 #title{clear:both;padding:0 0 15px}
 #sidebar,#sidebar-2{float:left;padding:3px 3px 0}
 #map{width:230px;height:230px}
-.submodule{padding-bottom:6px;background:#f8f8f8;font-family:arial,helvetica,sans-serif}
+.submodule{padding-bottom:6px;background:#f8f8f8;line-height:1.6em}
+.submodule-icon{float:left;width:30px;text-align:center}
 .theme3 .submodule{background:none}
-.submodule h4{border-top:0;border-bottom:1px solid #fff;padding:3px 10px;background:#eee;color:#888;clear:both;letter-spacing:.05em}
+.submodule h3.headline{text-transform:lowercase;font-size:110%}
+.submodule h4{border-top:0;border-bottom:1px solid #fff;padding:3px 10px;background:#eee;color:#888;clear:both}
 .theme3 .submodule h4{background:#F17022;color:#fff;float:left}
-.submodule h4 a{float:right;font-size:9px;margin-top:1px;padding-top:0;text-decoration:none;border-bottom:0;letter-spacing:normal}
+.submodule h4 a{float:right;font-size:9px;margin-top:1px;padding-top:0;text-decoration:none;border-bottom:0}
 .submodule h4 a:hover{text-decoration:underline}
 .submodule h5{margin-top:7px}
-.subcontent{padding:8px 30px 8px 10px;clear:both}
+.subcontent{padding:8px;clear:both}
 .subcontent ul li{padding:3px 0;clear:both}
 .subcontent ul{margin:3px 3px 0 6px}
 .subcontent span{font-weight:700;color:#777}
+.subcontent img{max-width:225px}
 #project-list{float:left;width:100%}
 #project-list-nav a,#client-list-nav a{font-size:96%}
-#client-list-nav{line-height:1.6em}
-#project-images{margin-top:20px}
+#client-list-nav{line-height:1.7em}
+#project-images{padding-top:3px}
 .project-image{display:inline-block;margin:0 20px 20px 0}
+.project-image img{width:300px}
+@media screen and (max-width: 768px) {
+.project-image img{width:100%}
+}
 .project-row{clear:both;border:1px solid #fff;border-top:1px solid #eee;margin:0 0 7px;padding:14px 0 2px}
 .project-row:hover{border:1px solid #ccc;background:#eee}
 .project-highlight{border:1px solid #ccc;background:#f90}
@@ -122,54 +151,70 @@ a:hover.button span{text-decoration:underline}
 .project-col p{font-size:105%}
 .submodule p{font-size:95%;padding-bottom:0;margin-bottom:0}
 .project-col span{font-weight:700;font-family:helvetica,arial,sans-serif}
-.project-col h3{font-size:1.3em}
+.project-col h3{font:1.3em 'Open Sans Condensed',sans-serif;font-weight:700}
 .project-col h3 a{border-bottom:none}
 .project-col-dtl{padding:0 20px}
+.project-col-dtl p{padding-bottom:.6em}
 .footnote{color:#ccc;font-size:80%;text-align:right}
-#pager-summary{padding:4px;text-align:right}
+#pager-summary{padding:0 0 4px;text-align:right}
 @media screen and (max-width: 768px) {
 #pager-summary{padding:4px 4px 4px 0;text-align:left}
 }
 #pager-summary span{font-weight:700}
 #pager{clear:both;padding:10px 4px;border-top:1px solid #eee;border-bottom:1px solid #eee;width:100%}
 #pager-nav{float:left;padding:4px 0}
-#pager a{border:1px solid #ccc;background:#eee;padding:4px 7px;text-decoration:none}
+#pager a{border:1px solid #ccc;background:#eee;padding:4px 7px;text-decoration:none;font-family:'Roboto Condensed',sans-serif}
 #pager a:hover{text-decoration:underline}
 #pager a.current{border:none;background:none}
 #pager a.current:hover{text-decoration:none}
 #pager-ctrl{text-align:right;float:right;padding:4px 0}
-.project-related{margin:0 0 7px;padding:4px}
+.project-related{margin:0 0 7px;padding-bottom:4px;font-family:'Open Sans Condensed',sans-serif;font-size:100%}
 #project-views{padding:9px 20px;margin:6px 0;background:#eee;border-top:1px solid #ccc;border-bottom:1px solid #ccc}
 #project-views a{width:75px;padding:3px;display:block;border:2px solid #ccc;margin-right:10px}
 #project-views .activeSlide a{border:2px solid #F17022}
 #project-views a:focus{outline:none}
 #project-views img{border:none;display:block}
 #project-thumbs li{float:left;margin:2px 0 3px}
-#project-details{padding:20px 20px 0 0;font-size:1.18em}
+#project-details{padding:20px 20px 0 0}
+#project-details p{font-size:1.18em;padding-bottom:0;padding-left:.7em;padding-right:.7em}
 .project-details-ret{margin-top:37px;padding:10px 8px;background:#eee;float:left}
 @media screen and (max-width: 768px) {
 #project-details{padding:10px 0 0}
 .project-details-ret{display:none}
 }
 .link-prompt{background:#eee;padding:5px 16px;text-align:right;clear:both;margin:15px 20px 10px 0;float:right}
-.tags-list{margin:.3em 0}
-#my-photo{float:right;margin:3px 2px 10px 25px}
-#my-photo img{border:1px solid #ccc;padding:3px;margin:0 auto}
+.tags-list{margin:.3em 0 .6em}
+.fa-tags{padding-right:3px}
+.tag{line-height:220%}
+.fa-user{padding-right:9px}
+.submodule .fa-user{padding-right:6px}
+.fa-external-link{padding-right:3px}
+.feature-set .fa-user{padding-right:3px}
+.fa-arrow-circle-left{padding-right:3px;margin-right:0}
+@media screen and (max-width: 768px) {
+.fa-tags{display:none}
+.fa-user{display:none}
+.fa-external-link{display:none}
+}
+#my-photo{float:right;margin:3px 2px 10px 25px;text-align:right}
+#my-photo img{border:1px solid #ccc;padding:3px;margin:0 auto;max-width:305px}
+#my-photo span{font-size:80%}
 @media screen and (max-width: 768px) {
 #my-photo{clear:both;float:none;margin:0 0 20px}
+#my-photo img{padding:0}
 }
 #msg{width:87%}
 .top-link{text-align:right;font-size:80%;display:block;padding-top:10px}
 .subcontent img{margin:5px 0 10px;padding:3px;border:1px solid #ccc;background:#fff}
 html #footersubnav .fb_share_button{font-size:80%;text-decoration:none}
-.marker{border:2px solid #fff;background:#f90;padding:2px;margin:0 6px 0 0;float:left;text-align:center;color:#fff;font-family:helvetica,arial,sans-serif}
+.marker{border:2px solid #fff;background:#f90;text-align:center;padding:2px;margin:0 6px 0 0;min-width:26px;float:left;text-align:center;color:#fff;font-family:helvetica,arial,sans-serif}
 .theme3 .marker{background:#F2583E;-moz-border-radius:4px;-webkit-border-radius:4px;border-radius:4px;padding:2px 6px;font-size:89%;line-height:20px}
 .warning{border:1px solid #ffde00;background:#fff299;padding:8px 10px;margin:12px auto;font-size:120%}
 .line-through{text-decoration:line-through}
 .theme3 .tag{border:0;text-decoration:none;background:#77BED2;color:#fff;padding:4px 10px;margin:0;font-family:helvetica,arial,sans-serif;font-size:88%;-moz-border-radius:4px;-webkit-border-radius:4px;border-radius:4px}
 #progress{position:absolute;top:155px;text-align:center;background:#f90;color:#fff;padding:3px 5px;display:none}
 #loader{background:#ccc;padding:6px 5px}
-#loader2{position:fixed;top:5px;left:45%;display:none;background:#F17022;color:#fff;margin:5px auto;padding:3px 8px;z-index:1000}
+#loader2{position:fixed;top:5px;left:45%;display:none;background:#F17022;color:#fff;margin:5px auto;padding:3px 8px;z-index:1000;font-family:'Open Sans Condensed',sans-serif;font-weight:700}
 @media screen and (max-width: 768px) {
 #loader2{left:40%}
 }
@@ -203,23 +248,26 @@ textarea.expanding{line-height:18px}
 form div{margin:5px 3px;padding:5px 3px}
 fieldset{border:1px solid #eee;margin-bottom:18px}
 legend{font-weight:400;text-transform:uppercase;font-size:100%;padding:2px 5px;margin-left:4px;color:#ccc;border-bottom:0;width:inherit}
-label{line-height:1.8;vertical-align:top;width:115px;display:inline-block;margin-left:15px}
+label{line-height:1.8;vertical-align:top;display:inline-block;margin-left:15px;padding-top:7px;font:105% HelveticaNeue-Light,"Helvetica Neue Light","Helvetica Neue",Helvetica,arial,sans-serif}
 label.req{font-weight:700}
 label.error{margin-left:15px;padding:0 7px;width:auto;color:#fff;background:red}
 #send-container{text-align:center}
-#send{border-radius:5px;border:0;width:100%}
+#send{border-radius:5px;border:0;width:90%;margin-right:14px;font:120% "Roboto Condensed",sans-serif}
 @media screen and (max-width: 768px) {
 input,textarea{margin-left:5px;width:90%}
-#send{width:90%;padding-right:10px}
+#send{width:90%}
 }
 #feature{float:left;padding-top:10px}
 .truncate{width:165px;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
-.feature-item{display:inline-block;float:left;margin:3px 1px 3px 0;width:180px;padding:4px 3px;border:1px solid #fff;text-align:center;-moz-border-radius:5px;-webkit-border-radius:5px;border-radius:5px}
+.feature-item{display:inline-block;margin:3px 5px 3px 0;width:180px;padding:4px;border:1px solid #fff;text-align:center;-moz-border-radius:5px;-webkit-border-radius:5px;border-radius:5px}
+@media screen and (max-width: 768px) {
+.feature-item{float:left}
+}
 .feature-item h4,.feature-item p{text-align:left;text-transform:none;padding-left:3px;padding-right:3px}
 .feature-item:hover{background:#eee;border:1px solid #ccc}
-.feature-item h4 a{text-decoration:none;font-size:88%;border:none;border-top:3px solid #2B3E42;padding-top:8px;margin-top:11px;display:block}
+.feature-item h4 a{text-decoration:none;font-size:100%;border:none;border-top:3px solid #2B3E42;padding-top:8px;margin-top:11px;display:block;font-family:'Open Sans Condensed',sans-serif}
 .feature-item span{font-size:90%;font-family:arial,verdana,sans-serif}
-.feature-item p{font-size:90%}
+.feature-item p{font-size:90%;padding-bottom:.1em}
 .feature-item img{border:1px solid #ccc;padding:2px;margin:0 auto 5px;width:170px}
 .feature-item img:hover{border:1px solid #fff}
 .feature-divider{background:#2B3E42}
@@ -237,6 +285,7 @@ h3.headline{background:#F17022;color:#fff;float:left;clear:both;font-size:119%;p
 .soc-photo img{margin:3px auto 6px;padding:0;border:1px solid #fff}
 .soc-logo{position:absolute;left:-7px;bottom:-2px}
 .soc-logo img{border:0}
+img.longhorn-logo{padding:7px 10px 5px;background:#fff}
 .theme1 .soc-1{background:#3b5998}
 .theme1 .soc-2{background:#0095C3}
 .theme1 .soc-3{background:#FF0084}
@@ -252,13 +301,16 @@ h3.headline{background:#F17022;color:#fff;float:left;clear:both;font-size:119%;p
 .theme5 .soc-1{background:#FF542E}
 .theme5 .soc-2{background:#7297BA}
 .theme5 .soc-3{background:#ADC1D6}
-.submit{padding:.3em 1em;background:#F17022;color:#fff}
+.submit{padding:.3em 1em;background:#77BED2;color:#fff}
 ::-moz-selection{background-color:#F2583E;color:#fff}
 ::selection{background-color:#F2583E;color:#fff}
-.item{width:142px;height:142px;display:inline-block;overflow:hidden;border-radius:5px;color:#fff;font-size:12px;padding-right:2px}
+.item{width:142px;height:142px;display:inline-block;overflow:hidden;border-radius:5px;color:#fff;font-size:12px}
 .item.w2{width:292px}
 .item.h2{height:292px}
 .featured-photos-container{clear:both}
+@media screen and (min-width: 768px) {
+.featured-photos-container{margin:0;padding:0}
+}
 .featured-photo{width:142px;height:142px;display:inline-block;overflow:hidden;border-radius:5px}
 .featured-photo.w2{width:292px}
 .featured-photo.h2{height:292px}
