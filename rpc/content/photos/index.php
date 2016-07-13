@@ -29,7 +29,7 @@ $debug[] = Zend_Debug::dump($photo_results, 'Initial Photos', 0);
 
 ?>
 <div id="title">
-    <h2>Photos, photos, photos!</h2>
+    <h2>Life, one photo at a time</h2>
 </div>
 
 <div id="all" class="container-fluid bg-3">

@@ -77,7 +77,7 @@ if (isset($_POST['send']))
     {
         if ($contact_id = add_contact_request($name, $email_addr, $msg_txt, $phone_num))
         {
-            $subject  = '[mikedang.com] New Contact Request';
+            $subject  = '[mikedang.com] New Contact';
 
             $message  = 'Name: '. $name . PHP_EOL;
             $message .= 'Email Address: '. $email_addr . PHP_EOL;
@@ -135,7 +135,7 @@ if ($sent)
 {
     echo <<<SENT
         <div id="success">
-            <p>Please allow up to 24 hours for a response as I work full-time during the day, on side projects at night, and attempt to squeeze in a life somewhere in between.</p>
+            <p>Please allow up to 24 hours for a response as I work full-time during the day, side projects at night, and attempt to squeeze in a life somewhere in between.</p>
         </div>
 
 SENT;
@@ -157,7 +157,7 @@ else
     else
     {
         echo <<<MESSAGE
-            <p>Use the short form below to send me a message about anything you might want to talk about. You can also reach me at any of my profiles to the right. If you don't really have anything to say then just say hi, it still makes me feel special.</p>
+            <p>Send me a message about anything you might want to talk about. You can also reach me at any of my profiles to the right. If you don't really have anything to say then just say hi, it still makes me feel special.</p>
 
 MESSAGE;
 	    // if (!isset($browser_info['msie']))

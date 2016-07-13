@@ -227,7 +227,7 @@ $params_str = http_build_query($params);
         }
         else
         {
-            echo 'for all projects';
+            //echo 'for all projects';
         }
 
         if ( $show_reset )

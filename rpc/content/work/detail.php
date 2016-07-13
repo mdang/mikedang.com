@@ -99,7 +99,7 @@ $params_str = http_build_query($params);
     <?php endif; ?>
 </div>
 <div class="details-ret details-ret-first">
-  <a class="ajax" href="/work/?<?php echo $params_str ?>">go back to project results</a>
+  <a class="ajax" href="/work/?<?php echo $params_str ?>">go back to results</a>
 </div>
 
 <div id="main-2" class="col-xs-12 col-sm-12 col-md-9">
@@ -233,7 +233,7 @@ $params_str = http_build_query($params);
 </div>
 
 <div class="details-ret">
-  <a class="ajax" href="/work/?<?php echo $params_str ?>">go back to project results</a>
+  <a class="ajax" href="/work/?<?php echo $params_str ?>">go back to results</a>
 </div>
 
 <script type="text/javascript">

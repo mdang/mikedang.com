@@ -19,27 +19,25 @@ $tab = 'tab4';
       <span>Photo credit: <a href="https://www.facebook.com/alison.mae.bonham" target="_new">Alison Mae</a><span>
   </div>
 
-  <p>I was born in a little city in Texas called <a href="http://en.wikipedia.org/wiki/Amarillo,_Texas" target="_new">Amarillo</a>. In case you haven't heard of it, Amarillo's kind of a big deal. At one point in time it was the helium capital of the world and there's a hit country song about it (<a href="http://en.wikipedia.org/wiki/Amarillo_by_Morning_(song)" target="_new">Amarillo by Morning</a>). Oh, and it just happens to be home to the <a href="http://www.bigtexan.com/free72.html" target="_new">72 oz. steak eating challenge</a>. My parents met and settled there shortly after they arrived in the states and I'm now the oldest of seven children. I've lived in just about every major city in Texas and currently call Dallas home.</p>
+  <p>I was born in a little city in Texas called <a href="http://en.wikipedia.org/wiki/Amarillo,_Texas" target="_new">Amarillo</a>. In case you haven't heard of it, Amarillo's kind of a big deal. At one point in time it was the helium capital of the world and there's a hit country song about it (<a href="https://play.spotify.com/track/3Ig9gmkoKZMAGgCXu1bwdH" target="_new">Amarillo by Morning</a>). Oh, and it just happens to be home to the <a href="http://bigtexan.com/live-stream/" target="_new">72 oz. steak eating challenge</a>. My parents met and settled there shortly after they arrived in the states and I'm now the oldest of seven children. I've lived in just about every major city in Texas and currently call Austin home.</p>
 
-  <p>I graduated from the <a href="http://www.utexas.edu" target="_new">University of Texas at Austin</a> in 2002 and have been bullied by the real world ever since. Although I'm now past the thirty year mark, I still feel <span class="line-through">young</span> <em>somewhat young</em> and hope to feel this way for a long time to come. </p>
+  <p>I graduated from the <a href="http://www.utexas.edu" target="_new">University of Texas at Austin</a> in 2002 and have been bullied by the real world ever since.</p>
 
   <h3>Personal Philosophies</h3>
 
-  <p>I consider myself to be a relatively easy going person. No matter what problems and trials are thrown my way I always remind myself that there are bigger problems out there being dealt with every day. That's not to say I don't take what I do seriously though. I'm a firm believer in doing something right or not doing it at all. Our time here is short and wasting my time as well as the time of other people around me is just not a good way to be spending it. </p>
+  <p>I consider myself to be an easy going person. No matter what problems and trials are thrown my way I always remind myself that there are bigger problems out there being dealt with every day. That's not to say I don't take what I do seriously though. I'm a firm believer in doing something right or not doing it at all. Our time here is short and wasting my time as well as the time of other people around me is just not a good way to be spending it. </p>
 
-  <p>I enjoy interacting with people of all different kinds of backgrounds. It fascinates me to think about what a person might have gone through or done with their time so far. There's always something you can learn from anyone, no matter what they do or where they're from. I don't think I'm better than anyone, and likewise that nobody is better than me. We all go down different paths in life that define who we are, there's no single "right" path.</p>
+  <p>I enjoy interacting with people of all different kinds of backgrounds. It fascinates me to think about what a person might have gone through or done with their time so far on this floating rock through space. There's always something you can learn from anyone, no matter what they do or where they're from. I don't think I'm better than anyone, and likewise that nobody is better than me. We all go down different paths in life that define who we are, there's no single <em>right</em> path.</p>
 
   <h3>Current Work</h3>
 
-  <p>I feel fortunate to have found something that I'm not only passionate about, but get paid to do. Although I have my degree in Economics, the web is where I want to be immersed in for quite some time. </p>
-
-  <p>I've previously worked at <a href="http://www.tribalddb.com/" target="_new">Tribal DDB</a> in various Application Development roles for over four years. I'm currently most interested in <a class="ajax" href="/contact/" target="_new">working freelance jobs</a> in the hopes of obtaining a more balanced lifestyle. I'm well into my second year of freelancing, and I enjoy being able to work with a variety of different companies and projects during this time. I'm currently <del>contracting</del> working full time at <a href="http://www.travelocity.com" target="_new">Travelocity</a> as a Senior UI Developer. Most of my experience is with PHP/MySQL application development. </p>
+  <p>I feel fortunate to have found something that I'm not only passionate about, but also get paid to do. Although my degree is in Economics, the digital web is where I want to be for quite some time. </p>
 
   <p>The recent growth in social networking has allowed me to combine my passion for web development with the social side of me. I'm looking to expand my presence in the social networking space and contribute to it through various projects I'm working on. The geek in me can't help but to feel like these are exciting times in regards to the evolution of the web. </p>
 
   <h3>About This Site</h3>
 
-  <p>I developed this site from the ground up a few years ago and have been revising and improving on it whenever I can find spare time. My tasks included everything from the design, development, to database administration of it. Below are some highlights of what's hidden beneath the surface. </p>
+  <p>I developed this site from the ground up years ago and have been revising and improving on it whenever I find spare time. The tasks included everything from planning, design, development, and database administration of it. Below are some highlights of what's hidden beneath the surface. </p>
 
   <ul class="list">
   	<li><a href="http://php.net/" target="_new">PHP</a> / <a href="http://framework.zend.com/" target="_new">Zend Framework</a></li>
